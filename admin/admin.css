@@ -1,0 +1,198 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: "Noto Sans", serif;
+}
+html,
+body,
+p {
+	margin: 0;
+	padding: 0;
+}
+p {
+	text-align: justify;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 600;
+}
+header {
+	background-color: #1e1b19;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	display: flex;
+	padding: 0.5em;
+	gap: 0.5em;
+	font-family: "Noto Sans", serif;
+	font-size: clamp(0.6rem, 1rem, 1.2rem);
+	color: #f3f2ef;
+	z-index: 9999;
+	box-shadow: 0em 0.3em 0.6em rgba(39, 39, 39, 0.933);
+}
+div {
+	z-index: -1;
+}
+.heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 69%;
+}
+header img {
+	grid-area: logo;
+	align-self: center;
+	height: clamp(3em, 4em, 5em);
+}
+.heading-title {
+	font-size: 1rem;
+	height: min-content;
+	text-justify: auto;
+	font-weight: 600;
+}
+.heading-dept {
+	font-size: 0.8em;
+	height: min-content;
+}
+header a {
+	text-decoration: none;
+	color: #f3f2ef;
+	align-self: center;
+	position: absolute;
+	right: 1em;
+}
+header a:hover::after {
+	content: attr(tooltip);
+	position: absolute;
+	background-color: #f3f2ef;
+	color: #1e1b19;
+	padding: 0.13em 0.4em;
+	left: -100%;
+	border-radius: 0.2em;
+	top: 100%;
+}
+header a i {
+	font-size: 1.5rem;
+}
+header a span {
+	display: none;
+}
+.intro-container {
+	padding: 1em;
+	display: grid;
+	align-items: center;
+	gap: 0.5em;
+	grid-auto-flow: row;
+}
+.intro-container img,
+.detail-option {
+	grid-column: label/ -1;
+	justify-self: center;
+	width: 70%;
+	height: 90%;
+	border-radius: 0.3em;
+	object-fit: cover;
+	box-shadow: 0 0.3em 0.7em black;
+}
+.intro-container label {
+	padding-inline: 0.5em;
+	color: #ab3c35;
+	font-weight: 800;
+}
+.intro-container input {
+	border-radius: 0.2em;
+	padding: 0.3em;
+}
+.intro-container button {
+	width: fit-content;
+	justify-self: center;
+	cursor: pointer;
+	background-color: #67a76b;
+	border-radius: 0.5em;
+	color: #f3f2ef;
+	padding: 0.4em 1em;
+	grid-column: 1/-1;
+	position: relative;
+	font-weight: 600;
+}
+.intro-container button label {
+	position: absolute;
+	background-color: #ab3c35;
+	color: #f3f2ef;
+	border-radius: 0.3em;
+	padding: 1em 1.5em;
+	width: max-content;
+	top: -10%;
+	left: -40%;
+	transition: transform 300ms ease-in-out;
+
+	transform: scale(0);
+	z-index: 10;
+}
+.intro-container button:hover {
+	background-color: #5a8a5d;
+}
+.faculty-details {
+	display: grid;
+	padding: 0.5em;
+	gap: 0.5em;
+}
+h1 {
+	color: #ab3c35;
+	padding-inline: 0.5em;
+	font-weight: 600;
+}
+.detail-option {
+	display: flex;
+	padding: 0.5em;
+	width: 90%;
+	gap: 0.2em;
+	flex-wrap: wrap;
+	height: fit-content;
+	margin: 1em auto;
+	flex-direction: column;
+}
+.detail-option li {
+	padding: 0.2em 0.5em;
+	list-style: none;
+	background-color: #e67b10;
+	color: #f3f2ef;
+	border-radius: 0.3em;
+	transition: 250ms ease-in-out;
+}
+li:hover {
+	cursor: pointer;
+	background-color: #ab3c35;
+	color: #f3f2ef;
+}
+@media screen and (min-width: 750px) {
+	header a i {
+		font-size: initial;
+	}
+	header a span {
+		display: initial;
+	}
+
+	header a:hover::after {
+		all: unset;
+	}
+	.intro-container {
+		grid-template-columns: [img] 25% [label] 18% [input] auto;
+	}
+	.intro-container img {
+		grid-column: img;
+		grid-row: 1 / span 7;
+		width: 90%;
+	}
+	.intro-container label {
+		justify-self: end;
+		grid-column: label;
+	}
+	.detail-option {
+		width: 95%;
+		flex-direction: row;
+	}
+}
