@@ -145,28 +145,41 @@ h1 {
 	padding-inline: 0.5em;
 	font-weight: 600;
 }
+.field-options {
+	display:grid;
+	gap:0.5em;
+}
 .detail-option {
 	display: flex;
+	grid-column: 1;
 	padding: 0.5em;
-	width: 90%;
 	gap: 0.2em;
 	flex-wrap: wrap;
 	height: fit-content;
-	margin: 1em auto;
 	flex-direction: column;
 }
-.detail-option li {
+.detail-option p {
 	padding: 0.2em 0.5em;
-	list-style: none;
 	background-color: #e67b10;
 	color: #f3f2ef;
 	border-radius: 0.3em;
 	transition: 250ms ease-in-out;
+	position: relative;
 }
-li:hover {
+.detail-option p:hover {
 	cursor: pointer;
 	background-color: #ab3c35;
 	color: #f3f2ef;
+}
+.field-options select{
+	width:fit-content;
+	height:fit-content;
+	padding:0.5em 1em;
+	justify-self: center;
+	text-transform: capitalize;
+}
+.field-options select option{
+	text-transform: uppercase;
 }
 @media screen and (min-width: 750px) {
 	header a i {
@@ -194,5 +207,11 @@ li:hover {
 	.detail-option {
 		width: 95%;
 		flex-direction: row;
+	}
+	.field-options{
+		grid-template-columns: 70% auto;
+	}
+	.field-options h1{
+		grid-row: 1;
 	}
 }

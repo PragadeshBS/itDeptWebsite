@@ -8,73 +8,96 @@
  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <div class="sample"></div>
   <div class="container">
-    <div class="items" id="item1">item1</div>
-    <div class="items" id="item2">iteam2</div>
-    <div class="items" id="item3">iteam3</div>
-    <div class="items" id="item4">iteam4</div>
-    <div class="items" id="item5">iteam5</div>
-    <div class="items" id="item6">iteam6</div>
-    <div class="items" id="item7">iteam7</div>
-    <div class="items" id="item8">iteam8</div>
-    <div class="items" id="item9">iteam9</div>
-    <div class="items" id="item10">iteam10</div>
-    <div class="items" id="item11">iteam11</div>
-    <div class="items" id="item12">iteam12</div>
-    <div class="items" id="item13">iteam13</div>
-    <div class="items" id="item14">iteam14</div>
-    <div class="items" id="item15">iteam15</div>
-    <div class="items" id="item16">iteam16</div>
-    <div class="items" id="item17">iteam17</div>
-    <div class="items" id="item18">iteam18</div>
-    <div class="items" id="item19">iteam19</div>
-    <div class="items" id="item20">iteam</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
+    <div class="items">Qualification</div>
   </div>
 </body>
 <style>
-  .container{
+  body{
     display:grid;
-    overflow-y: scroll;
-    height:20em;
-    width:30em;
-    margin:auto;
+    align-items: center;
+    justify-content: center;
+    gap:5em;
+    font-size: 0.5rem;
+  }
+  .sample{
+    height:10rem;
+    width:7rem;
     border:0.1em solid black;
+    background-color: aqua;
+    z-index: 5;
+  }
+  .container{
+    display:flex;
+    margin:auto;
     gap:0.2em;
-    padding:0.5em;
+    padding:1em;
+    width:fit-content;
+    perspective: 14em;
+    perspective-origin: 200% -350%;
+    transform: translateX(-3em);
   }
   .items{
-    border:0.1em solid black;
-    padding:1em;
-    height:10px;
+    top:0;
+    left:0;
+    padding:0.4em 1em;
+    border-radius: 2em;
+    position:absolute;
+    transition: 250ms ease-in-out;
+    z-index: -10;
+  transform-style: preserve-3d;
   }
   .items:hover{
     cursor: pointer;
-    background-color: aquamarine;
+    color: rgba(138, 46, 225, 0.775);
   }
 </style>
-
 <script>
-  window.onload=()=>{
-    let items=document.getElementsByClassName('items');
-    for(let i=0;i<items.length;i++){
-      items[i].style['order']=i;
+  function rotateDivClick(){
+    let c=document.getElementsByClassName("items");
+    for(let i=0;i<c.length;i++)
+      c[i].onclick=()=>{
+            rotateDiv(i,c[i].className);
+        };
+  }
+  function rotateDiv(i=0 ,name="items"){
+    let c=document.getElementsByClassName(name);
+    
+    
+    let r=document.body.clientWidth/200;
+    if(document.body.clientWidth<750)
+      r=4;
+    let s=(360/c.length-1);
+    console.log(s);
+    let q = s*(c.length/4);
+    if(i==c.length)
+        i=0;
+    for(let j=0;j<c.length;j++){
+      let x=r*Math.cos((q*0.0174533))*2.2;
+      let z=r*Math.sin((q*0.0174533))*(2.2);//1.2;
+      c[i].style["transform"]=`translateX(${x}em) translateZ(${z}em) `;
+      q+=s;
+      i++;
+      if(i==c.length)
+        i=0;      
     }
   }
-  
-$(".items").click((e)=>{
-  let $i=e.target ? $(e.target) : $(e.srcElement);
-  $i.css("background-color","red");
-  let c=$i.css('order');
-  console.log("old:",$i.css('order'),$i.prev().css('order'));
-  $i.prev().css('order',c);
-  $i.css('order',(c-1));
-  console.log("new:",$i.css('order'),$i.prev().css('order'));
-  //let p=i.previousSibling;
-  //i.style["order"]=p.style["order"];
-  //p.style["order"]=c;
-
-
-
-});
+  window.onload=()=>{
+    rotateDivClick();
+    rotateDiv();
+  }
 </script>
 </html>

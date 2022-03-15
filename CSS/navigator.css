@@ -400,7 +400,9 @@ Students
 	border-radius: 0.2em;
 	border: 0.1em solid #ab3c35;
 }
-.students-input h2{text-align: end;}
+.students-input h2 {
+	text-align: end;
+}
 .students-input label {
 	padding: 0.5em 1em;
 	transition: 300ms ease-in-out;
@@ -463,9 +465,8 @@ Students
 /*
 Curriculum 
 */
-.curriculum-bg{
+.curriculum-bg {
 	background-image: url("../Images/curriculum.jpeg");
-
 }
 #pgf:checked ~ label[for="pgf"] {
 	background-color: #ab3c35;
@@ -482,6 +483,60 @@ Curriculum
 #research2:checked ~ label[for="research2"] {
 	background-color: #ab3c35;
 	color: #f3f2ef;
+}
+/*
+faculty
+*/
+.faculty {
+	display: grid;
+	margin: auto;
+	width: fit-content;
+	max-width: 90%;
+	margin-top: 2em;
+	padding: 1.5em 1em;
+	gap: 0.2em;
+	position: relative;
+	border-radius: 0.7em;
+	box-shadow: 0 0.7em 0.7em #524c48ab;
+}
+.faculty img {
+	width: 90%;
+	height: 90%;
+	grid-column: 1;
+	margin: auto;
+	border-radius: 0.4em;
+}
+.faculty-items_container {
+	gap: 0.2em;
+	padding: 1em;
+	display: flex;
+	margin: auto;
+	margin-top: 2em;
+	max-width: fit-content;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.faculty-item {
+	padding: 0.4em 1em;
+	border-radius: 0.4em;
+	transition: 350ms ease-in-out;
+	z-index: -10;
+	color: #f3f2ef;
+	position: relative;
+	background-color: #696f7db9;
+}
+.faculty-item:hover {
+	background-color: #ab3c35 !important;
+	cursor: pointer;
+}
+.faculty-disp{
+	margin:auto;
+	max-width: 90%;
+	border-radius: 0.5em;
+	background-color: #1e1b19;
+	color:#f3f2ef;
+	margin-top:1em;
+	padding:2em 2.5em;
 }
 
 /* nagivation breakpoint */
@@ -566,5 +621,25 @@ Curriculum
 	}
 	.students-item:first-child {
 		font-size: 1.17rem;
+	}
+	.faculty {
+		margin-top: 5em;
+		grid-template-columns: 35% auto;
+	}
+	.faculty img{
+
+	grid-row: 1/5;
+	}
+	.faculty-items_container {
+		perspective: 15em;
+		perspective-origin: 200% -300%;
+		transform: translateX(-3em);
+		margin-top: 5em;
+	}
+	.faculty-item {
+		position: absolute;
+		transform-style: preserve-3d;
+		top: 0;
+		left: 0;
 	}
 }

@@ -49,24 +49,33 @@
       <label  id="updateMsg-P">Basic Information Update Completed !!</label>
     </button>        
   </div>
-  <h1>Fields</h1>
-  <div class="detail-option">
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">information</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
-    <li onclick="getInfo()">Hello</li>
+  <div class="field-options">
+    <h1>Fields</h1>
+    <div class="detail-option">
+      <p>Hello</p>
+      <p>information</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+      <p>Hello</p>
+    </div>
+    <h1>Add Fields :</h1>
+    <select name="" id="AvailFields">
+      <option value="">Hello</option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
   </div>
   <div class="faculty-details">
     
