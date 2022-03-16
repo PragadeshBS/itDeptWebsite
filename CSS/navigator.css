@@ -498,7 +498,7 @@ faculty
 }
 .faculty-details img {
 	width: 90%;
-	height: 95%;
+	object-fit: contain;
 	grid-column: 1;
 	border-radius: 0.4em;
 	align-self: center;
@@ -508,6 +508,22 @@ faculty
 	display: flex;
 	align-items: center;
 	padding-inline: 0.2em;
+}
+.faculty-icons {
+	color: #1e1b19;
+	display: flex;
+	gap: 1em;
+	font-size: 2rem;
+	position: relative;
+}
+.faculty-icons a {
+	text-decoration: none;
+	color: #1e1b19;
+	transition: transform 250ms ease-in-out;
+}
+.faculty-icons a:hover {
+	cursor: pointer;
+	transform: translateY(-5%);
 }
 .faculty-items_container {
 	gap: 0.2em;
@@ -522,8 +538,13 @@ faculty
 	border-radius: 0.4em;
 	box-shadow: 0em 0.3em 0.7em #1e1b19d0;
 }
-.faculty-items_container input{
+.faculty-items_container input {
 	display: none;
+}
+.faculty-items_container ~ h1 {
+	margin-inline: 3%;
+	color: #ab3c35;
+	text-transform: capitalize;
 }
 .faculty-item {
 	padding: 0.4em 1em;
@@ -539,13 +560,14 @@ faculty
 	cursor: pointer;
 }
 .faculty-disp {
+	visibility: hidden;
 	margin: auto;
 	max-width: 90%;
 	border-radius: 0.5em;
-	background-color: #1e1b19;
-	color: #f3f2ef;
+	color: #1e1b19;
 	margin-top: 1em;
-	padding: 2em 2.5em;
+	padding: 1.5em;
+	box-shadow: 0 0.4em 0.7em #1e1b19;
 }
 
 /* nagivation breakpoint */
@@ -639,14 +661,14 @@ faculty
 		grid-row: 1/5;
 	}
 	.faculty-items_container {
-		height: 14em;
+		height: 12em;
 		perspective: 15em;
 		perspective-origin: 200% -40%;
 		transform: translateX(-3em);
 		margin-top: 2em;
 		overflow-x: initial;
-		border-radius:initial;
-		box-shadow:none;
+		border-radius: initial;
+		box-shadow: none;
 	}
 	.faculty-item {
 		position: absolute;

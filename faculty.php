@@ -65,20 +65,16 @@
       <p id="designation">Designation</p>
       <p id="area">Area Of Spacification</p>
       <div class="faculty-icons">
-        <a id="phone" href=""><i>Phone</i></a>
-        <a id="email" href=""><i>email</i></a>
-        <a id="personalSite" href=""><i>personal</i></a>
-        <a id="acoeSite" href=""><i>ACOE</i></a>
+        <a id="phone" href=""><i class="bi bi-telephone-outbound-fill"></i></a>
+        <a id="email" href=""><i class="bi bi-envelope-paper-fill"></i></a>
+        <a id="personalSite" href=""><i class="bi bi-paperclip"></i></a>
+        <a id="acoeSite" href=""><i class="bi bi-diagram-3-fill"></i></a>
       </div>
     </div>
     <div class="faculty-items_container" id="list">
     </div>
+    <h1 id="display-title"></h1>
     <div class="faculty-disp" id="displayContent">
-      <h1>Qualification</h1>
-      <li>Hello</li>
-      <li>how re you</li>
-      <li></li>
-      <li></li>
     </div>
   
 </body><script src="./Js/faculty.js" crossorigin="anonymous"></script>
