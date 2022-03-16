@@ -53,10 +53,10 @@ var columns = [
 	"qualification",
 ];
 function populateContent(d) {
-	document.getElementById("displayContent").innerHTML="";
-	for(let i=0;i<d.length;i++){
-		let l=document.createElement('li');
-		l.innerText=d[i];
+	document.getElementById("displayContent").innerHTML = "";
+	for (let i = 0; i < d.length; i++) {
+		let l = document.createElement("li");
+		l.innerText = d[i];
 		document.getElementById("displayContent").appendChild(l);
 	}
 }
@@ -68,8 +68,10 @@ function generateList() {
 		inp.id = columns[i];
 		inp.name = "list";
 		inp.onchange = () => {
-			document.getElementById("display-title").innerHTML=columns[i].replaceAll("_"," ");
-			document.getElementById("displayContent").style["visibility"]="visible";
+			document.getElementById("display-title").innerHTML = columns[
+				i
+			].replaceAll("_", " ");
+			document.getElementById("displayContent").style["visibility"] = "visible";
 			document
 				.getElementById("displayContent")
 				.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
@@ -95,7 +97,7 @@ function generateList() {
 		let l = document.createElement("label");
 		l.setAttribute("for", columns[i]);
 		l.classList = "faculty-item";
-		l.innerText = columns[i].replaceAll("_"," ");
+		l.innerText = columns[i].replaceAll("_", " ");
 		document.getElementById("list").appendChild(inp);
 		document.getElementById("list").appendChild(l);
 	}
@@ -108,7 +110,7 @@ function initData(d) {
 	document.getElementById("name").innerHTML = d.name;
 	document.getElementById("designation").innerHTML = d.designation;
 	document.getElementById("email").href = d.emailID;
-	document.getElementById("area").href = d.AOS;
+	document.getElementById("area").innerHTML = d.AOS;
 	document.getElementById("phone").href = d.phoneNumber;
 	document.getElementById("personalSite").href = d.personalSiteLink;
 	document.getElementById("acoeSite").href = d.acoeSiteLink;
