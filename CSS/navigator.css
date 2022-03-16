@@ -487,56 +487,65 @@ Curriculum
 /*
 faculty
 */
-.faculty {
+.faculty-details {
 	display: grid;
 	margin: auto;
 	width: fit-content;
 	max-width: 90%;
 	margin-top: 2em;
-	padding: 1.5em 1em;
-	gap: 0.2em;
-	position: relative;
-	border-radius: 0.7em;
-	box-shadow: 0 0.7em 0.7em #524c48ab;
+	padding: 1em 1em;
+	gap: 0.1em;
 }
-.faculty img {
+.faculty-details img {
 	width: 90%;
-	height: 90%;
+	height: 95%;
 	grid-column: 1;
-	margin: auto;
 	border-radius: 0.4em;
+	align-self: center;
+	justify-self: center;
+}
+.faculty-details p {
+	display: flex;
+	align-items: center;
+	padding-inline: 0.2em;
 }
 .faculty-items_container {
 	gap: 0.2em;
-	padding: 1em;
-	display: flex;
+	padding: 0.5em 0.2em;
 	margin: auto;
 	margin-top: 2em;
-	max-width: fit-content;
-	flex-wrap: wrap;
-	justify-content: center;
+	width: fit-content;
+	max-width: 90%;
+	display: grid;
+	grid-auto-flow: column;
+	overflow-x: scroll;
+	border-radius: 0.4em;
+	box-shadow: 0em 0.3em 0.7em #1e1b19d0;
+}
+.faculty-items_container input{
+	display: none;
 }
 .faculty-item {
 	padding: 0.4em 1em;
 	border-radius: 0.4em;
 	transition: 350ms ease-in-out;
-	z-index: -10;
 	color: #f3f2ef;
-	position: relative;
-	background-color: #696f7db9;
+	background-color: #696f7ddc;
+	width: fit-content;
+	text-transform: capitalize;
 }
 .faculty-item:hover {
 	background-color: #ab3c35 !important;
 	cursor: pointer;
 }
-.faculty-disp{
-	margin:auto;
+.faculty-disp {
+	margin: auto;
 	max-width: 90%;
 	border-radius: 0.5em;
 	background-color: #1e1b19;
-	color:#f3f2ef;
-	margin-top:1em;
-	padding:2em 2.5em;
+	color: #f3f2ef;
+	margin-top: 1em;
+	padding: 2em 2.5em;
 }
 
 /* nagivation breakpoint */
@@ -622,19 +631,22 @@ faculty
 	.students-item:first-child {
 		font-size: 1.17rem;
 	}
-	.faculty {
-		margin-top: 5em;
+	.faculty-details {
 		grid-template-columns: 35% auto;
 	}
-	.faculty img{
-
-	grid-row: 1/5;
+	.faculty-details img {
+		grid-column: 1;
+		grid-row: 1/5;
 	}
 	.faculty-items_container {
+		height: 14em;
 		perspective: 15em;
-		perspective-origin: 200% -300%;
+		perspective-origin: 200% -40%;
 		transform: translateX(-3em);
-		margin-top: 5em;
+		margin-top: 2em;
+		overflow-x: initial;
+		border-radius:initial;
+		box-shadow:none;
 	}
 	.faculty-item {
 		position: absolute;

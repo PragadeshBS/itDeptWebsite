@@ -34,6 +34,8 @@
     <input type="text" name="name" id="name">   
     <label for="designation">Designation :</label>
     <input type="text" name="designation" id="designation">
+    <label for="AOS">Area Of Spacification :</label>
+    <input type="text" name="AOS" id="AOS">
     <label for="email">Email ID :</label>
     <input type="text" name="email" id="email">
     <label for="phone">Phone Number :</label>
@@ -49,36 +51,23 @@
       <label  id="updateMsg-P">Basic Information Update Completed !!</label>
     </button>        
   </div>
-  <div class="field-options">
-    <h1>Fields</h1>
-    <div class="detail-option">
-      <p>Hello</p>
-      <p>information</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-    </div>
-    <h1>Add Fields :</h1>
-    <select name="" id="AvailFields">
-      <option value="">Hello</option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </select>
+  <h1>Add Fields :</h1>
+  <select name="" id="AvailFields">
+    <option value="">Hello</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+  </select>
+  <h1>Fields</h1>
+  <div class="detail-option" id="list">
   </div>
-  <div class="faculty-details">
-    
+  <h2 id="field-title"></h2>
+  <button onclick="appendContent()"><i class="bi bi-plus-circle-dotted"></i> Add</button>
+  <button onclick="updateContent()">
+    <i class="bi bi-box-arrow-in-up"></i> Update
+    <div id="upd-msg" class="upd-msg">Content Updated !!</div>
+  </button>
+  <div class="faculty-details" id="display-contents">
     
   </div>  
 </body>

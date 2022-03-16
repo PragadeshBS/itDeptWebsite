@@ -138,49 +138,103 @@ header a span {
 .faculty-details {
 	display: grid;
 	padding: 0.5em;
-	gap: 0.5em;
+	gap: 0.2em;
+	margin: 0 auto;
+	width: 90%;
+	overflow-y: scroll;
+	max-height: 20em;
+	border-radius: 0.2em;
+	box-shadow: 0.2em 0.3em 0.7em #1e1b19a3;
+	margin-bottom: 0;
+}
+h2 ~ button {
+	padding: 0.5em 1em;
+	background-color: #aa8c9d;
+	color: #f3f2ef;
+	font-weight: 600;
+	border-radius: 0.7em;
+	position: relative;
+	transition: transform 250ms ease-in-out;
+	left:15%;
+	visibility: hidden;
+}
+h2 ~ button:hover {
+	cursor: pointer;
+	transform: translateY(-10%);
+}
+.upd-msg {
+	padding: 0.5em 2em;
+	background-color: #67a76b;
+	color: #f3f2ef;
+	position: absolute;
+	left: -5%;
+	top: -3%;
+	transform: scale(0);
+	transition: 350ms ease-in-out;
+	z-index: 1;
+	border-radius: 0.2em;
+	width:max-content;
+}
+.faculty-details input {
+	padding: 0.5em;
 }
 h1 {
 	color: #ab3c35;
 	padding-inline: 0.5em;
-	font-weight: 600;
+	text-transform: capitalize;
 }
-.field-options {
-	display:grid;
-	gap:0.5em;
+h2 {
+	color: #1e1b19;
+	padding-inline: 0.5em;
+	margin: 3%;
+	margin-top: 2em;
+	margin-block-end: 0.5em;
+	font-size: 2rem;
+	text-transform: capitalize;
+	line-height: 1;
+	
 }
 .detail-option {
 	display: flex;
 	grid-column: 1;
 	padding: 0.5em;
 	gap: 0.2em;
-	flex-wrap: wrap;
 	height: fit-content;
 	flex-direction: column;
+	margin: auto;
+	max-height: 20em;
+	overflow-y: scroll;
 }
-.detail-option p {
+.detail-option label {
 	padding: 0.2em 0.5em;
 	background-color: #e67b10;
 	color: #f3f2ef;
 	border-radius: 0.3em;
 	transition: 250ms ease-in-out;
 	position: relative;
+	z-index: 10;
+	text-align: center;
 }
-.detail-option p:hover {
+.detail-option label:hover {
 	cursor: pointer;
-	background-color: #ab3c35;
+	background-color: #ab3c35 !important;
 	color: #f3f2ef;
 }
-.field-options select{
-	width:fit-content;
-	height:fit-content;
-	padding:0.5em 1em;
+.detail-option input {
+	display: none;
+}
+select {
+	max-width: 90%;
+	height: fit-content;
+	padding: 0.5em 1em;
 	justify-self: center;
 	text-transform: capitalize;
+	margin-inline: 3%;
 }
-.field-options select option{
+.field-options select option {
 	text-transform: uppercase;
 }
+
 @media screen and (min-width: 750px) {
 	header a i {
 		font-size: initial;
@@ -193,7 +247,7 @@ h1 {
 		all: unset;
 	}
 	.intro-container {
-		grid-template-columns: [img] 25% [label] 18% [input] auto;
+		grid-template-columns: [img] 25% [label] 22% [input] auto;
 	}
 	.intro-container img {
 		grid-column: img;
@@ -207,11 +261,17 @@ h1 {
 	.detail-option {
 		width: 95%;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
-	.field-options{
+	.field-options {
 		grid-template-columns: 70% auto;
 	}
-	.field-options h1{
+	.field-options h1 {
 		grid-row: 1;
 	}
+	h2 ~ button {
+		top: -3.7em;
+		left: 50%;
+	}
+
 }
