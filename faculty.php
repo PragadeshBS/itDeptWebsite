@@ -23,7 +23,7 @@
     </div>
     <input type="checkbox" style="display:none"  id="nav-toggle" class="nav-toggle"> 
     <nav>
-        <a href="#">
+        <a href="./index.html">
           <i class="bi bi-house-door-fill"></i>
           Home
         </a>        
