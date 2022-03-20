@@ -16,8 +16,8 @@ function populateFields() {
 	}
 }
 function updateContentToDB(val) {
-	let j={
-		data:val
+	let j = {
+		data: val,
 	};
 	$(
 		$.ajax({
@@ -26,19 +26,21 @@ function updateContentToDB(val) {
 			data: {
 				tableN: field,
 				fid: faculty.id,
-				data:JSON.stringify(j)
+				data: JSON.stringify(j),
 			},
-			complete:(r)=>{
+			complete: (r) => {
 				console.log(r.responseText);
-			}
+			},
 		})
 	);
 }
-function updateContent() {
-	document.getElementById("upd-msg").style["transform"] = "scale(1.2)";
-	setTimeout(() => {
-		document.getElementById("upd-msg").style["transform"] = "scale(0)";
-	}, 1000);
+function updateContent(msg = true) {
+	if (msg) {
+		document.getElementById("upd-msg").style["transform"] = "scale(1.2)";
+		setTimeout(() => {
+			document.getElementById("upd-msg").style["transform"] = "scale(0)";
+		}, 1000);
+	}
 	let data = document.getElementById("display-contents");
 	let inputs = data.getElementsByTagName("input");
 	let values = [];
@@ -68,6 +70,7 @@ function appendList(a) {
 	inp.id = a;
 	inp.name = "list";
 	inp.onchange = () => {
+		if (field != "") updateContent(false);
 		field = a;
 		document.getElementById("field-title").innerHTML = a.replaceAll("_", " ");
 		document
@@ -80,7 +83,7 @@ function appendList(a) {
 				url: "../PHP/getFacultyColDetails.php",
 				data: {
 					tableN: a,
-					fid: faculty.id
+					fid: faculty.id,
 				},
 				complete: (r) => {
 					try {
@@ -115,15 +118,14 @@ function initData() {
 		"." + faculty.image + "?t=" + new Date().getTime();
 	document.getElementById("acoe").value = faculty.acoeSiteLink;
 	document.getElementById("personal-site").value = faculty.personalSiteLink;
-	
-	if (faculty.details != null) {
+
+	if (faculty.details != null && faculty.details != "") {
 		faculty.details.replace(" ", "_");
-		faculty.details=faculty.details.split("#");
+		faculty.details = faculty.details.split("#");
 	} else faculty.details = [];
 	columns = columns.filter((value) => {
-		return !(faculty.details.includes(value));
+		return !faculty.details.includes(value);
 	});
-	console.log(columns);
 	populateFields();
 	generateList();
 }
@@ -172,14 +174,14 @@ function addField() {
 			data: {
 				tableN: val,
 				fid: faculty.id,
-				details:faculty.details.join("#")
+				details: faculty.details.join("#"),
 			},
 		})
 	);
 	faculty.details.push(val);
 	$(`#${val}`).remove();
 	columns = columns.filter((value) => {
-		return !(faculty.details.includes(value));
+		return !faculty.details.includes(value);
 	});
 	appendList(val);
 	$("#AvailFields").val("");

@@ -64,12 +64,10 @@
       <p id="name">Name</p>
       <p id="designation">Designation</p>
       <p id="area">Area Of Spacification</p>
-      <div class="faculty-icons">
-        <a id="phone" href=""><i class="bi bi-telephone-outbound-fill"></i></a>
-        <a id="email" href=""><i class="bi bi-envelope-paper-fill"></i></a>
-        <a id="personalSite" href=""><i class="bi bi-paperclip"></i></a>
-        <a id="acoeSite" href=""><i class="bi bi-diagram-3-fill"></i></a>
-      </div>
+      <a id="phone" href="">044-90121</a>
+      <a id="email" href="">dk@gmail.com</a>
+      <a id="personalSite" href=""></a>
+      <a id="acoeSite" href="">FIS@AU</a>
     </div>
     <div class="faculty-items_container" id="list">
     </div>

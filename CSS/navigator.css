@@ -18,6 +18,7 @@ h2,
 h3,
 h4 {
 	font-weight: 600;
+	margin-inline: 0.4em;
 }
 /*
 Heading and navigation
@@ -509,19 +510,12 @@ faculty
 	align-items: center;
 	padding-inline: 0.2em;
 }
-.faculty-icons {
-	color: #1e1b19;
-	display: flex;
-	gap: 1em;
-	font-size: 2rem;
-	position: relative;
-}
-.faculty-icons a {
+.faculty-details a {
 	text-decoration: none;
 	color: #1e1b19;
 	transition: transform 250ms ease-in-out;
 }
-.faculty-icons a:hover {
+.faculty-details a:hover {
 	cursor: pointer;
 	transform: translateY(-5%);
 }
@@ -568,8 +562,88 @@ faculty
 	margin-top: 1em;
 	padding: 1.5em;
 	box-shadow: 0 0.4em 0.7em #1e1b19;
+	margin-bottom: 2em;
+}
+/* ITA */
+
+.ITA {
+	display: grid;
+	grid-template-columns: 80% auto;
+	grid-template-areas: 
+	"heading img"
+	"para para"
+	"list list";
+	gap: 1em;
+	padding:0.7em;
+	background-image: url("../Images/Infrastructure.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:#f3f2ef;
+
+	
+}
+.ITA-bg{
+	background-image: url("../Images/ITA.png");
+}
+.ITA img {
+	object-fit: contain;
+	width: 95%;
+	grid-area: img;
+	align-self: center;
+}
+.ITA-bg h1{
+	display:flex;
+	gap:0.5em;
+}
+.ITA-bg img{
+	width:1.5em;
+	object-fit: contain;
 }
 
+.ITA-activities {
+	display: grid;
+	gap: 0.1em;
+	margin-inline: 1em;
+	min-height: 42.5em;
+	color: #f3f2ef;
+}
+.ITA-activities > * {
+	z-index: 0;
+}
+.ITA-activity {
+	position: relative;
+	background-color: #1e1b19fa;
+	padding: 1em 0.6em;
+	height: 95%;
+}
+.ITA-activity li {
+	margin-left: 1em;
+	font-family: "Inspiration", cursive;
+	font-size: 1.1rem;
+}
+
+.ITA-activity img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -10;
+	opacity: 0.35;
+	top: 0;
+	left: 0;
+}
+
+.ITA-activity img:first-child {
+	visibility: hidden;
+	position: absolute;
+	width: 2.5em;
+	object-fit: contain;
+	left: 40%;
+	top: -4%;
+	opacity: 1;
+	height: initial;
+	z-index: 1;
+}
 /* nagivation breakpoint */
 @media screen and (min-width: 922px) {
 	header label {
@@ -658,7 +732,7 @@ faculty
 	}
 	.faculty-details img {
 		grid-column: 1;
-		grid-row: 1/5;
+		grid-row: 1/8;
 	}
 	.faculty-items_container {
 		height: 12em;
@@ -675,5 +749,35 @@ faculty
 		transform-style: preserve-3d;
 		top: 0;
 		left: 0;
+	}
+	.ITA-bg img{
+		width:2em;	
+	}
+	.ITA-activities {
+		gap: 0.5em;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		background-image: url("../Images/NoticeBoard.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding: 2.5em;
+	}
+	.activity-2 {
+		z-index: 1;
+		transform: rotateZ(4.5deg);
+	}
+	.activity-1 {
+		transform: rotateZ(-3.5deg);
+		z-index: 1;
+	}
+	.activity-note {
+		background-color: #ffff88;
+		color: #1e1b19;
+	}
+	.ITA-activity {
+		padding: 0.6em;
+	}
+	.ITA-activity img:first-child {
+		visibility: visible;
 	}
 }

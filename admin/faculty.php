@@ -40,7 +40,7 @@
     <input type="text" name="email" id="email">
     <label for="phone">Phone Number :</label>
     <input type="text" name="phone" id="phone">
-    <label for="acoe">ACOE Site :</label>
+    <label for="acoe">FIS@AU:</label>
     <input type="text" name="acoe" id="acoe">
     <label for="personal-site">Personal Site :</label>
     <input type="text" name="personal-site" id="personal-site">

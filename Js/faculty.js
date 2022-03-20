@@ -109,12 +109,18 @@ function generateList() {
 function initData(d) {
 	document.getElementById("name").innerHTML = d.name;
 	document.getElementById("designation").innerHTML = d.designation;
-	document.getElementById("email").href = d.emailID;
+	document.getElementById("email").innerHTML = d.emailID;
 	document.getElementById("area").innerHTML = d.AOS;
-	document.getElementById("phone").href = d.phoneNumber;
+	document.getElementById("phone").href = "tel:"+d.phoneNumber;
+	document.getElementById("phone").innerHTML = d.phoneNumber;
 	document.getElementById("personalSite").href = d.personalSiteLink;
+	if(d.personalSiteLink!="#")
+		document.getElementById("personalSite").innerHTML = d.personalSiteLink;
 	document.getElementById("acoeSite").href = d.acoeSiteLink;
-	columns = d.details.split("#");
+	if(d.details!="")
+		columns = d.details.split("#");
+	else 
+		columns=[];
 	generateList();
 }
 $(
