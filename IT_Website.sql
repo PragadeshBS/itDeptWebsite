@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 17, 2022 at 02:10 AM
+-- Generation Time: Mar 22, 2022 at 01:28 AM
 -- Server version: 8.0.27-0ubuntu0.20.04.1
 -- PHP Version: 7.4.3
 
@@ -25,6 +25,24 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `awards`
+--
+
+CREATE TABLE `awards` (
+  `fid` int NOT NULL,
+  `details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `awards`
+--
+
+INSERT INTO `awards` (`fid`, `details`) VALUES
+(1981, '{\"data\":[\"nothing\"]}');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `experience`
 --
 
@@ -32,6 +50,13 @@ CREATE TABLE `experience` (
   `fid` int NOT NULL,
   `details` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `experience`
+--
+
+INSERT INTO `experience` (`fid`, `details`) VALUES
+(1981, '{\"data\":[\"Thank you\"]}');
 
 -- --------------------------------------------------------
 
@@ -103,8 +128,32 @@ CREATE TABLE `facultyDetails_` (
 --
 
 INSERT INTO `facultyDetails_` (`Fid`, `areaOfSpec`, `acoeSite`, `personalSite`, `details`) VALUES
-(0, 'List of details of faculty', '#', '#', 'qualification#experience'),
-(1981, 'ML', '#', '#', 'qualification#experience');
+(0, 'List of details of faculty', '#', '#', 'qualification#experience#fdp#journals#lectures#research#seminar#awards'),
+(1981, 'Augmented reality & Virtual Reality ,Video Analysis ,Multimedia Systems,Video Processing,Mobile Communications and Computing', '#', '#', 'qualification#experience#journals#research#lectures#seminar#awards'),
+(1982, '', '#', '#', NULL),
+(1983, '', '#', '#', NULL),
+(1984, '', '#', '#', NULL),
+(1985, '', '#', '#', NULL),
+(1986, '', '#', '#', NULL),
+(1987, '', '#', '#', NULL),
+(1988, '', '#', '#', NULL),
+(1989, '', '#', '#', NULL),
+(1990, '', '#', '#', NULL),
+(1991, '', '#', '#', NULL),
+(1992, '', '#', '#', NULL),
+(1993, '', '#', '#', NULL),
+(1994, '', '#', '#', NULL),
+(1995, '', '#', '#', NULL),
+(1996, '', '#', '#', NULL),
+(1997, '', '#', '#', NULL),
+(1998, '', '#', '#', NULL),
+(1999, '', '#', '#', NULL),
+(2000, '', '#', '#', NULL),
+(2001, '', '#', '#', NULL),
+(2002, '', '#', '#', NULL),
+(2003, '', '#', '#', NULL),
+(2004, '', '#', '#', NULL),
+(2005, '', '#', '#', NULL);
 
 -- --------------------------------------------------------
 
@@ -128,8 +177,30 @@ CREATE TABLE `faculty_` (
 
 INSERT INTO `faculty_` (`fid`, `sNo`, `name`, `designation`, `emailID`, `phoneNumber`, `image`) VALUES
 (0, 0, 'admin', 'admin', '#', 6021, './admin.png'),
-(1981, 1, 'Mr.Dhananjay Kumar', 'HOD', 'dk@gmail.com', 6021, './Images/faculty/1981.webp'),
-(1982, 0, '', '', '', 6020, './Images/faculty/1982.webp');
+(1981, 1, 'Mr.Dhananjay Kumar', '-Head Of Department', 'dk@gmail.com', 6021, './Images/faculty/1981.webp'),
+(1982, 2, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1983, 3, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1984, 4, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1985, 5, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1986, 6, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1987, 7, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1988, 8, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1989, 9, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1990, 0, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1991, 11, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1992, 12, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1993, 13, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1994, 14, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1995, 15, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1996, 16, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1997, 17, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1998, 18, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(1999, 19, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(2000, 20, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(2001, 21, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(2003, 23, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(2004, 24, '', '', '', 6020, './Images/faculty/noImage.jpeg'),
+(2005, 25, '', '', '', 6020, './Images/faculty/noImage.jpeg');
 
 -- --------------------------------------------------------
 
@@ -148,13 +219,24 @@ CREATE TABLE `flashNews` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `ftp`
+--
+
+CREATE TABLE `ftp` (
+  `fid` int NOT NULL,
+  `details` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `initData`
 --
 
 CREATE TABLE `initData` (
   `fid` int NOT NULL,
-  `username` text NOT NULL,
-  `password` text NOT NULL
+  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'admin',
+  `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT '1234'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -163,7 +245,64 @@ CREATE TABLE `initData` (
 
 INSERT INTO `initData` (`fid`, `username`, `password`) VALUES
 (100, 'adminNews', '1234'),
-(1981, 'adminStaff', '1234');
+(1981, 'adminStaff', '1234'),
+(1982, 'admin', '1234'),
+(1983, 'admin', '1234'),
+(1984, 'admin', '1234'),
+(1985, 'admin', '1234'),
+(1986, 'admin', '1234'),
+(1987, 'admin', '1234'),
+(1988, 'admin', '1234'),
+(1989, 'admin', '1234'),
+(1990, 'admin', '1234'),
+(1991, 'admin', '1234'),
+(1992, 'admin', '1234'),
+(1993, 'admin', '1234'),
+(1994, 'admin', '1234'),
+(1995, 'admin', '1234'),
+(1996, 'admin', '1234'),
+(1997, 'admin', '1234'),
+(1998, 'admin', '1234'),
+(1999, 'admin', '1234'),
+(2000, 'admin', '1234'),
+(2001, 'admin', '1234'),
+(2002, 'admin', '1234');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `journals`
+--
+
+CREATE TABLE `journals` (
+  `fid` int NOT NULL,
+  `details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `journals`
+--
+
+INSERT INTO `journals` (`fid`, `details`) VALUES
+(1981, '{\"data\":[\"how are you\"]}');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lectures`
+--
+
+CREATE TABLE `lectures` (
+  `fid` int NOT NULL,
+  `details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `lectures`
+--
+
+INSERT INTO `lectures` (`fid`, `details`) VALUES
+(1981, '{\"data\":[\"Thank You\"]}');
 
 -- --------------------------------------------------------
 
@@ -181,7 +320,43 @@ CREATE TABLE `qualification` (
 --
 
 INSERT INTO `qualification` (`fid`, `details`) VALUES
-(1981, '{\"data\":[\"Phd\"]}');
+(1981, '{\"data\":[\"Hello\"]}');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `research`
+--
+
+CREATE TABLE `research` (
+  `fid` int NOT NULL,
+  `details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `research`
+--
+
+INSERT INTO `research` (`fid`, `details`) VALUES
+(1981, '{\"data\":[\"12434\"]}');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `seminar`
+--
+
+CREATE TABLE `seminar` (
+  `fid` int NOT NULL,
+  `details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `seminar`
+--
+
+INSERT INTO `seminar` (`fid`, `details`) VALUES
+(1981, '{\"data\":[\"lol\"]}');
 
 -- --------------------------------------------------------
 
@@ -217,6 +392,12 @@ INSERT INTO `WORK` (`fID`, `details`) VALUES
 --
 
 --
+-- Indexes for table `awards`
+--
+ALTER TABLE `awards`
+  ADD PRIMARY KEY (`fid`);
+
+--
 -- Indexes for table `experience`
 --
 ALTER TABLE `experience`
@@ -247,9 +428,33 @@ ALTER TABLE `initData`
   ADD PRIMARY KEY (`fid`);
 
 --
+-- Indexes for table `journals`
+--
+ALTER TABLE `journals`
+  ADD PRIMARY KEY (`fid`);
+
+--
+-- Indexes for table `lectures`
+--
+ALTER TABLE `lectures`
+  ADD PRIMARY KEY (`fid`);
+
+--
 -- Indexes for table `qualification`
 --
 ALTER TABLE `qualification`
+  ADD PRIMARY KEY (`fid`);
+
+--
+-- Indexes for table `research`
+--
+ALTER TABLE `research`
+  ADD PRIMARY KEY (`fid`);
+
+--
+-- Indexes for table `seminar`
+--
+ALTER TABLE `seminar`
   ADD PRIMARY KEY (`fid`);
 
 --
