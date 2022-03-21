@@ -5,6 +5,7 @@
     $result = $conn->query($sql);
     $data=array();
     while($row=$result->fetch_assoc()){
+      $faculty= null;
       $faculty->id=$row["fid"];
       $faculty->name=$row["name"];
       $faculty->designation=$row["designation"];
@@ -13,8 +14,7 @@
       $faculty->phoneNumber=$row["phoneNumber"];
       array_push($data,$faculty);
     }
-    $json->data=$data;
-    echo json_encode($json);
+    echo json_encode($data);
   }
 
 ?>

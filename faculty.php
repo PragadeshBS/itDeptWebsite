@@ -1,5 +1,4 @@
 <?php
-  $_GET['id']='1981';
   echo'<script>const ID='.$_GET["id"].';</script>';
 
 ?>
@@ -34,7 +33,7 @@
           <i class="bi bi-images"></i>
           Gallery
         </a>
-        <a href="#">
+        <a href="./faculty.html">
           <i class="bi bi-people-fill"></i>
           Faculty</a>
         <a href="./students.html">
@@ -61,9 +60,9 @@
   <div class="body-start"></div>
     <div class="faculty-details">
       <img src="./Images/faculty/1981.webp"  id="img" alt="">
-      <p id="name">Name</p>
+      <h2 id="name">Name</h2>
       <p id="designation">Designation</p>
-      <p id="area">Area Of Spacification</p>
+      <i id="area">Area Of Spacification</i>
       <a id="phone" href="">044-90121</a>
       <a id="email" href="">dk@gmail.com</a>
       <a id="personalSite" href=""></a>

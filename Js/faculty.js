@@ -107,6 +107,7 @@ function generateList() {
 	}
 }
 function initData(d) {
+	document.getElementById("img").src=d.image;
 	document.getElementById("name").innerHTML = d.name;
 	document.getElementById("designation").innerHTML = d.designation;
 	document.getElementById("email").innerHTML = d.emailID;

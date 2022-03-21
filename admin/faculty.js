@@ -114,6 +114,7 @@ function initData() {
 	document.getElementById("designation").value = faculty.designation;
 	document.getElementById("email").value = faculty.emailID;
 	document.getElementById("phone").value = faculty.phoneNumber;
+	document.getElementById("AOS").value = faculty.AOS;
 	document.getElementById("profilePic").src =
 		"." + faculty.image + "?t=" + new Date().getTime();
 	document.getElementById("acoe").value = faculty.acoeSiteLink;
@@ -178,7 +179,6 @@ function addField() {
 			},
 		})
 	);
-	faculty.details.push(val);
 	$(`#${val}`).remove();
 	columns = columns.filter((value) => {
 		return !faculty.details.includes(value);
