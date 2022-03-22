@@ -194,7 +194,7 @@ header label span::before {
 	overflow-x: hidden;
 	grid-auto-columns: 100%;
 	overscroll-behavior-inline: contain;
-	width:95%;
+	width:85%;
 	margin:auto;
 	margin-top:0.4em;
 	box-shadow: 0 0.5em 0.6em #1e1b19e1;
@@ -267,6 +267,44 @@ vission mission objectives
 }
 .body-container p {
 	grid-column: span 2;
+}
+/*
+HOD Desk
+*/
+.hod-profile {
+	box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.75);
+	transition: 0.3s;
+	display: grid;	
+	padding: 2em 2em;
+	width: fit-content;
+	max-width: 75%;
+	margin-inline: auto;
+	border-radius: 0.5em;
+}
+.hod-profile img {
+	grid-row: 1/5;
+	width: 90%;
+	object-fit: contain;
+	border-radius: 0.2em;
+	align-self: center;
+}
+.hod-profile:hover {
+	box-shadow: 0 0.8em 0.8em rgba(0, 0, 0, 0.60);
+}
+.hod-container {
+	margin: 0em;
+}
+
+.hod-about {
+	box-shadow: 0 4em 8em 0 rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	padding: 1em 2em;
+}
+/* 
+About Us
+*/
+.about-us-bg {
+	background-image: url("");
 }
 /*
 Infrastructure
@@ -569,7 +607,7 @@ faculties
 	grid-template-columns: 40% auto;
 }
 .faculties-container_bgTech{
-	background-image: url("../Images/ITA/ita14.webp");
+	background-image: url("../Images/facultyBG.webp");
 }
 .faculties-item_2 h3 {
 	line-height: 0.5;
@@ -830,6 +868,10 @@ Individual faculty
 	}
 	.body-container p {
 		grid-column: span 1;
+	}
+	.hod-profile {
+		width:60%;
+		grid-template-columns: 45% auto;
 	}
 	.infra-labs {
 		grid-auto-columns: 23em;

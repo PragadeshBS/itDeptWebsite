@@ -1,107 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="icon" type="image/x-icon" href="./Images/annaUniv.svg">
-  <title>IT | Association </title>
-  <link rel="stylesheet" href="./CSS/navigator.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./Images/annaUniv.svg">
+    <title>IT | Association </title>
+    <link rel="stylesheet" href="./CSS/navigator.css">
+    <link rel="stylesheet" href="./CSS/research.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./Js/research.js" defer></script>
 
 </head>
+
 <body>
-  <header>
-  <img src="./Images/annaUniv.svg" alt="">
-  <div class="heading">
-  <div class="heading-title">Department of Information Technology</div>
-  <div class="heading-dept">Anna University , MIT Campus</div>
-  </div>
-  <input type="checkbox" style="display:none"  id="nav-toggle" class="nav-toggle"> 
-  <nav>
-      <a href="./index.html">
-        <i class="bi bi-house-door-fill"></i>
-        Home
-      </a>        
-      <a href="#">
-        <i class="bi bi-person-rolodex"></i>
-        HOD's Desk</a>
-      <a href="#">
-        <i class="bi bi-images"></i>
-        Gallery
-      </a>
-      <a href="./faculty.php">
-        <i class="bi bi-people-fill"></i>
-        Faculty</a>
-      <a href="#">
-        <i class="bi bi-mortarboard-fill"></i>
-        Students</a>
-      <a href="./curriculum.html">
-        <i class="bi bi-book-half"></i>
-        Curriculum</a>
-      <a href="./infrastructure.html">
-        <i class="bi bi-building"></i>
-        Infrastructure</a>
-      <a href="#">
-        <i class="bi bi-motherboard-fill"></i>
-        Research</a>
-      <a href="#">
-        <i class="bi bi-puzzle"></i>
-        Events</a>
-        
-  </nav>
-  <label for="nav-toggle">
-    <span></span><i class="bi bi-x-lg"></i>
-  </label>
-  </header>
-  <div class="body-start intro-v2 ITA-bg">
-    <div class="intro-v2-content">
-      <h1><img src="./Images/ITA.png" alt="">IT Association</h1>
-      
-      <p>Constituted in the year 2001, Information Technology Association (ITA) comprises the students of our Department-Information Technologists. Dr. B.VinayagaSundaram, Professor & Head, Department of IT, is the current president of this association. DrDhananjay Kumar acts as the advisor for the Association. Under the able guidance of these two mentors and with the help from the teaching fraternity, the Association helps students to sharpen their talents, while also giving them the support they need to publish papers in prestigious academic journals and travel nationally and internationally to present at conferences</p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <header>
+        <img src="./Images/annaUniv.svg" alt="">
+        <div class="heading">
+            <div class="heading-title">Department of Information Technology</div>
+            <div class="heading-dept">Anna University , MIT Campus</div>
+        </div>
+        <input type="checkbox" style="display:none" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <a href="./index.html">
+                <i class="bi bi-house-door-fill"></i>
+                Home
+            </a>
+            <a href="./aboutUs.html">
+                <i class="bi bi-person"></i>
+                About Us
+              </a>
+            <a href="#">
+                <i class="bi bi-person-rolodex"></i>
+                HOD's Desk</a>
+            <a href="#">
+                <i class="bi bi-images"></i>
+                Gallery
+            </a>
+            <a href="./faculty.php">
+                <i class="bi bi-people-fill"></i>
+                Faculty</a>
+            <a href="#">
+                <i class="bi bi-mortarboard-fill"></i>
+                Students</a>
+            <a href="./curriculum.html">
+                <i class="bi bi-book-half"></i>
+                Curriculum</a>
+            <a href="./infrastructure.html">
+                <i class="bi bi-building"></i>
+                Infrastructure</a>
+            <a href="#">
+                <i class="bi bi-motherboard-fill"></i>
+                Research</a>
+            <a href="#">
+                <i class="bi bi-puzzle"></i>
+                Events</a>
+
+        </nav>
+        <label for="nav-toggle">
+            <span></span><i class="bi bi-x-lg"></i>
+        </label>
+    </header>
+    <div class="body-start">
     </div>
-  </div>
-  <h1 style="color:#ab3c35;">Activities</h1>
-  <div class="ITA-activities">
-    <div class="ITA-activity activity-1" style="grid-row:span 2;">
-      <img src="./Images/Logos/GreenPin.png" alt="">
-      <img src="./Images//ITA/ita14.webp" alt="">
-      <h1>SAMHITA</h1>
-      <p>A national-level technical symposium.. SAMHITA’19 will be a 2-day fest comprising of both onsite and online events. It will offer more than 20 events on various technological levels. It also includes workshops on the latest IT trends.</p>
+    <div class="wrapper">
+        <div class="optionsDiv">
+            <button id="sponsored">Sponsored Projects</button>
+            <button id="ctdt">CTDT</button>
+            <button id="scholars">Scholars</button>
+            <button id="reports">Project Reports</button>
+        </div>
+        <div class="contentsDiv">
+            <span class="contentHeading">Sponsored Projects</span>
+            <div class="contentData"></div>
+        </div>
     </div>
-    <div class="ITA-activity">
-      <img src="./Images/Logos/RedPin.png" alt="">
-      <img src="./Images//ITA/ita22.webp" alt="">
-      <h2>Guest Lectures</h2>
-      <li>On Role of IT @ CERN by Mr.S.P Mohanty</li>
-      <li>On Ethical Hacking By Mr.Ankit Fadia</li>
-      <li>On Lyrics Engineering by Dr.V.Madhan Karky</li>
-    </div>
-    <div class="ITA-activity activity-2 activity-note">
-      <img src="./Images/Logos/GreenPin.png" alt="">
-      <h2>Seminars</h2>
-      <li>On Entrepreneurship by Mr.Suhas Gopinath</li>
-      <li>On Ethical Hacking By Mr.Ankit Fadia</li>
-    </div>
-    <div class="ITA-activity" style="grid-row:span 2;">
-      <img src="./Images/Logos/RedPin.png" alt="">
-      <img src="./Images//ITA/ita14.webp" alt="">
-      <h1>MUTEX</h1>
-      <p>It is  an intra college technical festival.The main intention of MUTEX is to focus on the juniors and train them to hone their technical and analytical skills. In view of this, guest lectures on personality development and leadership will be arranged and various technical activities and events will be conducted.</p>
-    </div>
-    <div class="ITA-activity activity-note">
-      <img src="./Images/Logos/GreenPin.png" alt="">
-      Hello
-    </div>
-    <div class="ITA-activity activity-1">
-      <img src="./Images/Logos/RedPin.png" alt="">
-      Hello
-    </div>
-  </div>
 </body>
+
 </html>

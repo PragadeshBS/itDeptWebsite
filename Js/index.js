@@ -10,7 +10,6 @@ function moveImgs(){
     initial+=100*sign;
 }
 function init(){
-    document.getElementById("slide-show").innerHTML="";
     for(let i=0;i<d.length;i++){
         let img=document.createElement("img");
         img.src="./Images/Home/"+d[i];

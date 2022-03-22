@@ -26,13 +26,9 @@
           <i class="bi bi-house-door-fill"></i>
           Home
         </a>        
-        <a href="#">
+        <a href="./hodDesk.html">
           <i class="bi bi-person-rolodex"></i>
           HOD's Desk</a>
-        <a href="#">
-          <i class="bi bi-images"></i>
-          Gallery
-        </a>
         <a href="./faculty.html">
           <i class="bi bi-people-fill"></i>
           Faculty</a>
@@ -45,10 +41,10 @@
         <a href="./infrastructure.html">
           <i class="bi bi-building"></i>
           Infrastructure</a>
-        <a href="#">
+        <a href="./research.html">
           <i class="bi bi-motherboard-fill"></i>
           Research</a>
-        <a href="#">
+        <a href="./events.html">
           <i class="bi bi-puzzle"></i>
           Events</a>
           
