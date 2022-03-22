@@ -189,10 +189,22 @@ header label span::before {
 }
 /* Introduction */
 .intro {
-	width: 100%;
-	margin: 0;
-	padding: 1em;
-	transition: 600ms ease-in;
+	display: grid;
+	grid-auto-flow: column;
+	overflow-x: hidden;
+	grid-auto-columns: 100%;
+	overscroll-behavior-inline: contain;
+	width:95%;
+	margin:auto;
+	margin-top:0.4em;
+	box-shadow: 0 0.5em 0.6em #1e1b19e1;
+	background-color: #1e1b19e7;
+}
+.intro img{
+	width:100%;
+	object-fit: contain;
+	align-self: center;
+	transition: transform 2000ms ease-in-out;
 }
 .intro h2 {
 	text-align: center;
