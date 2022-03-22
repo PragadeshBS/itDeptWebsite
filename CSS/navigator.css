@@ -816,6 +816,62 @@ Individual faculty
 .ITA-events img:hover{
 	transform: scale(110%);
 }
+/* Placements */
+.placement-bar{
+	width:70vw;
+	
+	max-width: 100%;
+	margin: auto;
+}
+
+#y1819:checked ~ label[for="y1819"] {
+	background-color: #ab3c35;
+	color: #f3f2ef;
+}
+#y1718:checked ~ label[for="y1718"] {
+	background-color: #ab3c35;
+	color: #f3f2ef;
+}
+#y1617:checked ~ label[for="y1617"] {
+	background-color: #ab3c35;
+	color: #f3f2ef;
+}
+#y1516:checked ~ label[for="y1516"] {
+	background-color: #ab3c35;
+	color: #f3f2ef;
+}
+#y1415:checked ~ label[for="y1415"] {
+	background-color: #ab3c35;
+	color: #f3f2ef;
+}
+
+table{
+	text-align: center;	
+	border-collapse: separate;
+	display: grid;	
+}
+
+td{
+	text-align: center;
+}
+
+th, td{
+	padding: 0.5em;
+}
+
+.highers-container {
+	display: grid;
+	padding: 0.5em 0.5em;
+	width: 90%;
+	padding-inline-end: 0.3em;
+	margin-inline: auto;
+	border-radius: 0.3em;
+	box-shadow: 0em 0.2em 0.5em #1e1b19;
+	overflow-y: scroll;
+	max-height: 500px;
+	font-size: 0.9rem;
+	grid-template-columns: 5% repeat(3,1fr);
+}
 /* nagivation breakpoint */
 @media screen and (min-width: 922px) {
 	header label {
