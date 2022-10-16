@@ -1,103 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
 <body>
-
-  <div class="sample"></div>
-  <div class="container">
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
-    <div class="items">Qualification</div>
+  <div id='modal-".$i."' class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="staff-modal">
+        <div>
+          <img src="" alt="" />
+          <button>Profile</button>
+        </div>
+        <div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-<style>
-  body{
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    gap:5em;
-    font-size: 0.5rem;
-  }
-  .sample{
-    height:10rem;
-    width:7rem;
-    border:0.1em solid black;
-    background-color: aqua;
-    z-index: 5;
-  }
-  .container{
-    display:flex;
-    margin:auto;
-    gap:0.2em;
-    padding:1em;
-    width:fit-content;
-    perspective: 14em;
-    perspective-origin: 200% -350%;
-    transform: translateX(-3em);
-  }
-  .items{
-    top:0;
-    left:0;
-    padding:0.4em 1em;
-    border-radius: 2em;
-    position:absolute;
-    transition: 250ms ease-in-out;
-    z-index: -10;
-  transform-style: preserve-3d;
-  }
-  .items:hover{
-    cursor: pointer;
-    color: rgba(138, 46, 225, 0.775);
-  }
-</style>
-<script>
-  function rotateDivClick(){
-    let c=document.getElementsByClassName("items");
-    for(let i=0;i<c.length;i++)
-      c[i].onclick=()=>{
-            rotateDiv(i,c[i].className);
-        };
-  }
-  function rotateDiv(i=0 ,name="items"){
-    let c=document.getElementsByClassName(name);
-    
-    
-    let r=document.body.clientWidth/200;
-    if(document.body.clientWidth<750)
-      r=4;
-    let s=(360/c.length-1);
-    console.log(s);
-    let q = s*(c.length/4);
-    if(i==c.length)
-        i=0;
-    for(let j=0;j<c.length;j++){
-      let x=r*Math.cos((q*0.0174533))*2.2;
-      let z=r*Math.sin((q*0.0174533))*(2.2);//1.2;
-      c[i].style["transform"]=`translateX(${x}em) translateZ(${z}em) `;
-      q+=s;
-      i++;
-      if(i==c.length)
-        i=0;      
-    }
-  }
-  window.onload=()=>{
-    rotateDivClick();
-    rotateDiv();
-  }
-</script>
-</html>

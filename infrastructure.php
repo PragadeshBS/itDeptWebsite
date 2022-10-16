@@ -1,58 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./Images/annaUniv.svg">
-  <title>IT | Infrastructure </title>
-  <link rel="stylesheet" href="./CSS/navigator.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-</head>
-<body>
-  <header>
-    <img src="./Images/annaUniv.svg" alt="">
-    <div class="heading">
-    <div class="heading-title">Department of Information Technology</div>
-    <div class="heading-dept">Anna University , MIT Campus</div>
-    </div>
-    <input type="checkbox" style="display:none"  id="nav-toggle" class="nav-toggle"> 
-    <nav>
-        <a href="./index.html">
-          <i class="bi bi-house-door-fill"></i>
-          Home
-        </a>
-        <a href="./aboutUs.html">
-          <i class="bi bi-person"></i>
-          About Us
-        </a>        
-        <a href="./hodDesk.html">
-          <i class="bi bi-person-rolodex"></i>
-          HOD's Desk</a>
-        <a href="./faculty.html">
-          <i class="bi bi-people-fill"></i>
-          Faculty</a>
-        <a href="./students.html">
-          <i class="bi bi-mortarboard-fill"></i>
-          Students</a>
-        <a href="./curriculum.html">
-          <i class="bi bi-book-half"></i>
-          Curriculum</a>
-        <a href="./infrastructure.html">
-          <i class="bi bi-building"></i>
-          Infrastructure</a>
-        <a href="./research.html">
-          <i class="bi bi-motherboard-fill"></i>
-          Research</a>
-        <a href="./events">
-          <i class="bi bi-puzzle"></i>
-          Events</a>
-          
-    </nav>
-    <label for="nav-toggle">
-      <span></span><i class="bi bi-x-lg"></i>
-    </label>
-  </header>
+<?php require("templates/header.php"); ?>
   <div class="body-start intro-v2 infra-bg">
     
     <div class="intro-v2-content">
@@ -334,20 +280,19 @@
   <div class="body-container">
     <h1>Department Library</h1>
     <img src="./Images/deptlib.webp" alt="">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates similique, eaque praesentium ipsa ad ea. Accusamus earum nam minima quo quod eaque mollitia?</p>
+    <p>The Department Library is well equipped with over 800 books that cater to the needs of the faculty as well as students, both for academic and research purposes. Volumes from all leading publishers and authors are available in the library. It also has a wide range of CD/DVD collections for use by the staff and the students of the Department.</p>
     <ul><li>No Of Books : 970 Books</li></ul>
   </div>
   <div class="body-container">
       <h1>IT Seminar Hall</h1>
       <img src="./Images/placement.jpeg" alt="">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates similique, eaque praesentium ipsa ad ea. Accusamus earum nam minima quo quod eaque mollitia?</p>
+      <p>The department has a seminar hall which is utilised by the students and staff.</p>
   </div>
   <div class="body-container">
-      <h1>IT Confress Hall</h1>
+      <h1>IT conference Hall</h1>
       <img src="./Images/confrence.webp" alt="">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates similique, eaque praesentium ipsa ad ea. Accusamus earum nam minima quo quod eaque mollitia?</p>
+      <p>A spacious and well equipped conference hall with many facilities. The hall is used to hold meetings with the staff, conduct class committee meeting and project reviews.</p>
 </div>
-</body>
 <script>
   var displayLab=()=>{
     if(document.getElementById('pl-1').checked){
@@ -399,5 +344,5 @@
     }else
       document.getElementById('mrl').labels[0].classList.remove("infra-lab-checked");
   }
-</script>
-</html>
+  </script>
+  <?php require("templates/footer.php"); ?>

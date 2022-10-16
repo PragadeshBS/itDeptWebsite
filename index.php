@@ -1,59 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./Images/annaUniv.svg">
-  <title>IT | Home </title>
-  <link rel="stylesheet" href="./CSS/navigator.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-</head>
-<body>
-  <header>
-    <img src="./Images/annaUniv.svg" alt="">
-    <div class="heading">
-    <div class="heading-title">Department of Information Technology</div>
-    <div class="heading-dept">Anna University , MIT Campus</div>
-    </div>
-    <input type="checkbox" style="display:none"  id="nav-toggle" class="nav-toggle"> 
-    <nav>
-        <a href="#">
-          <i class="bi bi-house-door-fill"></i>
-          Home
-        </a>
-        <a href="./aboutUs.html">
-          <i class="bi bi-person"></i>
-          About Us
-        </a>        
-        <a href="./hodDesk.html">
-          <i class="bi bi-person-rolodex"></i>
-          HOD's Desk
-        </a>
-        <a href="./faculty.html">
-          <i class="bi bi-people-fill"></i>
-          Faculty</a>
-        <a href="./students.html">
-          <i class="bi bi-mortarboard-fill"></i>
-          Students</a>
-        <a href="./curriculum.html">
-          <i class="bi bi-book-half"></i>
-          Curriculum</a>
-        <a href="./infrastructure.html">
-          <i class="bi bi-building"></i>
-          Infrastructure</a>
-        <a href="./research.html">
-          <i class="bi bi-motherboard-fill"></i>
-          Research</a>
-        <a href="./events.html">
-          <i class="bi bi-puzzle"></i>
-          Events</a>
-          
-    </nav>
-    <label for="nav-toggle">
-      <span></span><i class="bi bi-x-lg"></i>
-    </label>
-  </header>
+
+  <?php require("templates/header.php"); ?>
   <div class="body-start announcements">
   </div>
   <div class="intro" id="slide-show">
@@ -88,16 +34,15 @@
     </div>
   </div>
   </div>
-  <a href="./studentAssociation.html" class="body-container">
+  <a href="./studentAssociation.php" class="body-container">
     <h1>Information Technology Association</h1>
     <img src="./Images/ita.jpg" alt="">
     <p>Constituted in the year 2001, Information Technology Association (ITA) comprises the students of our Department-Information Technologists. Dr. B.VinayagaSundaram, Professor & Head, Department of IT, is the current president of this association. DrDhananjay Kumar acts as the advisor for the Association. Under the able guidance of these two mentors and with the help from the teaching fraternity, the Association helps students to sharpen their talents, while also giving them the support they need to publish papers in prestigious academic journals and travel nationally and internationally to present at conferences.</p>
   </a>
-  <a href="./placements.html" class="body-container">
+  <a href="./placements.php" class="body-container">
     <h1>Placement</h1>
     <img src="./Images/placement.jpeg" alt="">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates similique, eaque praesentium ipsa ad ea. Accusamus earum nam minima quo quod eaque mollitia?</p>
+    <p>The Placement Cell of MIT is responsible for co-ordination placement activities for both the PG and UG students and is attached to the Center for University-Industry Collaboration (CUIC) of Anna University. The placement activities of the constituent colleges of Anna University is scheduled by the CUIC.</p>
   </a>
-</body>
 <script src="./Js/index.js"></script>
-</html>
+<?php require("templates/footer.php"); ?>

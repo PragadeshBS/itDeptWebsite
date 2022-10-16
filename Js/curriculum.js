@@ -20,7 +20,7 @@ const years={
   $(
     $.ajax({
       type:'POST',
-      url:'../PHP/getCurriculum.php',
+      url:'./PHP/getCurriculum.php',
       data:{
         Degree:deg,
         Year:year
@@ -55,7 +55,7 @@ const years={
     changeYears();
     $.ajax({
       type:'POST',
-      url:'../PHP/getCurriculum.php',
+      url:'./PHP/getCurriculum.php',
       data:{
         Degree:deg,
         Year:year
@@ -73,7 +73,7 @@ const years={
     year=document.getElementsByName('year')[0].value;
     $.ajax({
       type:'POST',
-      url:'../PHP/getCurriculum.php',
+      url:'./PHP/getCurriculum.php',
       data:{
         Degree:deg,
         Year:year
