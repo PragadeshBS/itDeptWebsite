@@ -1,8 +1,7 @@
 :root {
-  /* --primary: #3d550c; */
-  --primary: #2f5233;
-  --forestGreen: #08313a;
-  --lightForestGreen: #1a5653;
+  --primary: #06283d;
+  --alt: #256d85;
+  --altLight: #efef;
 }
 
 *,
@@ -251,7 +250,7 @@ vission mission objectives
 }
 .body-container {
   /* background-color: #1a2238; */
-  background-color: var(--forestGreen);
+  background-color: var(--alt);
   margin-inline: 1em;
   color: #f3f2ef;
   padding: 0.5em 1em;
@@ -329,10 +328,12 @@ Infrastructure
 }
 .intro-v2-content {
   /* background-color: #1e1b19d2; */
-  background-color: var(--forestGreen);
+  background-color: var(--alt);
   padding: 2em;
   color: #f3f2ef;
   width: 100%;
+  clip-path: circle(70.9% at 0 55%);
+  padding-right: 50%;
 }
 .infra-labs {
   background-color: #1e1b19;
@@ -349,7 +350,7 @@ Infrastructure
 }
 .lab-item {
   /* background-color: #9c8592d9; */
-  background-color: var(--lightForestGreen);
+  background-color: var(--altLight);
   border-radius: 0.5em;
   position: relative;
   /* color: #f3f2ef; */
@@ -559,11 +560,7 @@ faculties
   height: 20rem;
   padding: 0.5em;
   padding-bottom: 0.3em;
-
-  /* background-color: #1e1b19de; */
-  /* background-color: #ab3d3556; */
-  background-color: var(--forestGreen);
-
+  background-color: var(--alt);
   background-repeat: no-repeat;
   background-size: 100% auto;
   box-shadow: 0 0em 0.6em #1e1b19e2;
@@ -607,15 +604,19 @@ faculties
   transform: scale(103%);
 }
 .faculties-item_2 {
+  width: 370px;
   display: grid;
-  gap: 0.3em 0.5em;
-  padding: 0.5em;
-  background-color: #1e1b19c4;
-  color: #f3f2ef;
-  z-index: 1;
+  gap: 10px;
+  /* padding: 0.5em; */
+  /* background-color: #1e1b19c4; */
+  /* color: #f3f2ef; */
+  /* z-index: 1; */
   border-radius: 0.2em;
-  grid-row: span 2;
-  grid-template-columns: 40% auto;
+  background-color: var(--altLight);
+  padding: 1em;
+  margin: 10px;
+  /* grid-row: span 2; */
+  /* grid-template-columns: 40% auto; */
 }
 .faculties-container_bgTech {
   background-image: url("../Images/facultyBG.webp");
@@ -868,7 +869,7 @@ td {
 }
 
 th {
-  background-color: var(--forestGreen);
+  background-color: var(--alt);
   color: white;
   border: 1px solid white;
 }
@@ -951,10 +952,6 @@ td {
   .infra-labs {
     grid-auto-columns: 23em;
     font-size: 1rem;
-  }
-  .intro-v2-content {
-    clip-path: circle(70.9% at 0 55%);
-    padding-right: 50%;
   }
   .infra-lab-checked {
     grid-template-columns: repeat(2, 1fr);
@@ -1059,4 +1056,12 @@ td {
   font-size: 1rem;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.home-content {
+  margin-top: 2em;
+}
+
+nav > a:hover {
+  color: white;
 }
