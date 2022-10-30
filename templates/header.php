@@ -55,8 +55,16 @@
                 Research</a>
             <a href="./events.php">
                 <i class="bi bi-puzzle"></i>
-                Events</a>
-
+                Events
+            </a>
+            <a href="./placements.php">
+                <i class="bi bi-person-check"></i>
+                Placements
+            </a>
+            <a href="./e-service.php">
+                <i class="bi bi-pc-display-horizontal"></i>
+                E-Service
+            </a>
         </nav>
         <label for="nav-toggle">
             <span></span><i class="bi bi-x-lg"></i>

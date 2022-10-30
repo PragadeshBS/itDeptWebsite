@@ -20,7 +20,7 @@
         ";
           for ($i=1; $i < count($data); $i++) {
             echo "<div class='teaching-staff-item text-center col-3 p-3 m-1' onclick='displayStaff(".$i.")'>
-              <img src='' alt='' />
+              <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$data[$i]['name']."</div>
               <i>".$data[$i]['designation']."</i>
               <div><a href='tel:'>".$data[$i]['mobile']."</a></div>
@@ -40,7 +40,7 @@
         <span class='close'>&times;</span>
         <div class='staff-modal'>
           <div class='left'>
-            <div><img src='' alt='Staff image' /></div>
+            <div><img src='images/teachingStaff/".$data[$i]['img']."' alt='Staff image' class='fac-detail-img img-fluid' /></div>
             <div><a href='https://google.com'><button>Profile</button></a></div>
           </div>
           <div class='right'>
@@ -190,7 +190,12 @@ tr:nth-child(even) {
 }
 
 .fac-img {
-    max-width: 200px;
+    height: 200px;
+}
+
+.fac-detail-img {
+    max-width: 350px;
+    margin-right: 2rem;
 }
 </style>
 
