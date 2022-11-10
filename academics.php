@@ -63,7 +63,8 @@
             <input type="radio" name="degree" style="display: none" id="pgt" />
             <input type="radio" name="degree" style="display: none" id="research1" />
             <input type="radio" name="degree" style="display: none" id="research2" />
-            <label class="students-input-element" for="ug">Under Graduate</label>
+            <label class="students-input-element" for="ug">UG IT</label>
+            <label class="students-input-element" for="ug-aids">UG AI &amp; DS</label>
             <label class="students-input-element" for="pgf">Post Graduate(Full Time)</label>
             <label class="students-input-element" for="pgt">Post Graduate(Part Time)</label>
             <label class="students-input-element" for="research1">Research(M.S)</label>

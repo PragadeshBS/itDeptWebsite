@@ -1,20 +1,43 @@
 <?php require("templates/header.php"); ?>
 
-  <div class="body-start intro-v2 curriculum-bg">
+<div class="body-start intro-v2 curriculum-bg">
     <div class="intro-v2-content">
-      <h1>Placements</h1>
-      <p>Some nice text that states that we got good placement stats and opportunities.</p>
+        <h1>Placements</h1>
+        <!-- <p>Some nice text that states that we got good placement stats and opportunities.</p> -->
     </div>
-  </div>
+</div>
 
-  <h2 style="color: black;padding-inline: 1em;text-align: center;">
-  Previous Year's Placements</h2>  
-  <canvas id="myChart2" class="placement-bar"></canvas>
-  <br><p style="text-align:center; color: #ab3c35; font-size: 1.2rem">Academic Year (Number of Students Registered)</p>
-  <br><br>
-  <h2 style="color: black;padding-inline: 1em;text-align: center;">
-  Higher Studies</h2>
-  <div class="students-input">
+<div class="row my-3">
+    <div class="col-6">
+        <h2 style="color: black;padding-inline: 1em;text-align: center;">
+            Previous Year's Placements</h2>
+        <canvas id="myChart2" class="placement-bar"></canvas>
+        <br>
+        <p style="text-align:center; color: #ab3c35; font-size: 1.2rem">Academic Year (Number of Students Registered)
+        </p>
+    </div>
+    <div class="col-6">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active fs-5" id="tab-2018" onclick="onTabChange(2018)">2018</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" id="tab-2019" onclick="onTabChange(2019)">2019</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" id="tab-2020" onclick="onTabChange(2020)">2020</a>
+            </li>
+        </ul>
+        <div id="placement-data" class="container mt-2">
+            <embed id="pdf-embed" class="w-100 d-block mx-auto" src="./PDF/placement/p2018.pdf" height="500px" />
+        </div>
+    </div>
+</div>
+<div class="mt-5">
+    <h2 style="color: black;padding-inline: 1em;text-align: center;">
+        Higher Studies</h2>
+</div>
+<!-- <div class="students-input">
     <input type="radio" name="higher" style="display:none;" id="y1819" checked>
     <input type="radio" name="higher" style="display:none;" id="y1718">
     <input type="radio" name="higher" style="display:none;" id="y1617">
@@ -25,11 +48,76 @@
     <label class="students-input-element" for="y1617">2016 - 2017</label>
     <label class="students-input-element" for="y1516">2015 - 2016</label>
     <label class="students-input-element" for="y1415">2014 - 2015</label>
-  </div>
+  </div> -->
 
-  <div class="highers-container" id="higherstats-display"></div>
-  <br><br>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./Js/placements-bar.js"></script>
+<!-- <div class="highers-container" id="higherstats-display"></div> -->
+<div class="container my-3">
+    <embed id="pdf-embed-hs" class="w-100 d-block mx-auto" src="./PDF/placement/HigherStudies.pdf" width="800px"
+        height="500px" />
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Name of student</th>
+                <th>Enrollment no.</th>
+                <th>Program graduated from</th>
+                <th>Name of institution joined</th>
+                <th>Year of admission</th>
+                <th>Name of programme admitted to</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">LYGm2 (2015-16)</td>
+                <td>Rakshana.G</td>
+                <td>2015506034</td>
+                <td>Information Technology</td>
+                <td>Tacoma University</td>
+                <td>2019</td>
+                <td>M.S - Computer Science &amp; Systems</td>
+            </tr>
+            <tr>
+                <td>N.Nivethan</td>
+                <td>2015506082</td>
+                <td>Information Technology</td>
+                <td>Arizona State University</td>
+                <td>2019</td>
+                <td>M.S - Computer Science</td>
+            </tr>
+            <tr>
+                <td>LYGm3 (2016-17)</td>
+                <td>Jyothi Prasanth D R</td>
+                <td>2016506028</td>
+                <td>Information Technology</td>
+                <td>Iowa State University</td>
+                <td>2021</td>
+                <td>M.S - Computer Science</td>
+            </tr>
+        </tbody>
+    </table> -->
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./Js/placements-bar.js"></script>
+<script>
+const onTabChange = (tabNo) => {
+    if (tabNo === 2018) {
+        $("#pdf-embed").attr("src", "./PDF/placement/p2018.pdf");
+        $("#tab-2018").addClass("active");
+        $("#tab-2019").removeClass("active");
+        $("#tab-2020").removeClass("active");
+    } else if (tabNo === 2019) {
+        $("#pdf-embed").attr("src", "./PDF/placement/p2019.pdf");
+        $("#tab-2018").removeClass("active");
+        $("#tab-2019").addClass("active");
+        $("#tab-2020").removeClass("active");
+    } else if (tabNo === 2020) {
+        $("#pdf-embed").attr("src", "./PDF/placement/p2020.pdf");
+        $("#tab-2018").removeClass("active");
+        $("#tab-2019").removeClass("active");
+        $("#tab-2020").addClass("active");
+    }
+}
+</script>
 <?php require("templates/footer.php"); ?>

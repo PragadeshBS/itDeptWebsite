@@ -1,14 +1,33 @@
 <?php require("templates/header.php"); ?>
 <div class="body-start"></div>
-<h1 class="pt-3">Teaching Staff</h1>
 <?php 
   $jsonData = file_get_contents("./JSON/faculty/teaching.json");
   $data = json_decode($jsonData, true);
-?>
-<div class="container">
-    <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
-        <div class="col-3"></div>
-        <?php
+  ?>
+<div class="mx-3">
+    <h1 class="pt-3">Faculty</h1>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active fs-5" onclick="changeTab(0)" aria-current="page" href="#" id="ts-toggle">
+                    Teaching Staff
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#" onclick="changeTab(1)" id="nts-toggle">
+                    Non teaching staff
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#" onclick="changeTab(2)">Former faculty</a>
+            </li>
+        </ul>
+    </div>
+    <div id="teaching-staff-content" class="container">
+        <h3 class=" mt-3">Teaching Staff</h3>
+        <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
+            <div class="col-3"></div>
+            <?php
         echo "<div class='teaching-staff-item text-center col-4 p-3 m-1' onclick='displayStaff(0)'>
           <img src="."images/teachingStaff/".$data[0]['img']." alt='' class='fac-img img-fluid' />
           <div>".$data[0]['name']."</div>
@@ -19,7 +38,7 @@
         <div class='col-3'></div>
         ";
           for ($i=1; $i < count($data); $i++) {
-            echo "<div class='teaching-staff-item text-center col-3 p-3 m-1' onclick='displayStaff(".$i.")'>
+            echo "<div class='teaching-staff-item text-center col-3 p-3 m-4' onclick='displayStaff(".$i.")'>
               <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$data[$i]['name']."</div>
               <i>".$data[$i]['designation']."</i>
@@ -28,6 +47,7 @@
             </div>";
           }
     ?>
+        </div>
     </div>
 </div>
 
@@ -41,7 +61,7 @@
         <div class='staff-modal'>
           <div class='left'>
             <div><img src='images/teachingStaff/".$data[$i]['img']."' alt='Staff image' class='fac-detail-img img-fluid' /></div>
-            <div><a href='https://google.com'><button>Profile</button></a></div>
+            <div><a href='https://google.com'><button class='btn btn-primary mx-auto d-block'>Profile</button></a></div>
           </div>
           <div class='right'>
             <table class='staffTable'>
@@ -183,10 +203,12 @@ tr:nth-child(even) {
 }
 
 .teaching-staff-item {
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 240, 240, 1) 100%);
+    /* background: rgb(255, 255, 255); */
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 240, 240, 1) 100%); */
     cursor: pointer;
     border-radius: 10px;
+    background-color: #7696ff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .fac-img {
@@ -215,11 +237,28 @@ window.onclick = function(event) {
         activeModal = -1;
     }
 }
+const changeTab = (tabNo) => {
+    const teachingStaff = document.getElementById("teaching-staff-content")
+    const nonTeachingStaff = document.getElementById("non-teaching-staff-content")
+    const tsToggle = document.querySelector("#ts-toggle")
+    const ntsToggle = document.querySelector("#nts-toggle")
+    if (tabNo === 0) {
+        teachingStaff.style.display = 'block';
+        nonTeachingStaff.style.display = 'none';
+        tsToggle.classList.add("active");
+        ntsToggle.classList.remove("active");
+    } else if (tabNo === 1) {
+        teachingStaff.style.display = 'none';
+        nonTeachingStaff.style.display = 'block';
+        ntsToggle.classList.add("active");
+        tsToggle.classList.remove("active");
+    }
+}
 </script>
 
 
-<div class="container">
-    <h1>Technical Staff</h1>
+<div class="container" id="non-teaching-staff-content" style="display: none;">
+    <h3 class="mt-3">Technical Staff</h3>
     <div>
         <div class="row">
             <div class="col-4 p-3 faculties-item_2">

@@ -53,9 +53,9 @@
             <a href="./research.php">
                 <i class="bi bi-motherboard-fill"></i>
                 Research</a>
-            <a href="./events.php">
+            <a href="./studentAssociation.php">
                 <i class="bi bi-puzzle"></i>
-                Events
+                ITA
             </a>
             <a href="./placements.php">
                 <i class="bi bi-person-check"></i>
