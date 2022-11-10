@@ -36,6 +36,16 @@
         </p>
     </div>
 </div>
+<div class="my-5 posters">
+    <h3 class="container mb-3">Student projects</h3>
+    <div class="row posters-content">
+        <div class="col-1"><i id="prev-poster" class="bi bi-chevron-left display-3 ms-5"></i></div>
+        <div class="col-10">
+            <img id="poster-img" src="./Images/projects/1.png" class="d-block mx-auto poster-img">
+        </div>
+        <div class="col-1"><i id="next-poster" class="bi bi-chevron-right display-3 me-5"></i></div>
+    </div>
+</div>
 <div class="my-3">
     <div class="container row">
         <div class="col-4">
@@ -88,5 +98,38 @@
         transform: translate(-100%, 0);
     }
 }
+
+.posters-content {
+    align-items: center;
+}
+
+.poster-img {
+    width: 800px;
+}
+
+#prev-poster,
+#next-poster {
+    cursor: pointer;
+}
 </style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+let activePoster = 1;
+$("#prev-poster").click(() => {
+    activePoster = Math.max(1, activePoster - 1);
+    if (activePoster == 1) $("#prev-poster").hide();
+    $("#next-poster").show()
+    $("#poster-img").attr("src", `./Images/projects/${activePoster}.png`)
+})
+$("#next-poster").click(() => {
+    activePoster = Math.min(12, activePoster + 1);
+    if (activePoster == 12) $("#next-poster").hide();
+    $("#prev-poster").show()
+    $("#poster-img").attr("src", `./Images/projects/${activePoster}.png`)
+})
+$(document).ready(() => {
+    $("#prev-poster").hide();
+})
+</script>
 <?php require("templates/footer.php"); ?>
