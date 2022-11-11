@@ -3,7 +3,7 @@
 <div class="intro-v2 about-us-bg ">
     <div class="home-content">
         <div class="announcements marquee">
-            <div class="text-center mt-3">
+            <div class="mt-3">
                 <p>
                     <a href="./academics.php">
                         New course: Artificial Intelligence & Data Science
@@ -36,12 +36,47 @@
         </p>
     </div>
 </div>
+<div class="stats container mt-5">
+    <div class="row fs-3">
+        <div class="col-6 text-center border-end pe-0">
+            <div>
+                Students admitted
+            </div>
+            <div class="fs-1 border-bottom">131</div>
+            <div class="my-2"></div>
+            <div>
+                Placement percentage
+            </div>
+            <div class="fs-1">80%</div>
+        </div>
+        <div class="col-6 text-center ps-0">
+            <div>
+                Research scholars
+            </div>
+            <div class="fs-1 border-bottom">34</div>
+            <div class="my-2"></div>
+            <div>
+                Students pursuing higher studies
+            </div>
+            <div class="fs-1">3</div>
+        </div>
+    </div>
+</div>
+<div class="mt-5 container">
+    <h1 class="mx-0">Companies visited</h1>
+    <img src="./Images/placement/companies.png" class="img-fluid">
+</div>
 <div class="my-5 posters">
-    <h3 class="container mb-3">Student projects</h3>
+    <h1 class="container mb-3">Student projects</h1>
     <div class="row posters-content">
         <div class="col-1"><i id="prev-poster" class="bi bi-chevron-left display-3 ms-5"></i></div>
-        <div class="col-10">
-            <img id="poster-img" src="./Images/projects/1.png" class="d-block mx-auto poster-img">
+        <div class="col-10 row">
+            <div class="col-6">
+                <img id="poster-img-1" src="./Images/projects/1.png" class="d-block mx-auto img-fluid">
+            </div>
+            <div class="col-6">
+                <img id="poster-img-2" src="./Images/projects/2.png" class="d-block mx-auto img-fluid">
+            </div>
         </div>
         <div class="col-1"><i id="next-poster" class="bi bi-chevron-right display-3 me-5"></i></div>
     </div>
@@ -49,11 +84,35 @@
 <div class="my-3">
     <div class="container row">
         <div class="col-4">
-            <p>Department of Information Technology</p>
-            <p>
-                Madras Institute of Technology, Anna University, Chromepet,
-                Chennai-600044
-            </p>
+            <h1 class="mb-3">Contact Us</h1>
+            <div class="container row">
+                <div class="col-2">
+                    <i class="fs-3 bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="col-10">
+                    <p>Department of Information Technology,</p>
+                    <p>
+                        Madras Institute of Technology, Anna University, Chromepet,
+                        Chennai - 600044
+                    </p>
+                </div>
+            </div>
+            <div class="container row align-items-center">
+                <div class="col-2">
+                    <i class="fs-3 bi bi-telephone-fill"></i>
+                </div>
+                <div class="col-10">
+                    <p>044-2251 6020</p>
+                </div>
+            </div>
+            <div class="container row align-items-center">
+                <div class="col-2">
+                    <i class="fs-3 bi bi-envelope-fill"></i>
+                </div>
+                <div class="col-10">
+                    <p>aucmitit@gmail.com</p>
+                </div>
+            </div>
         </div>
         <div class="col-8">
             <iframe
@@ -103,11 +162,17 @@
     align-items: center;
 }
 
-.poster-img {
-    width: 800px;
-}
+/* #poster-img-1:hover,
+#poster-img-2:hover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%, -50%) scale(1.3);
+    width: 500px;
+} */
 
-#prev-poster,
+a #prev-poster,
 #next-poster {
     cursor: pointer;
 }
@@ -120,13 +185,15 @@ $("#prev-poster").click(() => {
     activePoster = Math.max(1, activePoster - 1);
     if (activePoster == 1) $("#prev-poster").hide();
     $("#next-poster").show()
-    $("#poster-img").attr("src", `./Images/projects/${activePoster}.png`)
+    $("#poster-img-2").attr("src", `./Images/projects/${activePoster+1}.png`)
+    $("#poster-img-1").attr("src", `./Images/projects/${activePoster}.png`)
 })
 $("#next-poster").click(() => {
-    activePoster = Math.min(12, activePoster + 1);
-    if (activePoster == 12) $("#next-poster").hide();
+    activePoster = Math.min(11, activePoster + 1);
+    if (activePoster == 11) $("#next-poster").hide();
     $("#prev-poster").show()
-    $("#poster-img").attr("src", `./Images/projects/${activePoster}.png`)
+    $("#poster-img-2").attr("src", `./Images/projects/${activePoster+1}.png`)
+    $("#poster-img-1").attr("src", `./Images/projects/${activePoster}.png`)
 })
 $(document).ready(() => {
     $("#prev-poster").hide();

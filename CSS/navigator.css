@@ -192,6 +192,7 @@ header label span::before {
   padding-inline: 0.5em 2em;
   font-weight: 600;
   font-size: 0.8rem;
+  z-index: 1;
 }
 /* Introduction */
 .intro {
