@@ -217,7 +217,7 @@ tr:nth-child(even) {
     /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 240, 240, 1) 100%); */
     cursor: pointer;
     border-radius: 10px;
-    background-color: #7696ff;
+    background-color: #BCCEF8;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
@@ -251,7 +251,8 @@ const changeTab = (tabNo) => {
     const teachingStaff = $("#teaching-staff-content"),
         nonTeachingStaff = $("#non-teaching-staff-content"),
         formerFaculty = $("#former-staff-content"),
-        tsToggle = $("#ts-toggle"),
+        formerHod = $("#former-hod-content");
+    tsToggle = $("#ts-toggle"),
         ntsToggle = $("#nts-toggle"),
         ffToggle = $("#ff-toggle"),
         fhodToggle = $("#fhod-toggle")
@@ -269,6 +270,7 @@ const changeTab = (tabNo) => {
         formerFaculty.show();
         ffToggle.addClass("active");
     } else if (tabNo === 3) {
+        formerHod.show();
         fhodToggle.addClass("active");
     }
 }
@@ -361,7 +363,7 @@ const changeTab = (tabNo) => {
 </div>
 
 
-<div id="former-staff-content" class="container">
+<div id="former-staff-content" class="container" style="display: none">
     <h3 class=" mt-3">Former Staff</h3>
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
         <?php        
@@ -378,7 +380,7 @@ const changeTab = (tabNo) => {
     </div>
 </div>
 
-<div id="former-hod-content" class="container">
+<div id="former-hod-content" class="container" style="display: none">
     <h3 class=" mt-3">Former Staff</h3>
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
         <div class='teaching-staff-item text-center col-3 p-3 m-4'>

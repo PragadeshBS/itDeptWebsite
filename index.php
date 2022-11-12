@@ -38,27 +38,80 @@
 </div>
 <div class="stats container mt-5">
     <div class="row fs-3">
-        <div class="col-6 text-center border-end pe-0">
-            <div>
-                Students admitted
+        <div class="col-6 text-center pe-0">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <img src="icons/student.png" width="50px">
+                </div>
+                <div class="col-6">
+                    <div>
+                        Students admitted
+                    </div>
+                    <div class="fs-1 border-bottom">131</div>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div class="fs-1 border-bottom">131</div>
             <div class="my-2"></div>
-            <div>
-                Placement percentage
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <img src="icons/job.png" width="50px">
+                </div>
+                <div class="col-6">
+                    <div>
+                        Placement percent
+                    </div>
+                    <div class="fs-1">80%</div>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div class="fs-1">80%</div>
         </div>
         <div class="col-6 text-center ps-0">
-            <div>
-                Research scholars
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <img src="icons/research.png" width="50px">
+                </div>
+                <div class="col-6">
+                    <div>
+                        Research Scholars
+                    </div>
+                    <div class="fs-1 border-bottom">34</div>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div class="fs-1 border-bottom">34</div>
             <div class="my-2"></div>
-            <div>
-                Students pursuing higher studies
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <img src="icons/book.png" width="50px">
+                </div>
+                <div class="col-6">
+                    <div>
+                        Students in higher studies
+                    </div>
+                    <div class="fs-1">3</div>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div class="fs-1">3</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 text-center mx-auto">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <img src="icons/money.png" width="50px">
+                </div>
+                <div class="col-6 fs-3">
+                    <div>
+                        Highest CTC offered
+                    </div>
+                    <div class="fs-1">40 LPA</div>
+                </div>
+                <div class="col-2"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -128,6 +181,10 @@
     </div>
 </div>
 <style>
+.row {
+    align-items: center;
+}
+
 input[type=checkbox] {
     display: none;
 }
