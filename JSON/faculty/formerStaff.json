@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. V. Rhymend Uthariaraj",
+    "designation": "Professor",
+    "mobile": "",
+    "email": "rhymend@annauniv.edu",
+    "areaOfExpertise": "Computer Networks, Network Security, Pervasive Computing, Wireless Networks",
+    "img": "f1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Ashoka Rajan",
+    "designation": "Teaching Fellow",
+    "mobile": "",
+    "email": "ashok.tiruchendur@gmail.com",
+    "areaOfExpertise": "Adhoc Networks, Software Engineering, Computer Networks",
+    "img": "f2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dr. M.Gokuldhev",
+    "designation": "Teaching Fellow",
+    "mobile": "",
+    "email": "ksmdhev@gmail.com",
+    "areaOfExpertise": "Computer Networks | Web Technology | Grid Computing",
+    "img": "f3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ms M.Monisha Devi",
+    "designation": "Teaching Fellow",
+    "mobile": "",
+    "email": "mmonishadevi.cse@gmail.com",
+    "areaOfExpertise": "Database Management System| Mobile Computing",
+    "img": "f4.jpg"
+  }
+]

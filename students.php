@@ -1,6 +1,17 @@
 <?php require("templates/header.php"); ?>
-<div class="body-start pt-3">
-    <h1 class="container">Students</h1>
+<div class="body-start intro-v2 curriculum-bg">
+    <div class="intro-v2-content">
+        <h1>Students</h1>
+        <p class="container">
+            The computational needs of the researchers and engineers are met
+            through well equipped laboratories. The resources in the department
+            are continually updated with the changing industrial trends. The
+            Advanced computing facility has been provided with the latest
+            dual-core processors from Intel.
+        </p>
+    </div>
+</div>
+<div class="pt-3">
     <div class="row align-items-center container">
         <div class="col-8">
             <div class="container">
@@ -31,42 +42,28 @@
         </div>
     </div>
 </div>
-<div>
-    <div class="container">
-        <div>
-            <p>
-                The computational needs of the researchers and engineers are met
-                through well equipped laboratories. The resources in the department
-                are continually updated with the changing industrial trends. The
-                Advanced computing facility has been provided with the latest
-                dual-core processors from Intel.
-            </p>
-        </div>
-    </div>
-    <h2 class="mt-5 container">Students List</h2>
-    <div class="students-input container my-3">
-        <input type="radio" name="degree" style="display: none" checked />
-        <input type="radio" name="degree" style="display: none" />
-        <input type="radio" name="degree" style="display: none" />
-        <label id="ug-it" class="students-input-element" for="ug-it" onclick="changeDegree('ugIt')">
-            Under Graduate (IT)
-        </label>
-        <label id="ug-aids" class="students-input-element active" for="ug-aids" onclick="changeDegree('ugAids')">
-            Under Graduate (AI &amp; DS)
-        </label>
-        <label id="pg" class="students-input-element active" for="pg" onclick="changeDegree('pg')">
-            Post Graduate
-        </label>
-        <h2 style="color: #ab3c35; padding-inline: 1em">Year :</h2>
-        <select class="students-input-element" name="year" id="year"></select>
-    </div>
-    <div class="container">
-        <embed id="pdf-embed" class="w-100 d-block mx-auto" src="./PDF/curriculum/UG-CBCS-2015.pdf" width="800px"
-            height="500px" />
-    </div>
+<h2 class="mt-5 container">Students List</h2>
+<div class="students-input container my-3">
+    <input type="radio" name="degree" style="display: none" checked />
+    <input type="radio" name="degree" style="display: none" />
+    <input type="radio" name="degree" style="display: none" />
+    <label id="ug-it" class="students-input-element" for="ug-it" onclick="changeDegree('ugIt')">
+        Under Graduate (IT)
+    </label>
+    <label id="ug-aids" class="students-input-element active" for="ug-aids" onclick="changeDegree('ugAids')">
+        Under Graduate (AI &amp; DS)
+    </label>
+    <label id="pg" class="students-input-element active" for="pg" onclick="changeDegree('pg')">
+        Post Graduate
+    </label>
+    <h2 style="color: #ab3c35; padding-inline: 1em">Year :</h2>
+    <select class="students-input-element" name="year" id="year"></select>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<div class="container">
+    <embed id="pdf-embed" class="w-100 d-block mx-auto" src="./PDF/curriculum/UG-CBCS-2015.pdf" width="800px"
+        height="500px" />
+</div>
+</div>
 <!-- <script src="./Js/students.js"></script> -->
 
 <script>

@@ -3,7 +3,10 @@
 <div class="body-start intro-v2 curriculum-bg">
     <div class="intro-v2-content">
         <h1>Placements</h1>
-        <!-- <p>Some nice text that states that we got good placement stats and opportunities.</p> -->
+        <p class="container">The Center for University - Industry Collaboration plays an integral role in guiding the
+            students achieve
+            their career goals. The centre facilitates the training activities with the help of industry experts, alumni
+            and corporate trainers to prepare the students industry-ready.</p>
     </div>
 </div>
 
@@ -52,9 +55,9 @@
 
 <!-- <div class="highers-container" id="higherstats-display"></div> -->
 <div class="container my-3">
-    <embed id="pdf-embed-hs" class="w-100 d-block mx-auto" src="./PDF/placement/HigherStudies.pdf" width="800px"
-        height="500px" />
-    <!-- <table>
+    <!-- <embed id="pdf-embed-hs" class="w-100 d-block mx-auto" src="./PDF/placement/HigherStudies.pdf" width="800px"
+        height="500px" /> -->
+    <table>
         <thead>
             <tr>
                 <th>Year</th>
@@ -94,10 +97,8 @@
                 <td>M.S - Computer Science</td>
             </tr>
         </tbody>
-    </table> -->
+    </table>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./Js/placements-bar.js"></script>
 <script>

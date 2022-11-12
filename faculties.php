@@ -3,6 +3,9 @@
 <?php 
   $jsonData = file_get_contents("./JSON/faculty/teaching.json");
   $data = json_decode($jsonData, true);
+
+  $jsonData = file_get_contents("./JSON/faculty/formerStaff.json");
+  $formerStaffData = json_decode($jsonData, true);
   ?>
 <div class="mx-3">
     <h1 class="pt-3">Faculty</h1>
@@ -19,7 +22,14 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" href="#" onclick="changeTab(2)">Former faculty</a>
+                <a class="nav-link fs-5" href="#" onclick="changeTab(2)" id="ff-toggle">
+                    Former faculty
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" href="#" onclick="changeTab(3)" id="fhod-toggle">
+                    Former HOD
+                </a>
             </li>
         </ul>
     </div>
@@ -238,20 +248,28 @@ window.onclick = function(event) {
     }
 }
 const changeTab = (tabNo) => {
-    const teachingStaff = document.getElementById("teaching-staff-content")
-    const nonTeachingStaff = document.getElementById("non-teaching-staff-content")
-    const tsToggle = document.querySelector("#ts-toggle")
-    const ntsToggle = document.querySelector("#nts-toggle")
+    const teachingStaff = $("#teaching-staff-content"),
+        nonTeachingStaff = $("#non-teaching-staff-content"),
+        formerFaculty = $("#former-staff-content"),
+        tsToggle = $("#ts-toggle"),
+        ntsToggle = $("#nts-toggle"),
+        ffToggle = $("#ff-toggle"),
+        fhodToggle = $("#fhod-toggle")
+    let contents = [teachingStaff, nonTeachingStaff, formerFaculty],
+        toggles = [tsToggle, ntsToggle, ffToggle, fhodToggle];
+    contents.forEach(content => content.hide());
+    toggles.forEach(toggle => toggle.removeClass("active"));
     if (tabNo === 0) {
-        teachingStaff.style.display = 'block';
-        nonTeachingStaff.style.display = 'none';
-        tsToggle.classList.add("active");
-        ntsToggle.classList.remove("active");
+        teachingStaff.show();
+        tsToggle.addClass("active");
     } else if (tabNo === 1) {
-        teachingStaff.style.display = 'none';
-        nonTeachingStaff.style.display = 'block';
-        ntsToggle.classList.add("active");
-        tsToggle.classList.remove("active");
+        nonTeachingStaff.show();
+        ntsToggle.addClass("active");
+    } else if (tabNo === 2) {
+        formerFaculty.show();
+        ffToggle.addClass("active");
+    } else if (tabNo === 3) {
+        fhodToggle.addClass("active");
     }
 }
 </script>
@@ -263,7 +281,7 @@ const changeTab = (tabNo) => {
         <div class="row">
             <div class="col-4 p-3 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr.V.Kannan</h3>
+                <h3>Mr. V.Kannan</h3>
                 <p>Professional Assistant - I</p>
                 <p>
                     Conference Website Maintanence, System Maintanence, Server Maintanence
@@ -277,7 +295,7 @@ const changeTab = (tabNo) => {
             </div>
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr.V.Saravanan</h3>
+                <h3>Mr. V.Saravanan</h3>
                 <p>Professional Assistant - II</p>
                 <p>Server Maintanence, System Troubleshooting, Lab Maintanence</p>
                 <ul>
@@ -291,7 +309,7 @@ const changeTab = (tabNo) => {
             </div>
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Ms.G.Senbagam</h3>
+                <h3>Ms. G.Senbagam</h3>
                 <p>Professional Assistant - II</p>
                 <p>System Troubleshooting, Lab Maintanence</p>
                 <ul>
@@ -307,7 +325,7 @@ const changeTab = (tabNo) => {
         <div class="row my-3 justify-content-center">
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Ms.S.Kalpana</h3>
+                <h3>Ms. S.Kalpana</h3>
                 <p>Professional Assistant - I</p>
                 <p>
                     Maintain hardware and software issues for all systems in Labs.
@@ -319,7 +337,7 @@ const changeTab = (tabNo) => {
             </div>
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr.J.Babu</h3>
+                <h3>Mr. J.Babu</h3>
                 <p>Professional Assistant - I</p>
                 <p>
                     System Maintenance, Software Installation and upgradation, Server
@@ -332,20 +350,45 @@ const changeTab = (tabNo) => {
         </div>
         <h1>Non Technical Staff</h1>
         <ul>
-            <li>Mrs.M.Eswari - M.S.G.C</li>
-            <li>Mr.A.Augustin - Professional Assistant - II</li>
-            <li>Mr.R.Sandiappan - Peon</li>
-            <li>Mrs.Umarani.A - Assistant</li>
-            <li>Ms.Kalaiselvi.K - Clerical Assistant</li>
-            <li>Mr.Nallathambi.K - Peon</li>
+            <li>Mrs. M.Eswari - M.S.G.C</li>
+            <li>Mr. A.Augustin - Professional Assistant - II</li>
+            <li>Mr. R.Sandiappan - Peon</li>
+            <li>Mrs. Umarani.A - Assistant</li>
+            <li>Ms. Kalaiselvi.K - Clerical Assistant</li>
+            <li>Mr. Nallathambi.K - Peon</li>
         </ul>
     </div>
 </div>
-<!-- <script
-src="https://code.jquery.com/jquery-3.6.0.min.js"
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-crossorigin="anonymous"
-></script> -->
+
+
+<div id="former-staff-content" class="container">
+    <h3 class=" mt-3">Former Staff</h3>
+    <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
+        <?php        
+          for ($i=0; $i < count($formerStaffData); $i++) {
+            echo "<div class='teaching-staff-item text-center col-3 p-3 m-4'>
+              <img src="."images/formerStaff/".$formerStaffData[$i]['img']." alt='' class='fac-img img-fluid' />
+              <div>".$formerStaffData[$i]['name']."</div>
+              <i>".$formerStaffData[$i]['designation']."</i>
+              <div><a href='tel:'>".$formerStaffData[$i]['mobile']."</a></div>
+              <div>".$formerStaffData[$i]['email']."</div>
+            </div>";
+          }
+    ?>
+    </div>
+</div>
+
+<div id="former-hod-content" class="container">
+    <h3 class=" mt-3">Former Staff</h3>
+    <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
+        <div class='teaching-staff-item text-center col-3 p-3 m-4'>
+            <img src='./images/formerStaff/hod.jpg' alt='' class='fac-img img-fluid' />
+            <div>Dr.B.Vinayagasundaram</div>
+            <i>Former HOD | Assosciate Professor</i>
+            <div>bvsundaram@annauniv.edu</div>
+        </div>
+    </div>
+</div>
 <!-- <script src="./Js/faculties.js"></script> -->
 
 <?php require("templates/footer.php"); ?>

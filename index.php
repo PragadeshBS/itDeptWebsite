@@ -72,10 +72,16 @@
         <div class="col-1"><i id="prev-poster" class="bi bi-chevron-left display-3 ms-5"></i></div>
         <div class="col-10 row">
             <div class="col-6">
-                <img id="poster-img-1" src="./Images/projects/1.png" class="d-block mx-auto img-fluid">
+                <input type="checkbox" id="zoomCheck1">
+                <label for="zoomCheck1">
+                    <img id="poster-img-1" src="./Images/projects/1.png" class="d-block mx-auto img-fluid">
+                </label>
             </div>
             <div class="col-6">
-                <img id="poster-img-2" src="./Images/projects/2.png" class="d-block mx-auto img-fluid">
+                <input type="checkbox" id="zoomCheck2">
+                <label for="zoomCheck2">
+                    <img id="poster-img-2" src="./Images/projects/2.png" class="d-block mx-auto img-fluid">
+                </label>
             </div>
         </div>
         <div class="col-1"><i id="next-poster" class="bi bi-chevron-right display-3 me-5"></i></div>
@@ -122,6 +128,25 @@
     </div>
 </div>
 <style>
+input[type=checkbox] {
+    display: none;
+}
+
+label>img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+input[type=checkbox]:checked~label>img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 400px;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 100000;
+    cursor: zoom-out;
+}
+
 .marquee {
     white-space: nowrap;
     overflow: hidden;
@@ -177,8 +202,6 @@ a #prev-poster,
     cursor: pointer;
 }
 </style>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
 let activePoster = 1;
 $("#prev-poster").click(() => {
