@@ -36,41 +36,53 @@
 </div>
 <div class="stats">
     <div class="container row text-center">
-        <div class="my-4 col-4">
+        <div class="my-4 col-3">
             <div class="display-4">23</div>
             <div class="fs-6">Faculty</div>
         </div>
-        <div class="my-4 col-4">
+        <div class="my-4 col-3">
             <div class="display-4">11</div>
             <div class="fs-6">Staff</div>
         </div>
-        <div class="my-4 col-4">
+        <div class="my-4 col-3">
             <div class="display-4">467</div>
             <div class="fs-6">Undergraduate Students</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">34</div>
             <div class="fs-6">Research Scholars</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">8</div>
             <div class="fs-6">Laboratories</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">3</div>
             <div class="fs-6">Students pursuing higher studies</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">8</div>
             <div class="fs-6">Laboratories</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">40 LPA</div>
             <div class="fs-6">Highest CTC offered</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">80%</div>
             <div class="fs-6">Placement Percent</div>
+        </div>
+        <div class="mb-4 col-3">
+            <div class="display-4">29</div>
+            <div class="fs-6">Papers Published</div>
+        </div>
+        <div class="mb-4 col-3">
+            <div class="display-4">8</div>
+            <div class="fs-6">Awards Recieved</div>
+        </div>
+        <div class="mb-4 col-3">
+            <div class="display-4">78</div>
+            <div class="fs-6">Funded Projects</div>
         </div>
     </div>
 </div>
