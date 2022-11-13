@@ -32,10 +32,10 @@
         </div>
         <div class="col-4">
             <div class="">
-                <img src="images/students/students-strength.png" alt="">
+                <img src="./Images/students/students-strength.png" alt="">
             </div>
             <div class="my-3">
-                <img src="images/students/success-rate.png" alt="">
+                <img src="./Images/students/success-rate.png" alt="">
             </div>
         </div>
     </div>

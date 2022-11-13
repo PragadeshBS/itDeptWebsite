@@ -63,7 +63,7 @@
                 <i class="bi bi-person-check"></i>
                 Placements
             </a>
-            <a href="./e-service.php">
+            <a href="./activities.php">
                 <i class="bi bi-file-earmark-richtext"></i>
                 Activities
             </a>

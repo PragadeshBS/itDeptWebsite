@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="col-6">
-                    <img src="images/peo.png" class="img-fluid">
+                    <img src="./Images/peo.png" class="img-fluid">
                 </div>
             </div>
         </div>

@@ -23,13 +23,16 @@
     <div class="col-6">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active fs-5" id="tab-2018" onclick="onTabChange(2018)">2018</a>
+                <a class="nav-link active fs-5" id="tab-2018" onclick="onTabChange(2018)">2019</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" id="tab-2019" onclick="onTabChange(2019)">2019</a>
+                <a class="nav-link fs-5" id="tab-2019" onclick="onTabChange(2019)">2020</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" id="tab-2020" onclick="onTabChange(2020)">2020</a>
+                <a class="nav-link fs-5" id="tab-2020" onclick="onTabChange(2020)">2021</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" id="tab-2021" onclick="onTabChange(2021)">2022</a>
             </li>
         </ul>
         <div id="placement-data" class="container mt-2">
@@ -109,16 +112,25 @@ const onTabChange = (tabNo) => {
         $("#tab-2018").addClass("active");
         $("#tab-2019").removeClass("active");
         $("#tab-2020").removeClass("active");
+        $("#tab-2021").removeClass("active");
     } else if (tabNo === 2019) {
         $("#pdf-embed").attr("src", "./PDF/placement/p2019.pdf");
         $("#tab-2018").removeClass("active");
         $("#tab-2019").addClass("active");
         $("#tab-2020").removeClass("active");
+        $("#tab-2021").removeClass("active");
     } else if (tabNo === 2020) {
         $("#pdf-embed").attr("src", "./PDF/placement/p2020.pdf");
         $("#tab-2018").removeClass("active");
         $("#tab-2019").removeClass("active");
         $("#tab-2020").addClass("active");
+        $("#tab-2021").removeClass("active");
+    }else{
+        $("#pdf-embed").attr("src", "./PDF/placement/p2021.pdf");
+        $("#tab-2018").removeClass("active");
+        $("#tab-2019").removeClass("active");
+        $("#tab-2020").removeClass("active");
+        $("#tab-2021").addClass("active");
     }
 }
 </script>

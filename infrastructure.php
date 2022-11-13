@@ -306,7 +306,7 @@
 </div>
 <div class="body-container">
     <h1>IT Seminar Hall</h1>
-    <img src="./Images/placement.jpeg" alt="">
+    <img src="./Images/seminar.jpg" alt="">
     <p>The department has a seminar hall which is utilised by the students and staff.</p>
 </div>
 <div class="body-container">
