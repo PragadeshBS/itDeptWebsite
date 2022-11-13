@@ -414,12 +414,17 @@ const changeTab = (tabNo) => {
 <div id="former-hod-content" class="container" style="display: none">
     <h3 class=" mt-3">Former HOD</h3>
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
-        <div class='teaching-staff-item text-center col-3 p-3 m-4'>
+        <a href="https://annauniv.irins.org/profile/269368" class='teaching-staff-item text-center col-3 p-3 m-4' style="color:black">
             <img src='./Images/formerStaff/hod.jpg' alt='' class='fac-img img-fluid' />
             <div>Dr.B.Vinayagasundaram</div>
             <i>Former HOD | Assosciate Professor</i>
             <div>bvsundaram@annauniv.edu</div>
-        </div>
+        </a>
+        <a href="https://annauniv.irins.org/profile/117758" class='teaching-staff-item text-center col-3 p-3 m-4' style="color:black">
+            <img src='./Images/formerStaff/hod1.jpg' alt='' class='fac-img img-fluid' />
+            <div>Dr S Thamarai Selvi</div>
+            <i>Former HOD | Professor</i>
+        </a>
     </div>
 </div>
 <!-- <script src="./Js/faculties.js"></script> -->
