@@ -8,8 +8,7 @@
   $formerStaffData = json_decode($jsonData, true);
   ?>
 <div class="mx-3">
-    <h1 class="pt-3">Faculty</h1>
-    <div class="container">
+    <div class="container my-3 mt-5">
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link active fs-5" onclick="changeTab(0)" aria-current="page" href="#" id="ts-toggle">
@@ -18,12 +17,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link fs-5" href="#" onclick="changeTab(1)" id="nts-toggle">
-                    Non teaching staff
+                    Non teaching Staff
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link fs-5" href="#" onclick="changeTab(2)" id="ff-toggle">
-                    Former faculty
+                    Former Staff
                 </a>
             </li>
             <li class="nav-item">
@@ -413,7 +412,7 @@ const changeTab = (tabNo) => {
 </div>
 
 <div id="former-hod-content" class="container" style="display: none">
-    <h3 class=" mt-3">Former Staff</h3>
+    <h3 class=" mt-3">Former HOD</h3>
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
         <div class='teaching-staff-item text-center col-3 p-3 m-4'>
             <img src='./images/formerStaff/hod.jpg' alt='' class='fac-img img-fluid' />

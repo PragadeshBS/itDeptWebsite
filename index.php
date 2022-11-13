@@ -36,82 +36,43 @@
         </p>
     </div>
 </div>
-<div class="stats container mt-5">
-    <div class="row fs-3">
-        <div class="col-6 text-center pe-0">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-1">
-                    <img src="icons/student.png" width="50px">
-                </div>
-                <div class="col-6">
-                    <div>
-                        Students admitted
-                    </div>
-                    <div class="fs-1 border-bottom">131</div>
-                </div>
-                <div class="col-2"></div>
-            </div>
-            <div class="my-2"></div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-1">
-                    <img src="icons/job.png" width="50px">
-                </div>
-                <div class="col-6">
-                    <div>
-                        Placement percent
-                    </div>
-                    <div class="fs-1">80%</div>
-                </div>
-                <div class="col-2"></div>
-            </div>
+<div class="stats">
+    <div class="container row text-center">
+        <div class="my-4 col-4">
+            <div class="display-4">23</div>
+            <div class="fs-6">Faculty</div>
         </div>
-        <div class="col-6 text-center ps-0">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-1">
-                    <img src="icons/research.png" width="50px">
-                </div>
-                <div class="col-6">
-                    <div>
-                        Research Scholars
-                    </div>
-                    <div class="fs-1 border-bottom">34</div>
-                </div>
-                <div class="col-2"></div>
-            </div>
-            <div class="my-2"></div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-1">
-                    <img src="icons/book.png" width="50px">
-                </div>
-                <div class="col-6">
-                    <div>
-                        Students in higher studies
-                    </div>
-                    <div class="fs-1">3</div>
-                </div>
-                <div class="col-2"></div>
-            </div>
+        <div class="my-4 col-4">
+            <div class="display-4">11</div>
+            <div class="fs-6">Staff</div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6 text-center mx-auto">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-1">
-                    <img src="icons/money.png" width="50px">
-                </div>
-                <div class="col-6 fs-3">
-                    <div>
-                        Highest CTC offered
-                    </div>
-                    <div class="fs-1">40 LPA</div>
-                </div>
-                <div class="col-2"></div>
-            </div>
+        <div class="my-4 col-4">
+            <div class="display-4">467</div>
+            <div class="fs-6">Undergraduate Students</div>
+        </div>
+        <div class="mb-4 col-4">
+            <div class="display-4">34</div>
+            <div class="fs-6">Research Scholars</div>
+        </div>
+        <div class="mb-4 col-4">
+            <div class="display-4">8</div>
+            <div class="fs-6">Laboratories</div>
+        </div>
+        <div class="mb-4 col-4">
+            <div class="display-4">3</div>
+            <div class="fs-6">Students pursuing higher studies</div>
+        </div>
+        <div class="mb-4 col-4">
+            <div class="display-4">8</div>
+            <div class="fs-6">Laboratories</div>
+        </div>
+        <div class="mb-4 col-4">
+            <div class="display-4">40 LPA</div>
+            <div class="fs-6">Highest CTC offered</div>
+        </div>
+        <div class="mb-4 col-4">
+            <div class="display-4">80%</div>
+            <div class="fs-6">Placement Percent</div>
         </div>
     </div>
 </div>
@@ -257,6 +218,12 @@ input[type=checkbox]:checked~label>img {
 a #prev-poster,
 #next-poster {
     cursor: pointer;
+}
+
+.stats {
+    background-image: url("Images/bg/stats.jpg");
+    color: white;
+    background-size: cover;
 }
 </style>
 <script>
