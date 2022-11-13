@@ -47,7 +47,25 @@
         </div>
         <div class='col-3'></div>
         ";
-          for ($i=1; $i < count($data); $i++) {
+        for ($i=1; $i <= 2; $i++) {
+            echo "<div class='teaching-staff-item text-center col-4 p-3 m-4' onclick='displayStaff(".$i.")'>
+              <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
+              <div>".$data[$i]['name']."</div>
+              <i>".$data[$i]['designation']."</i>
+              <div><a href='tel:'>".$data[$i]['mobile']."</a></div>
+              <div>".$data[$i]['email']."</div>
+            </div>";
+          }
+          for ($i=3; $i <= 4; $i++) {
+            echo "<div class='teaching-staff-item text-center col-4 p-3 m-4' onclick='displayStaff(".$i.")'>
+              <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
+              <div>".$data[$i]['name']."</div>
+              <i>".$data[$i]['designation']."</i>
+              <div><a href='tel:'>".$data[$i]['mobile']."</a></div>
+              <div>".$data[$i]['email']."</div>
+            </div>";
+          }
+          for ($i=5; $i < count($data); $i++) {
             echo "<div class='teaching-staff-item text-center col-3 p-3 m-4' onclick='displayStaff(".$i.")'>
               <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$data[$i]['name']."</div>
@@ -71,7 +89,7 @@
         <div class='staff-modal'>
           <div class='left'>
             <div><img src='images/teachingStaff/".$data[$i]['img']."' alt='Staff image' class='fac-detail-img img-fluid' /></div>
-            <div><a href='https://google.com'><button class='btn btn-primary mx-auto d-block'>Profile</button></a></div>
+            <div><a target='_blank' href='".$data[$i]['externalLink']."'><button class='btn btn-primary mx-auto d-block'>Profile</button></a></div>
           </div>
           <div class='right'>
             <table class='staffTable'>
@@ -283,12 +301,14 @@ const changeTab = (tabNo) => {
         <div class="row">
             <div class="col-4 p-3 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr. V.Kannan</h3>
+                <h3>Mr. V. Kannan</h3>
                 <p>Professional Assistant - I</p>
                 <p>
+                    <span class="fs-6">Responsibilities<br></span>
                     Conference Website Maintanence, System Maintanence, Server Maintanence
                 </p>
                 <ul>
+                    <span class="fs-6">Qualification<br></span>
                     <li>
                         Diploma in IT - Valivalam Desikar Polytechnic College Nagapattinam
                     </li>
@@ -297,10 +317,14 @@ const changeTab = (tabNo) => {
             </div>
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr. V.Saravanan</h3>
+                <h3>Mr. V. Saravanan</h3>
                 <p>Professional Assistant - II</p>
-                <p>Server Maintanence, System Troubleshooting, Lab Maintanence</p>
+                <p>
+                    <span class="fs-6">Responsibilities<br></span>
+                    Server Maintanence, System Troubleshooting, Lab Maintanence
+                </p>
                 <ul>
+                    <span class="fs-6">Qualification<br></span>
                     <li>
                         Diploma in Electrical and Electronics Engineering - Sri Ram Polytechnic,
                         Vepampattu
@@ -310,11 +334,15 @@ const changeTab = (tabNo) => {
                 </ul>
             </div>
             <div class="col-4 faculties-item_2">
-                <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Ms. G.Senbagam</h3>
+                <img src="./Images/faculty/noImage.jpeg" />
+                <h3>Ms. G. Senbagam</h3>
                 <p>Professional Assistant - II</p>
-                <p>System Troubleshooting, Lab Maintanence</p>
+                <p>
+                    <span class="fs-6">Responsibilities<br></span>
+                    System Troubleshooting, Lab Maintanence
+                </p>
                 <ul>
+                    <span class="fs-6">Qualification<br></span>
                     <li>B.Sc Computer Science - Indo American College</li>
                     <li>B.Ed Computer Science - Saratha College of Education</li>
                     <li>
@@ -327,37 +355,41 @@ const changeTab = (tabNo) => {
         <div class="row my-3 justify-content-center">
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Ms. S.Kalpana</h3>
+                <h3>Ms. S. Kalpana</h3>
                 <p>Professional Assistant - I</p>
                 <p>
+                    <span class="fs-6">Responsibilities<br></span>
                     Maintain hardware and software issues for all systems in Labs.
                     Troubleshoot the hardware and peripherals when needed.
                 </p>
                 <ul>
+                    <span class="fs-6">Qualification<br></span>
                     <li>B.E (C.S.E) - Rajalakshmi Engineering College, Thandalam.</li>
                 </ul>
             </div>
             <div class="col-4 faculties-item_2">
                 <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr. J.Babu</h3>
+                <h3>Mr. J. Babu</h3>
                 <p>Professional Assistant - I</p>
                 <p>
+                    <span class="fs-6">Responsibilities<br></span>
                     System Maintenance, Software Installation and upgradation, Server
                     Maintenance
                 </p>
                 <ul>
+                    <span class="fs-6">Qualification<br></span>
                     <li>BE(CSE) Pallavan college of Engineering, Kanchipuram</li>
                 </ul>
             </div>
         </div>
         <h1>Non Technical Staff</h1>
         <ul>
-            <li>Mrs. M.Eswari - M.S.G.C</li>
-            <li>Mr. A.Augustin - Professional Assistant - II</li>
-            <li>Mr. R.Sandiappan - Peon</li>
-            <li>Mrs. Umarani.A - Assistant</li>
-            <li>Ms. Kalaiselvi.K - Clerical Assistant</li>
-            <li>Mr. Nallathambi.K - Peon</li>
+            <li>Mrs. M. Eswari - M.S.G.C</li>
+            <li>Mr. A. Augustin - Professional Assistant - II</li>
+            <li>Mr. R. Sandiappan - Peon</li>
+            <li>Mrs. Umarani .A - Assistant</li>
+            <li>Ms. Kalaiselvi .K - Clerical Assistant</li>
+            <li>Mr. Nallathambi .K - Peon</li>
         </ul>
     </div>
 </div>

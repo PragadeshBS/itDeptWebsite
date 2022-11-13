@@ -3,7 +3,8 @@
 <div class="body-start intro-v2 curriculum-bg">
     <div class="intro-v2-content">
         <h1>Placements</h1>
-        <p class="container">The Center for University - Industry Collaboration plays an integral role in guiding the
+        <p class="container">The Center for University - Industry Collaboration (CUIC) plays an integral role in guiding
+            the
             students achieve
             their career goals. The centre facilitates the training activities with the help of industry experts, alumni
             and corporate trainers to prepare the students industry-ready.</p>

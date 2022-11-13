@@ -46,6 +46,13 @@
                 </div>";
             }
         ?>
+        <?php 
+            for($i=1;$i<=15;$i++){
+                echo "<div class='col-4 my-3'>
+                    <img src='./Images/gallery/".$i.".png' class='img-fluid'>
+                </div>";
+            }
+        ?>
     </div>
 </div>
 <?php require("./templates/footer.php"); ?>

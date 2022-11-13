@@ -4,17 +4,18 @@
         <h1><img src="./Images/ITA.png" alt="">IT Association</h1>
 
         <p>Constituted in the year 2001, Information Technology Association (ITA) comprises the students of our
-            Department-Information Technologists. Dr. B.VinayagaSundaram, Professor & Head, Department of IT, is the
-            current president of this association. DrDhananjay Kumar acts as the advisor for the Association. Under the
-            able guidance of these two mentors and with the help from the teaching fraternity, the Association helps
-            students to sharpen their talents, while also giving them the support they need to publish papers in
-            prestigious academic journals and travel nationally and internationally to present at conferences</p>
+            Department-Information Technologists. Dr G. Rajesh acts as the advisor for the Association. Under the able
+            guidance of the mentors and with the help from the teaching fraternity, the Association helps students to
+            sharpen their talents, while also giving them the support they need to publish papers in prestigious
+            academic journals and travel nationally and internationally to present at conferences</p>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Chairperson - Yaswant R</li>
+            <li>General secretary - Sanjay Kannan M</li>
+            <li>Technical head - Mohamed Fazith J</li>
+            <li>Lady representative - Sudharsana Suresh</li>
+            <li>Media head - Rozen Berg D</li>
+            <li>Treasurer - Edwin K</li>
+            <li>Joint secretary - Praveein S</li>
         </ul>
     </div>
 </div>

@@ -1,9 +1,9 @@
 <?php require("./templates/header.php"); ?>
-<div class="body-start mt-5 pt-3 mx-3">
+<div class="body-start mt-5 py-3 rounded px-2 mx-3 bg-blue">
     <div>
         <h1 class="text-center">Vision and Mission</h1>
     </div>
-    <div>
+    <div class="vision p-3 rounded">
         <h3>Vision of the Department</h3>
         <div class="container">
             <p>The Department of Information Technology pledges to educate students with conceptual
@@ -12,7 +12,7 @@
                 environment in collaboration with industry.</p>
         </div>
     </div>
-    <div class="my-3">
+    <div class="my-3 vision p-3 rounded">
         <h3>Mission of the Department</h3>
         <div class="container">
             <ol type="1">
@@ -38,4 +38,13 @@
         </div>
     </div>
 </div>
+<style>
+.bg-blue {
+    background-color: #D6E9FF;
+}
+
+.vision {
+    background-color: #DED6FF;
+}
+</style>
 <?php require("./templates/footer.php"); ?>

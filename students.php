@@ -3,11 +3,9 @@
     <div class="intro-v2-content">
         <h1>Students</h1>
         <p class="container">
-            The computational needs of the researchers and engineers are met
-            through well equipped laboratories. The resources in the department
-            are continually updated with the changing industrial trends. The
-            Advanced computing facility has been provided with the latest
-            dual-core processors from Intel.
+            The 450+ students of the department are given equal emphasis on theoretical and experimental Information
+            Technology with Anna
+            University's curriculum.
         </p>
     </div>
 </div>
