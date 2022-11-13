@@ -312,18 +312,18 @@ HOD Desk
 About Us
 */
 .about-us-bg {
-  background-image: url("../Images/dept.jpg");
+  background-image: url("../Images/gallery/1.png");
+  background-size: cover;
 }
 /*
 Infrastructure
 */
 .intro-v2 {
-  width: 100%;
-  object-fit: contain;
-  height: max-content;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: max-content;
+  /* width: 100%; */
+  /* object-fit: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* height: max-content; */
 }
 .infra-bg {
   background-image: url("../Images/Infrastructure.jpeg");
@@ -331,11 +331,13 @@ Infrastructure
 .intro-v2-content {
   /* background-color: #1e1b19d2; */
   background-color: var(--alt);
-  padding: 2em;
+  /* padding: 2em; */
   color: #f3f2ef;
-  width: 100%;
-  clip-path: circle(70.9% at 0 55%);
-  padding-right: 50%;
+  width: 50%;
+  /* clip-path: circle(90.9% at 0 55%); */
+  clip-path: circle(80% at 0 50%);
+  padding-right: 15rem;
+  padding-left: 1rem;
 }
 .infra-labs {
   background-color: #1e1b19;
