@@ -1,6 +1,6 @@
 <?php require("templates/header.php"); ?>
 <!-- Content from here -->
-<div class="intro-v2 about-us-bg ">
+<div class="about-us-bg">
     <div class="home-content">
         <div class="announcements marquee">
             <div class="mt-3">
@@ -12,7 +12,7 @@
                 </p>
             </div>
         </div>
-        <p class="intro-v2-content">
+        <p class="intro-v2-home-content">
             Keeping with the tradition of Anna University in offering new areas of specialization in engineering, the
             Department of Information Technology was instituted in the year 2001 with the objective of imparting
             knowledge in cutting-edge technologies in Information Technology and Computer Sciences.

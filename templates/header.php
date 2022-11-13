@@ -34,7 +34,7 @@
             </a>
             <a href="./vision-mission.php">
                 <i class="bi bi-person"></i>
-                Vision and Mission
+                Vision &amp; Mission
             </a>
             <a href="./hodDesk.php">
                 <i class="bi bi-person-rolodex"></i>
@@ -62,6 +62,10 @@
             <a href="./placements.php">
                 <i class="bi bi-person-check"></i>
                 Placements
+            </a>
+            <a href="./e-service.php">
+                <i class="bi bi-file-earmark-richtext"></i>
+                Activities
             </a>
             <a href="./gallery.php">
                 <i class="bi bi-card-image"></i>
