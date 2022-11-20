@@ -6,7 +6,7 @@
     "mobile": "",
     "email": "rhymend@annauniv.edu",
     "areaOfExpertise": "Computer Networks, Network Security, Pervasive Computing, Wireless Networks",
-    "img": "f1.jpg"
+    "img": "f1.webp"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "mobile": "",
     "email": "ashok.tiruchendur@gmail.com",
     "areaOfExpertise": "Adhoc Networks, Software Engineering, Computer Networks",
-    "img": "f2.jpg"
+    "img": "f2.webp"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "mobile": "",
     "email": "ksmdhev@gmail.com",
     "areaOfExpertise": "Computer Networks | Web Technology | Grid Computing",
-    "img": "f3.jpg"
+    "img": "f3.webp"
   },
   {
     "id": 4,
@@ -33,6 +33,6 @@
     "mobile": "",
     "email": "mmonishadevi.cse@gmail.com",
     "areaOfExpertise": "Database Management System| Mobile Computing",
-    "img": "f4.jpg"
+    "img": "f4.webp"
   }
 ]

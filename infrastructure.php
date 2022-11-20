@@ -1,5 +1,5 @@
 <?php require("templates/header.php"); ?>
-<div class="body-start intro-v2 infra-bg">
+<div class="intro-v2 infra-bg">
 
     <div class="intro-v2-content">
         <h1>Infrastructure</h1>
@@ -306,7 +306,7 @@
 </div>
 <div class="body-container">
     <h1>IT Seminar Hall</h1>
-    <img src="./Images/seminar.jpg" alt="">
+    <img src="./Images/seminar.webp" alt="">
     <p>The department has a seminar hall which is utilised by the students and staff.</p>
 </div>
 <div class="body-container">
