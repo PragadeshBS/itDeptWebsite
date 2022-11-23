@@ -6,25 +6,28 @@
     "mobile": "",
     "email": "rhymend@annauniv.edu",
     "areaOfExpertise": "Computer Networks, Network Security, Pervasive Computing, Wireless Networks",
-    "img": "f1.webp"
+    "img": "f1.webp",
+    "link":"https://annauniv.irins.org/profile/118033"
   },
   {
     "id": 2,
-    "name": "Dr. Ashoka Rajan",
-    "designation": "Teaching Fellow",
+    "name": "Dr.B.Vinayagasundaram",
+    "designation": "Former HOD | Assosciate Professor",
     "mobile": "",
-    "email": "ashok.tiruchendur@gmail.com",
+    "email": "bvsundaram@annauniv.edu",
     "areaOfExpertise": "Adhoc Networks, Software Engineering, Computer Networks",
-    "img": "f2.webp"
+    "img": "hod.webp",
+    "link":"https://annauniv.irins.org/profile/269368"
   },
   {
     "id": 3,
-    "name": "Dr. M.Gokuldhev",
-    "designation": "Teaching Fellow",
+    "name": "Dr S Thamarai Selvi",
+    "designation": "Former HOD | Professor",
     "mobile": "",
-    "email": "ksmdhev@gmail.com",
-    "areaOfExpertise": "Computer Networks | Web Technology | Grid Computing",
-    "img": "f3.webp"
+    "email": "stselvi@annauniv.edu",
+    "areaOfExpertise": "Grid Computing, Cloud Computing and Neural Networks.",
+    "img": "hod1.webp",
+    "link":"https://annauniv.irins.org/profile/117758"
   },
   {
     "id": 4,
@@ -33,6 +36,7 @@
     "mobile": "",
     "email": "mmonishadevi.cse@gmail.com",
     "areaOfExpertise": "Database Management System| Mobile Computing",
-    "img": "f4.webp"
+    "img": "f4.webp",
+    "link":""
   }
 ]

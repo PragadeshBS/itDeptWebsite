@@ -20,11 +20,6 @@
                     Former Staff
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link fs-5"style="font-size:1.5em;" href="#" onclick="changeTab(3)" id="fhod-toggle">
-                    Former HOD
-                </a>
-            </li>
         </ul>
     </div>
     <div id="teaching-staff-content" class="container">
@@ -287,7 +282,7 @@ const changeTab = (tabNo) => {
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
         <?php        
           for ($i=0; $i < count($formerStaffData); $i++) {
-            echo "<div class='teaching-staff-item text-center col-3 p-3 m-4'>
+            echo "<div onclick='window.location.href = `".$formerStaffData[$i]['link']."`;' class='teaching-staff-item text-center col-3 p-3 m-4'>
               <img src="."./Images/formerStaff/".$formerStaffData[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$formerStaffData[$i]['name']."</div>
               <i>".$formerStaffData[$i]['designation']."</i>
@@ -302,13 +297,13 @@ const changeTab = (tabNo) => {
 <div id="former-hod-content" class="container" style="display: none">
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
         <a href="https://annauniv.irins.org/profile/269368" class='teaching-staff-item text-center col-3 p-3 m-4' style="color:black">
-            <img src='./Images/formerStaff/hod.jpg' alt='' class='fac-img img-fluid' />
+            <img src='./Images/formerStaff/hod.webp' alt='' class='fac-img img-fluid' />
             <div>Dr.B.Vinayagasundaram</div>
             <i>Former HOD | Assosciate Professor</i>
             <div>bvsundaram@annauniv.edu</div>
         </a>
         <a href="https://annauniv.irins.org/profile/117758" class='teaching-staff-item text-center col-3 p-3 m-4' style="color:black">
-            <img src='./Images/formerStaff/hod1.jpg' alt='' class='fac-img img-fluid' />
+            <img src='./Images/formerStaff/hod1.webp' alt='' class='fac-img img-fluid' />
             <div>Dr S Thamarai Selvi</div>
             <i>Former HOD | Professor</i>
         </a>

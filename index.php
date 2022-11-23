@@ -1,4 +1,4 @@
-<?php require("templates/header.php"); ?>
+<?php require("templates/header-1.php"); ?>
 
 <div class="announcements marquee">
     <div class="mt-3">
