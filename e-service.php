@@ -1,5 +1,4 @@
 <?php require("./templates/header.php"); ?>
-<div class="body-start"></div>
 <div class="text-center mt-3 pt-3">
     <h1>E-Service</h1>
 </div>

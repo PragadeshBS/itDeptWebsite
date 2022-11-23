@@ -1,6 +1,5 @@
 <?php require("templates/header.php"); ?>
-
-<div class="body-start intro-v2 curriculum-bg">
+<div class="intro-v2 curriculum-bg">
     <div class="intro-v2-content">
         <h1>Placements</h1>
         <p class="container">The Center for University - Industry Collaboration (CUIC) plays an integral role in guiding
@@ -10,9 +9,12 @@
             and corporate trainers to prepare the students industry-ready.</p>
     </div>
 </div>
-
-<div class="row my-3">
-    <div class="col-6">
+<div class="my-5 container">
+    <h1 class="mx-0">Companies visited</h1>
+    <center><img src="./Images/placement/companies.png" class="img-fluid"></center>
+</div>
+<div class="placement-head">
+    <div class="placement-chart">
         <h2 style="color: black;padding-inline: 1em;text-align: center;">
             Previous Year's Placements</h2>
         <canvas id="myChart2" class="placement-bar"></canvas>
@@ -20,22 +22,31 @@
         <p style="text-align:center; color: #ab3c35; font-size: 1.2rem">Academic Year (Number of Students Registered)
         </p>
     </div>
-    <div class="col-6">
+    <div class="placement-pdf">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active fs-5" id="tab-2018" onclick="onTabChange(2018)">2018</a>
+                <a class="nav-link active fs-5" id="tab-2018" onclick="onTabChange(2018)">2019</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" id="tab-2019" onclick="onTabChange(2019)">2019</a>
+                <a class="nav-link fs-5" id="tab-2019" onclick="onTabChange(2019)">2020</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" id="tab-2020" onclick="onTabChange(2020)">2020</a>
+                <a class="nav-link fs-5" id="tab-2020" onclick="onTabChange(2020)">2021</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5" id="tab-2021" onclick="onTabChange(2021)">2022</a>
             </li>
         </ul>
         <div id="placement-data" class="container mt-2">
             <embed id="pdf-embed" class="w-100 d-block mx-auto" src="./PDF/placement/p2018.pdf" height="500px" />
         </div>
     </div>
+    <img style="max-width:100%;" src="./Images/placement/p1.webp" alt="">
+    <img style="max-width:100%;" src="./Images/placement/p2.webp" alt="">
+    <img style="max-width:100%;" src="./Images/placement/p3.webp" alt="">
+    <img style="max-width:100%;" src="./Images/placement/p4.webp" alt="">
+    <img style="max-width:100%;" src="./Images/placement/p5.webp" alt="">
+    <img style="max-width:100%;" src="./Images/placement/p6.webp" alt="">
 </div>
 <div class="mt-5">
     <h2 style="color: black;padding-inline: 1em;text-align: center;">
@@ -109,16 +120,25 @@ const onTabChange = (tabNo) => {
         $("#tab-2018").addClass("active");
         $("#tab-2019").removeClass("active");
         $("#tab-2020").removeClass("active");
+        $("#tab-2021").removeClass("active");
     } else if (tabNo === 2019) {
         $("#pdf-embed").attr("src", "./PDF/placement/p2019.pdf");
         $("#tab-2018").removeClass("active");
         $("#tab-2019").addClass("active");
         $("#tab-2020").removeClass("active");
+        $("#tab-2021").removeClass("active");
     } else if (tabNo === 2020) {
         $("#pdf-embed").attr("src", "./PDF/placement/p2020.pdf");
         $("#tab-2018").removeClass("active");
         $("#tab-2019").removeClass("active");
         $("#tab-2020").addClass("active");
+        $("#tab-2021").removeClass("active");
+    }else{
+        $("#pdf-embed").attr("src", "./PDF/placement/p2021.pdf");
+        $("#tab-2018").removeClass("active");
+        $("#tab-2019").removeClass("active");
+        $("#tab-2020").removeClass("active");
+        $("#tab-2021").addClass("active");
     }
 }
 </script>

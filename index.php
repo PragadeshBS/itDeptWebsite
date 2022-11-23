@@ -1,103 +1,375 @@
 <?php require("templates/header.php"); ?>
-<!-- Content from here -->
-<div class="about-us-bg">
-    <div class="home-content">
-        <div class="announcements marquee">
-            <div class="mt-3">
-                <p>
-                    <a href="./academics.php">
-                        New course: Artificial Intelligence & Data Science
-                        <i class="bi bi-box-arrow-up-right external-link-icon"></i>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <p class="intro-v2-home-content">
-            Keeping with the tradition of Anna University in offering new areas of specialization in engineering, the
-            Department of Information Technology was instituted in the year 2001 with the objective of imparting
-            knowledge in cutting-edge technologies in Information Technology and Computer Sciences.
-            <br><br>
-            The department is currently headed by Dr. Dhananjay Kumar, an educator and researcher himself. In the
-            footsteps of the former Heads, the incumbent Head is further taking the department to reach newer heights.
-            The department has a team of dynamic, young and dedicated staff, with specialization in wide array of areas.
-            It offers full time and part time courses for both UG and PG. The department receives funds from DST under
-            FIST programme.
-            <br><br>A new course, Artificial Intelligence &amp; Data Science, has been introduced that keeps the
-            students
-            in line with the current trends of technology.
-            <br><br>Department of Information Technology, MIT, thrives to accomplish its vision of developing dexterous
-            and proficient students. Its progress is growing exponentially in contributing efficient and technically
-            sound students to the corporate world.
-            <br><br>
-            “Imagination is more important than knowledge “ - Innovative ideas from student side are encouraged and
-            support for implementation of the same offered by faculty members.
+
+<div class="announcements marquee">
+    <div class="mt-3">
+        <p>
+            <a href="./academics.php">
+                New course: Artificial Intelligence & Data Science
+                <i class="bi bi-box-arrow-up-right external-link-icon"></i>
+            </a>
+            <i class="fa-regular fa-grip-lines-vertical" style="margin-inline:1em;"></i>
+            <a href="./Videos/staffVideo.mp4">
+                Highlights : Open Day 
+                <i class="bi bi-box-arrow-up-right external-link-icon"></i>
+            </a>
         </p>
     </div>
 </div>
+<div class="home-v2">
+    <div id="carouselExampleIndicators" class="carousel slide" style="position:relative;" data-ride="carousel">
+    <!-- <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+    </ol> -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./Images/Home Slider/slide1.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/Home Slider/slide2.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/Home Slider/slide3.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/Home Slider/slide4.webp" alt="...">            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/2.webp" alt="...">           
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/3.webp" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/10.webp" alt="...">            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/8.webp" alt="...">
+           
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/6.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/13.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/11.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/4.webp" alt="...">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/14.webp" alt="...">
+           
+        </div>
+        <div class="carousel-item">
+            <img src="./Images/gallery/12.webp" alt="...">
+            
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    <p class="intro-v2-content">
+        Keeping with the tradition of Anna University in offering new areas of specialization in engineering, the
+        Department of Information Technology was instituted in the year 2001 with the objective of imparting
+        knowledge in cutting-edge technologies in Information Technology and Computer Sciences.
+        <br><br>
+        The department is currently headed by Dr. Dhananjay Kumar, an educator and researcher himself. In the
+        footsteps of the former Heads, the incumbent Head is further taking the department to reach newer heights.
+        The department has a team of dynamic, young and dedicated staff, with specialization in wide array of areas.
+        It offers full time and part time courses for both UG and PG. The department receives funds from DST under
+        FIST programme.
+        <br><br>A new course, Artificial Intelligence &amp; Data Science, has been introduced at 2022 that keeps the
+        students
+        in line with the current trends of technology.
+        <br><br>Department of Information Technology, MIT, thrives to accomplish its vision of developing dexterous
+        and proficient students. Its progress is growing exponentially in contributing efficient and technically
+        sound students to the corporate world.
+        <br><br>
+        “Imagination is more important than knowledge “ - Innovative ideas from student side are encouraged and
+        support for implementation of the same offered by faculty members.
+    </p>
+</div>
+
 <div class="stats">
     <div class="container row text-center">
-        <div class="my-4 col-4">
+        <div class="my-4 col-3">
             <div class="display-4">23</div>
             <div class="fs-6">Faculty</div>
         </div>
-        <div class="my-4 col-4">
+        <div class="my-4 col-3">
             <div class="display-4">11</div>
             <div class="fs-6">Staff</div>
         </div>
-        <div class="my-4 col-4">
+        <div class="my-4 col-3">
             <div class="display-4">467</div>
-            <div class="fs-6">Undergraduate Students</div>
+            <div class="fs-6">UG & PG Students</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">34</div>
             <div class="fs-6">Research Scholars</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">8</div>
             <div class="fs-6">Laboratories</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">3</div>
             <div class="fs-6">Students pursuing higher studies</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">8</div>
             <div class="fs-6">Laboratories</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">40 LPA</div>
             <div class="fs-6">Highest CTC offered</div>
         </div>
-        <div class="mb-4 col-4">
+        <div class="mb-4 col-3">
             <div class="display-4">80%</div>
             <div class="fs-6">Placement Percent</div>
+        </div>
+        <div class="mb-4 col-3">
+            <div class="display-4">29</div>
+            <div class="fs-6">Papers Published</div>
+        </div>
+        <div class="mb-4 col-3">
+            <div class="display-4">8</div>
+            <div class="fs-6">Awards Received</div>
+        </div>
+        <div class="mb-4 col-3">
+            <div class="display-4">78</div>
+            <div class="fs-6">R&D Projects</div>
         </div>
     </div>
 </div>
 <div class="mt-5 container">
     <h1 class="mx-0">Companies visited</h1>
-    <img src="./Images/placement/companies.png" class="img-fluid">
+    <center><img src="./Images/placement/companies.png" class="img-fluid"></center>
 </div>
-<div class="my-5 posters">
-    <h1 class="container mb-3">Student projects</h1>
-    <div class="row posters-content">
-        <div class="col-1"><i id="prev-poster" class="bi bi-chevron-left display-3 ms-5"></i></div>
-        <div class="col-10 row">
-            <div class="col-6">
-                <input type="checkbox" id="zoomCheck1">
-                <label for="zoomCheck1">
-                    <img id="poster-img-1" src="./Images/projects/1.png" class="d-block mx-auto img-fluid">
-                </label>
+<div class="mt-5">
+    <h2 class="ml-2">Research Trust Areas</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" style="position:relative;" data-ride="carousel">
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/Home Slider/slide1.webp" alt="...">
+                <div class="slide-text">
+                    <h3>Artificial Intelligence & Machine Learning</h3>
+                    <p>
+                    
+                    </p>
+                </div>
+                
             </div>
-            <div class="col-6">
-                <input type="checkbox" id="zoomCheck2">
-                <label for="zoomCheck2">
-                    <img id="poster-img-2" src="./Images/projects/2.png" class="d-block mx-auto img-fluid">
-                </label>
+            <div class="carousel-item">
+                <img src="./Images/Home Slider/slide2.webp" alt="...">
+                <p>
+                    <h3>Image and Video Analytics</h3>
+                </p>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Home Slider/slide3.webp" alt="...">
+                <p>
+                    <h3>Data Analytics</h3>
+                </p>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Home Slider/slide4.webp" alt="...">
+                <p>
+                    <h3>Networks and Information Security</h3>
+                </p>            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/2.webp" alt="...">   
+                <p>
+                    <h3>Distributed and Cloud Computing</h3>
+                </p>        
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/3.webp" alt="...">
+                <p>
+                    <h3>Mobile Computing</h3>
+                </p>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/10.webp" alt="...">
+                <p>
+                    <h3>Augmented Reality & Virtual Reality</h3>
+                </p>            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/8.webp" alt="...">
+            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/6.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/13.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/11.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/4.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/14.webp" alt="...">
+            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/12.webp" alt="...">
+                
             </div>
         </div>
-        <div class="col-1"><i id="next-poster" class="bi bi-chevron-right display-3 me-5"></i></div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+</div>
+<div class="my-5 posters">
+    <section class="pt-5 pb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <h1 class="container mb-3">Student projects</h1>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6 text-right">
+                            <a
+                                class="btn btn-primary mb-3 mr-1 arrow-btn"
+                                href="#carouselExampleIndicators2"
+                                role="button"
+                                data-slide="prev"
+                            >
+                                <i class="bi bi-arrow-left"></i>
+                            </a>
+                            <a
+                                class="btn btn-primary mb-3 arrow-btn"
+                                href="#carouselExampleIndicators2"
+                                role="button"
+                                data-slide="next"
+                            >
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/1.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/2.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/3.webp">
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/4.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/5.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/6.webp">
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/7.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/8.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/9.webp">
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/10.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/11.webp">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 ftco-animate">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./Images/projects/12.webp">
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <div class="my-3">
     <div class="container row">
@@ -152,6 +424,9 @@ label>img {
     transition: transform 0.25s ease;
     cursor: zoom-in;
 }
+
+
+
 
 input[type=checkbox]:checked~label>img {
     position: fixed;

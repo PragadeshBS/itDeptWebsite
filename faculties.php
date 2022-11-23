@@ -1,5 +1,5 @@
 <?php require("templates/header.php"); ?>
-<div class="body-start"></div>
+
 <?php 
   $jsonData = file_get_contents("./JSON/faculty/teaching.json");
   $data = json_decode($jsonData, true);
@@ -11,34 +11,28 @@
     <div class="container my-3 mt-5">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active fs-5" onclick="changeTab(0)" aria-current="page" href="#" id="ts-toggle">
+                <a class="nav-link active fs-5"style="font-size:1.5em;" onclick="changeTab(0)" aria-current="page" href="#" id="ts-toggle">
                     Teaching Staff
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" href="#" onclick="changeTab(1)" id="nts-toggle">
-                    Non teaching Staff
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fs-5" href="#" onclick="changeTab(2)" id="ff-toggle">
+                <a class="nav-link fs-5"style="font-size:1.5em;" href="#" onclick="changeTab(2)" id="ff-toggle">
                     Former Staff
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-5" href="#" onclick="changeTab(3)" id="fhod-toggle">
+                <a class="nav-link fs-5"style="font-size:1.5em;" href="#" onclick="changeTab(3)" id="fhod-toggle">
                     Former HOD
                 </a>
             </li>
         </ul>
     </div>
     <div id="teaching-staff-content" class="container">
-        <h3 class=" mt-3">Teaching Staff</h3>
         <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
             <div class="col-3"></div>
             <?php
         echo "<div class='teaching-staff-item text-center col-4 p-3 m-1' onclick='displayStaff(0)'>
-          <img src="."images/teachingStaff/".$data[0]['img']." alt='' class='fac-img img-fluid' />
+          <img src="."./Images/teachingStaff/".$data[0]['img']." alt='' class='fac-img img-fluid' />
           <div>".$data[0]['name']."</div>
           <i>".$data[0]['designation']."</i>
           <div><a href='tel:'>".$data[0]['mobile']."</a></div>
@@ -48,7 +42,7 @@
         ";
         for ($i=1; $i <= 2; $i++) {
             echo "<div class='teaching-staff-item text-center col-4 p-3 m-4' onclick='displayStaff(".$i.")'>
-              <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
+              <img src="."./Images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$data[$i]['name']."</div>
               <i>".$data[$i]['designation']."</i>
               <div><a href='tel:'>".$data[$i]['mobile']."</a></div>
@@ -57,7 +51,7 @@
           }
           for ($i=3; $i <= 4; $i++) {
             echo "<div class='teaching-staff-item text-center col-4 p-3 m-4' onclick='displayStaff(".$i.")'>
-              <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
+              <img src="."./Images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$data[$i]['name']."</div>
               <i>".$data[$i]['designation']."</i>
               <div><a href='tel:'>".$data[$i]['mobile']."</a></div>
@@ -65,8 +59,8 @@
             </div>";
           }
           for ($i=5; $i < count($data); $i++) {
-            echo "<div class='teaching-staff-item text-center col-3 p-3 m-4' onclick='displayStaff(".$i.")'>
-              <img src="."images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
+            echo "<div class='teaching-staff-item teaching-staff-item1 text-center col-3 p-3 m-4' onclick='displayStaff(".$i.")'>
+              <img src="."./Images/teachingStaff/".$data[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$data[$i]['name']."</div>
               <i>".$data[$i]['designation']."</i>
               <div><a href='tel:'>".$data[$i]['mobile']."</a></div>
@@ -87,7 +81,7 @@
         <span class='close'>&times;</span>
         <div class='staff-modal'>
           <div class='left'>
-            <div><img src='images/teachingStaff/".$data[$i]['img']."' alt='Staff image' class='fac-detail-img img-fluid' /></div>
+            <img src='./Images/teachingStaff/".$data[$i]['img']."' alt='Staff image' class='fac-detail-img img-fluid' />
             <div><a target='_blank' href='".$data[$i]['externalLink']."'><button class='btn btn-primary mx-auto d-block'>Profile</button></a></div>
           </div>
           <div class='right'>
@@ -110,7 +104,7 @@
                   <td>".$data[$i]['email']."</td>
                 </tr>
                 <tr>
-                  <td>Phone Number</td>
+                  <td>Intercom Number</td>
                   <td>".$data[$i]['mobile']."</td>
                 </tr>
                 <tr>
@@ -171,15 +165,13 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-.staff-modal {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 .left {
     display: flex;
     flex-direction: column;
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -244,7 +236,6 @@ tr:nth-child(even) {
 
 .fac-detail-img {
     max-width: 350px;
-    margin-right: 2rem;
 }
 </style>
 
@@ -281,8 +272,8 @@ const changeTab = (tabNo) => {
         teachingStaff.show();
         tsToggle.addClass("active");
     } else if (tabNo === 1) {
-        nonTeachingStaff.show();
-        ntsToggle.addClass("active");
+        //nonTeachingStaff.show();
+        //ntsToggle.addClass("active");
     } else if (tabNo === 2) {
         formerFaculty.show();
         ffToggle.addClass("active");
@@ -292,115 +283,12 @@ const changeTab = (tabNo) => {
     }
 }
 </script>
-
-
-<div class="container" id="non-teaching-staff-content" style="display: none;">
-    <h3 class="mt-3">Technical Staff</h3>
-    <div>
-        <div class="row">
-            <div class="col-4 p-3 faculties-item_2">
-                <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr. V. Kannan</h3>
-                <p>Professional Assistant - I</p>
-                <p>
-                    <span class="fs-6">Responsibilities<br></span>
-                    Conference Website Maintanence, System Maintanence, Server Maintanence
-                </p>
-                <ul>
-                    <span class="fs-6">Qualification<br></span>
-                    <li>
-                        Diploma in IT - Valivalam Desikar Polytechnic College Nagapattinam
-                    </li>
-                    <li>B.E (CSE) - Anna University, MIT Campus</li>
-                </ul>
-            </div>
-            <div class="col-4 faculties-item_2">
-                <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr. V. Saravanan</h3>
-                <p>Professional Assistant - II</p>
-                <p>
-                    <span class="fs-6">Responsibilities<br></span>
-                    Server Maintanence, System Troubleshooting, Lab Maintanence
-                </p>
-                <ul>
-                    <span class="fs-6">Qualification<br></span>
-                    <li>
-                        Diploma in Electrical and Electronics Engineering - Sri Ram Polytechnic,
-                        Vepampattu
-                    </li>
-                    <li>Bachelor of Computer Application - Madurai Kamarajar University</li>
-                    <li>Master of Computer Application - Anna University CEG Campus</li>
-                </ul>
-            </div>
-            <div class="col-4 faculties-item_2">
-                <img src="./Images/faculty/noImage.jpeg" />
-                <h3>Ms. G. Senbagam</h3>
-                <p>Professional Assistant - II</p>
-                <p>
-                    <span class="fs-6">Responsibilities<br></span>
-                    System Troubleshooting, Lab Maintanence
-                </p>
-                <ul>
-                    <span class="fs-6">Qualification<br></span>
-                    <li>B.Sc Computer Science - Indo American College</li>
-                    <li>B.Ed Computer Science - Saratha College of Education</li>
-                    <li>
-                        Master of Computer Application - Quaid-E-Millath Government College for
-                        Women
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row my-3 justify-content-center">
-            <div class="col-4 faculties-item_2">
-                <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Ms. S. Kalpana</h3>
-                <p>Professional Assistant - I</p>
-                <p>
-                    <span class="fs-6">Responsibilities<br></span>
-                    Maintain hardware and software issues for all systems in Labs.
-                    Troubleshoot the hardware and peripherals when needed.
-                </p>
-                <ul>
-                    <span class="fs-6">Qualification<br></span>
-                    <li>B.E (C.S.E) - Rajalakshmi Engineering College, Thandalam.</li>
-                </ul>
-            </div>
-            <div class="col-4 faculties-item_2">
-                <img src="./Images/faculty/noImage.jpeg" alt="" />
-                <h3>Mr. J. Babu</h3>
-                <p>Professional Assistant - I</p>
-                <p>
-                    <span class="fs-6">Responsibilities<br></span>
-                    System Maintenance, Software Installation and upgradation, Server
-                    Maintenance
-                </p>
-                <ul>
-                    <span class="fs-6">Qualification<br></span>
-                    <li>BE(CSE) Pallavan college of Engineering, Kanchipuram</li>
-                </ul>
-            </div>
-        </div>
-        <h1>Non Technical Staff</h1>
-        <ul>
-            <li>Mrs. M. Eswari - M.S.G.C</li>
-            <li>Mr. A. Augustin - Professional Assistant - II</li>
-            <li>Mr. R. Sandiappan - Peon</li>
-            <li>Mrs. Umarani .A - Assistant</li>
-            <li>Ms. Kalaiselvi .K - Clerical Assistant</li>
-            <li>Mr. Nallathambi .K - Peon</li>
-        </ul>
-    </div>
-</div>
-
-
 <div id="former-staff-content" class="container" style="display: none">
-    <h3 class=" mt-3">Former Staff</h3>
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
         <?php        
           for ($i=0; $i < count($formerStaffData); $i++) {
             echo "<div class='teaching-staff-item text-center col-3 p-3 m-4'>
-              <img src="."images/formerStaff/".$formerStaffData[$i]['img']." alt='' class='fac-img img-fluid' />
+              <img src="."./Images/formerStaff/".$formerStaffData[$i]['img']." alt='' class='fac-img img-fluid' />
               <div>".$formerStaffData[$i]['name']."</div>
               <i>".$formerStaffData[$i]['designation']."</i>
               <div><a href='tel:'>".$formerStaffData[$i]['mobile']."</a></div>
@@ -412,14 +300,18 @@ const changeTab = (tabNo) => {
 </div>
 
 <div id="former-hod-content" class="container" style="display: none">
-    <h3 class=" mt-3">Former HOD</h3>
     <div class="teaching-staff-wrapper row justify-content-center" id="teaching-display">
-        <div class='teaching-staff-item text-center col-3 p-3 m-4'>
-            <img src='./images/formerStaff/hod.jpg' alt='' class='fac-img img-fluid' />
+        <a href="https://annauniv.irins.org/profile/269368" class='teaching-staff-item text-center col-3 p-3 m-4' style="color:black">
+            <img src='./Images/formerStaff/hod.jpg' alt='' class='fac-img img-fluid' />
             <div>Dr.B.Vinayagasundaram</div>
             <i>Former HOD | Assosciate Professor</i>
             <div>bvsundaram@annauniv.edu</div>
-        </div>
+        </a>
+        <a href="https://annauniv.irins.org/profile/117758" class='teaching-staff-item text-center col-3 p-3 m-4' style="color:black">
+            <img src='./Images/formerStaff/hod1.jpg' alt='' class='fac-img img-fluid' />
+            <div>Dr S Thamarai Selvi</div>
+            <i>Former HOD | Professor</i>
+        </a>
     </div>
 </div>
 <!-- <script src="./Js/faculties.js"></script> -->

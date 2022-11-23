@@ -1,5 +1,5 @@
 <?php require("templates/header.php"); ?>
-<div class="body-start intro-v2 curriculum-bg">
+<div class="intro-v2 curriculum-bg">
     <div class="intro-v2-content">
         <h1>Students</h1>
         <p class="container">
@@ -11,32 +11,11 @@
 </div>
 <div class="pt-3">
     <div class="row align-items-center container">
-        <div class="col-8">
-            <div class="container">
-                <h2 class="mt-5">Inter institute events</h2>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5" onclick="changeTab(0)">
-                            2020
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" onclick="changeTab(1)">
-                            2021
-                        </a>
-                    </li>
-                </ul>
-                <embed id="pdf-embed-events" class="my-3 w-100 d-block mx-auto"
-                    src="./PDF/events/interInstitute2020.pdf" height="500px" />
-            </div>
+        <div class="col">
+            <img style="max-width:100%;" src="./Images/students/students-strength.webp" alt="">
         </div>
-        <div class="col-4">
-            <div class="">
-                <img src="images/students/students-strength.png" alt="">
-            </div>
-            <div class="my-3">
-                <img src="images/students/success-rate.png" alt="">
-            </div>
+        <div class="col">
+            <img style="max-width:100%;" src="./Images/students/success-rate.webp" alt="">
         </div>
     </div>
 </div>

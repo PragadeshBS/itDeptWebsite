@@ -1,18 +1,30 @@
 <?php require("templates/header.php"); ?>
 <div class="container mt-5 pt-5">
     <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active fs-5" aria-current="page" href="#">B.Tech IT</a>
+        <!-- <li class="nav-item">
+            <a class="nav-link active fs-5" onclick="changeTab(0)" id="btechToggle" aria-current="page" href="#">B.Tech
+                IT</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fs-5" href="#">M.Tech IT</a>
+            <a class="nav-link fs-5" onclick="changeTab(1)" id="mtechToggle" href="#">M.Tech IT</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fs-5" href="#">PhD</a>
+            <a class="nav-link fs-5" onclick="changeTab(2)" id="phdToggle" href="#">PhD</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link active tab-link fs-5" onclick="changeTab('btech',this)" id="defaultopen"
+                aria-current="page" href="#">B.Tech
+                IT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link tab-link fs-5" onclick="changeTab('mtech',this)" href="#">M.Tech IT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5 tab-link" onclick="changeTab('phd',this)" href="#">PhD</a>
         </li>
     </ul>
     <div class="my-3">
-        <div class="btech-it">
+        <div class="tabcontent" id="btech">
             <h1>Program Educational Objectives</h1>
             <div class="container row align-items-start justify-content-center">
                 <div class="col-6">
@@ -39,12 +51,60 @@
                     </ul>
                 </div>
                 <div class="col-6">
-                    <img src="images/peo.png" class="img-fluid">
+                    <img src="./Images/peo.png" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
+    <div class="my-3">
+        <div class="tabcontent" id="mtech">
+            <h1>Program Educational Objectives</h1>
+            <div class="container row align-items-start justify-content-center">
+                <div class="col-6">
+                    Master of Technology in Information Technology curriculum is designed to prepare the graduates
+                    having attitude and knowledge to:
+                    <ul>
+                        <li>
+                            PEO1. To prepare students to excel in research or to succeed in Information Technology
+                            Profession by adapting to the rapid advances in new emerging technologies through rigorous
+                            graduate education.
+                        </li>
+                        <li>
+                            PEO2.To provide students with a solid foundation in mathematical, scientific and engineering
+                            fundamentals required to provide IT solutions to real-world problems of Industries,
+                            Businesses and Society.
+                        </li>
+                        <li>
+                            PEO3. To train students with good computer science and engineering knowledge so as to
+                            comprehend, analyze, design and create novel products and novel IT services.
+                        </li>
+                        <li>
+                            PEO4. To inculcate students in solving real-time problems through IT knowledge and with
+                            attention to team work, effective communication skills and critical thinking.
+                        </li>
+                        <li>PEO5. To provide student with an academic environment aware of excellence, leadership,
+                            ethical codes and guidelines, learning and teamwork for a successful professional career.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <img src="./Images/peo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-3">
+        <div class="tabcontent" id="phd">
+            <div class="container row align-items-start justify-content-center">
+                <a href="https://cfr.annauniv.edu/research/academics/index.php">
+                    <h4>Center for Research</h4>
+                </a>
+
+            </div>
+        </div>
+    </div>
 </div>
+<!--
 <div class="container">
     <h1>Curriculum</h1>
     <div class="container">
@@ -75,9 +135,43 @@
             <select class="students-input-element" name="year" id="year"></select>
         </div>
         <iframe class="my-3 display-container" style="height: 900px" id="curriculum-display" id="currDispPDF"></iframe>
+        
     </div>
+-->
 </div>
+<style>
+.tabcontent {
+    display: none;
+}
+
+#btech {
+    display: block;
+}
+</style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./Js/curriculum.js"></script>
+
+<script>
+function changeTab(tabname, elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    
+    navcontent = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        if(navcontent[i].classList.contains("active"))
+            navcontent[i].classList.remove("active");
+    }
+    elmnt.classList.add("active");
+
+    document.getElementById(tabname).style.display = "block";
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
 <?php require("templates/footer.php"); ?>

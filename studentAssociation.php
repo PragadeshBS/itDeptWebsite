@@ -1,5 +1,5 @@
 <?php require("templates/header.php"); ?>
-<div class="body-start intro-v2 ITA-bg">
+<div class="intro-v2 ITA-bg">
     <div class="intro-v2-content">
         <h1><img src="./Images/ITA.png" alt="">IT Association</h1>
 
