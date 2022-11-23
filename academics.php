@@ -104,6 +104,7 @@
         </div>
     </div>
 </div>
+<!--
 <div class="container">
     <h1>Curriculum</h1>
     <div class="container">
@@ -134,7 +135,9 @@
             <select class="students-input-element" name="year" id="year"></select>
         </div>
         <iframe class="my-3 display-container" style="height: 900px" id="curriculum-display" id="currDispPDF"></iframe>
+        
     </div>
+-->
 </div>
 <style>
 .tabcontent {

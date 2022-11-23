@@ -213,20 +213,19 @@ header label span::before {
 	z-index: 1;
 }
 
-.carousel .carousel-item {
-  min-height: 550px;
-}
-
-.carousel-item img {
-  	min-height: 450px;
-		max-height: 550px;
-    object-fit:cover;
-}
 .home-v2 .carousel .carousel-item{
 	background-color: var(--alt);
 }
-.home-v2 .carousel-item img {
-		margin-left: 50%;
+.carousel-item{
+	position: relative;
+	background-color: var(--alt);
+}
+.carousel-item .slide-text{
+	position:absolute;
+	top:0;
+	margin-left:50%;
+	padding:2em;
+	color: #f3f2ef;
 }
 /* Introduction */
 .intro {
@@ -342,6 +341,12 @@ HOD Desk
 	transition: 0.5s;
 	padding: 1em 2em;
 }
+/*
+slider
+*/
+.main-content{
+	max-height: 300px;
+}
 /* 
 About Us
 */
@@ -378,7 +383,7 @@ Infrastructure
 	position:absolute;
 	top:0;
 	left:0;
-	height:100%;
+	max-height:100%;
 }
 .intro-v2-home-content {
 	/* background-color: #1e1b19d2; */
@@ -969,6 +974,17 @@ td {
 	}
 }
 @media screen and (min-width: 750px) {
+	.carousel .carousel-item {
+  min-height: 570px;
+}
+.home-v2 .carousel-item img {
+		margin-left: 50%;
+}
+.carousel-item img {
+  	min-height: 450px;
+		max-height: 570px;
+    object-fit:cover;
+}
 	.placement-head{
 		grid-template-columns: repeat(3,30%);
 		grid-auto-flow: dense;

@@ -9,7 +9,10 @@
             and corporate trainers to prepare the students industry-ready.</p>
     </div>
 </div>
-
+<div class="my-5 container">
+    <h1 class="mx-0">Companies visited</h1>
+    <center><img src="./Images/placement/companies.png" class="img-fluid"></center>
+</div>
 <div class="placement-head">
     <div class="placement-chart">
         <h2 style="color: black;padding-inline: 1em;text-align: center;">

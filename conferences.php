@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col">
                 <div class="my-3 ">
-                    <h1>Faculties participated in National/International Confrences</h1>
+                    <h1>Faculties participated in National/International Conferences</h1>
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link active fs-5" id="ctab-2022" onclick="changeTabConf(0)">

@@ -165,7 +165,96 @@
     <h1 class="mx-0">Companies visited</h1>
     <center><img src="./Images/placement/companies.png" class="img-fluid"></center>
 </div>
-
+<div class="mt-5">
+    <h2 class="ml-2">Research Trust Areas</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" style="position:relative;" data-ride="carousel">
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/Home Slider/slide1.webp" alt="...">
+                <div class="slide-text">
+                    <h3>Artificial Intelligence & Machine Learning</h3>
+                    <p>
+                    
+                    </p>
+                </div>
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Home Slider/slide2.webp" alt="...">
+                <p>
+                    <h3>Image and Video Analytics</h3>
+                </p>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Home Slider/slide3.webp" alt="...">
+                <p>
+                    <h3>Data Analytics</h3>
+                </p>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/Home Slider/slide4.webp" alt="...">
+                <p>
+                    <h3>Networks and Information Security</h3>
+                </p>            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/2.webp" alt="...">   
+                <p>
+                    <h3>Distributed and Cloud Computing</h3>
+                </p>        
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/3.webp" alt="...">
+                <p>
+                    <h3>Mobile Computing</h3>
+                </p>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/10.webp" alt="...">
+                <p>
+                    <h3>Augmented Reality & Virtual Reality</h3>
+                </p>            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/8.webp" alt="...">
+            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/6.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/13.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/11.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/4.webp" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/14.webp" alt="...">
+            
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/gallery/12.webp" alt="...">
+                
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 <div class="my-5 posters">
     <section class="pt-5 pb-5">
         <div class="container-fluid">
