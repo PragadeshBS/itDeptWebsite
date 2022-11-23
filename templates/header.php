@@ -24,6 +24,8 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
     <link rel="stylesheet" href="./CSS/patent.css">
     <link rel="stylesheet" href="./CSS/navigator.css">
+    <link rel="stylesheet" href="./CSS/studentAwards.css">
+    <link rel="stylesheet" href="./CSS/phd.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
 </head>

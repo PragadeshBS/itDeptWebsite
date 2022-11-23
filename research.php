@@ -3,7 +3,6 @@
     <div class="optionsDiv">
         <button id="sponsored">Sponsored Projects</button>
         <button id="ctdt">CTDT</button>
-        <button id="reports">Project Reports</button>
     </div>
     <div class="contentsDiv">
         <span class="contentHeading">Sponsored Projects</span>

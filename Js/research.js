@@ -837,36 +837,13 @@ let cdtdProjects = {
     },
   ],
 };
-let reportsData = {
-  title: [
-    "S.No.",
-    "Project Title",
-    "Sponsor Agency",
-    "Amount",
-    "Duration",
-    "Investigator",
-  ],
-  data: [
-    {
-      sno: "1.",
-      link: "https://it.mitindia.edu/research/Final%20Report%20of%20Major%20Research%20Project_V3.1.pdf",
-      title: "Video streaming using Telemedicine applications in 3G",
-      agency: "UGC",
-      amount: "8.91",
-      duration: "-",
-      investigator: "Dr. Dhananjay Kumar",
-    },
-  ],
-};
-
 let contentHeading = document.querySelector(".contentHeading");
 let contentData = document.querySelector(".contentData");
 
 let sponsored = document.querySelector("#sponsored");
 let ctdt = document.querySelector("#ctdt");
-let reports = document.querySelector("#reports");
 
-let buttons = [sponsored, ctdt,reports];
+let buttons = [sponsored, ctdt];
 
 sponsored.addEventListener("click", (e) => {
   markTouched(e);
@@ -875,10 +852,6 @@ sponsored.addEventListener("click", (e) => {
 ctdt.addEventListener("click", (e) => {
   markTouched(e);
   contentData.innerHTML = fillCtdt(cdtdProjects);
-});
-reports.addEventListener("click", (e) => {
-  markTouched(e);
-  contentData.innerHTML = fillReports(reportsData);
 });
 
 function markTouched(e) {
@@ -946,29 +919,6 @@ function fillCtdt(stuff) {
   html += `<span><br>2012 - 2013 - Mr.Mukund Murali, B.Sarath Kumar, G.Sivaprakash Guide Dr.P.V.Varalakshmi project titled “Mitigating Denial of Service in the presence of Clock drift and preventing selective jamming attacks in cloud. <br>`;
   html += `<br>2011 - 2012 Mr.R.Prasanna, Mr.V.Prashanth and Mr.A.Srinivas Guide Dr.P.Varalakshmi project titled “Student Attendance Tracking system using IPv6.<br></span>`;
 
-  return html;
-}
-
-function fillReports(stuff) {
-  contentHeading.innerHTML = "Project reports";
-  let html = `<table><thead><tr>`;
-  stuff.title.forEach((e) => {
-    html += `<th>${e}</th>`;
-  });
-  html += "</tr></thead></tbody>";
-
-  stuff.data.forEach((e) => {
-    html += `<tr>`;
-    html += `<td>${e.sno}</td>`;
-    html += `<td><a href="${e.link}">${e.title}</a></td>`;
-    html += `<td>${e.agency}</td>`;
-    html += `<td>${e.amount}</td>`;
-    html += `<td>${e.duration}</td>`;
-    html += `<td>${e.investigator}</td>`;
-    html += "</tr>";
-  });
-
-  html += "</tbody></table>";
   return html;
 }
 
