@@ -68,6 +68,7 @@ header img {
 	font-size: 0.8em;
 	height: min-content;
 }
+/*
 .dropdown-submenu {
   position: relative;
 }
@@ -145,7 +146,6 @@ header label {
 }
 /*
 	navigation menu
-*/
 header label span,
 header label span::after,
 header label span::before {
@@ -185,7 +185,7 @@ header label span::before {
 }
 .nav-toggle:checked ~ label span {
 	transform: scale(0);
-}
+}*/
 .body-start {
 	margin-top: 0.1rem;
 }

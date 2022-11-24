@@ -1,11 +1,23 @@
 .phd{
   display: grid;
-  gap:2em;
+  gap:3em;
+  padding:2em 20%;
+  font-size: 0.7rem;
+}
+
+@media all and (min-width : 750px) {
+  .phd{
+    grid-template-columns: repeat(3,auto);
+    padding:3em 14em;
+  }
+  .phd .flip-card-front h2{
+    padding-top:6.5em;
+  }
 }
 .phd .flip-card {
   background-color: transparent;
-  height: 300px;
-  max-width: 300px;
+  height: 40vh;
+  max-width: 90vw;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -13,8 +25,8 @@
 /* This container is needed to position the front and back side */
 .phd .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: inherit;
+  height: inherit;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -52,12 +64,12 @@
   left:0;
   width:100%;
   height:100%;
-  background-color: rgba(0, 0, 0, 0.576);
+  background-color: rgba(0, 0, 0, 0.533);
   z-index: -1;
 }
 .phd .flip-card-front h2{
   font-weight: 600;
-  padding-top:6.5em;
+  padding-top:6em;
 }
 /* Style the back side */
 .phd .flip-card-back {

@@ -1,7 +1,6 @@
 <?php require("templates/header.php"); ?>
 <div class="patent">
 
-	<h2>Wall of Patents</h2>
 	<div class="app">
 		<div class="cardList">
 			<button class="cardList__btn btn btn--left">
@@ -70,12 +69,6 @@ AWARENESS ALERT SYSTEM</h1>
 			<div class="app__bg__image previous--image">
 				<img src="./Images/Patent/3.webp" alt="" />
 			</div>
-		</div>
-	</div>
-	<div class="loading__wrapper">
-		<div class="loader--text">Loading...</div>
-		<div class="loader">
-			<span></span>
 		</div>
 	</div>
 	<svg class="icons" style="display: none;">

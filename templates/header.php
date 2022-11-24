@@ -19,18 +19,19 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
-   
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
     <link rel="stylesheet" href="./CSS/patent.css">
     <link rel="stylesheet" href="./CSS/navigator.css">
     <link rel="stylesheet" href="./CSS/studentAwards.css">
-    <link rel="stylesheet" href="./CSS/phd.css">
+    <link rel="stylesheet" href="./CSS/phd.css">    
+    <link rel="stylesheet" href="./CSS/facultyAchivements.css">
+    
+    <link rel="stylesheet" href="./CSS/books.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
 </head>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./Js/slider.js"></script>
+
 <body>
     <!-- Image and text -->
 
@@ -98,6 +99,7 @@
 
     </header>
 
+    </nav>
     <nav class="navbar navbar-expand-lg shadow-sm">
         <div class="container-fluid">
             <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
@@ -125,13 +127,14 @@
                         </a>
                     </li>
 
-                    <li class="nav-item dropdown mr-2">
+                    <li class="nav-item dropdown">
                         <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             class="nav-link dropdown-toggle"><i class="bi bi-people-fill"></i>
                             People <i class="bi bi-caret-down-fill"></i></a>
                         <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-1 shadow">
-                            <li><a href="./faculties.php" class="dropdown-item">Teaching Staff </a></li>
-                            <li><a href="./facultiesTech.php" class="dropdown-item">Technical Staff & Administrative people</a></li>
+                            <li><a href="./faculties.php" class="dropdown-item">Teaching  Staff </a></li>
+                            <!-- <li><a href="#" class="dropdown-item">Administrative people</a></li> -->
+                            <li><a href="./facultiesTech.php" class="dropdown-item">Technical & Administrative Staff </a></li>
 
                             <li class="dropdown-divider"></li>
 
@@ -273,13 +276,29 @@
                     <li class="nav-item"><a href="./infrastructure.php">
                             <i class="bi bi-building"></i>
                             Infrastructure</a></li>
-                    <li class="nav-item"><a href="./research.php">
-                            <i class="bi bi-motherboard-fill"></i>
-                            Research</a></li>
-                   <!-- <li class="nav-item"><a href="./studentAssociation.php">
+
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="./research.php" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" class="nav-link dropdown-toggle"><i
+                                class="bi bi-motherboard-fill"></i>
+                            Research & Innovation <i class="bi bi-caret-down-fill"></i> </a>
+                        <ul aria-labelledby="dropdownMenu6" class="dropdown-menu border-1 shadow">
+                            <li><a href="./patent.php" class="dropdown-item">Patent </a></li>
+                            <!-- <li><a href="#" class="dropdown-item">Administrative people</a></li> -->                            
+                            <li><a href="./trustAreas.php" class="dropdown-item">Research Trust Areas</a></li>
+                            <li><a href="./research.php" class="dropdown-item">Sponsored & CTDT projects </a></li>
+                            <li><a href="./phd.php" class="dropdown-item">List of Scholars awarded Ph.D</a></li>                            
+                            <li><a href="./books.php" class="dropdown-item">Books Published</a></li>
+                            <li><a href="https://annauniv.irins.org/faculty/index/Department+of+Information+Technology" class="dropdown-item">Faculty Citations</a></li>
+
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item"><a href="./studentAssociation.php">
                             <i class="bi bi-puzzle"></i>
                             ITA
-                        </a></li>-->
+                        </a></li>
                     <li class="nav-item"><a href="./placements.php">
                             <i class="bi bi-person-check"></i>
                             Placements
@@ -316,7 +335,7 @@
                                         class="bi bi-caret-down-fill"></i></a>
                                 <ul aria-labelledby="dropdownMenu4" class="dropdown-menu border-0 shadow">
                                     <li>
-                                        <a tabindex="-1" href="./conferences.php" class="dropdown-item">National/International Conferences</a>
+                                        <a tabindex="-1" href="./conferences.php" class="dropdown-item">Conferences Attended</a>
                                     </li>
                                     <li>
                                         <a tabindex="-1" href="./journals.php" class="dropdown-item">Journals Published</a>
@@ -333,19 +352,36 @@
                         </ul>
 
                     </li>
-                    <li class="nav-item dropdown mr-2">
-                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            class="nav-link dropdown-toggle"><i class="bi bi-people-fill"></i>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="./activities.php" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" class="nav-link dropdown-toggle"> <i
+                                class="bi bi-file-earmark-richtext"></i>
+
                             Awards <i class="bi bi-caret-down-fill"></i></a>
-                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-1 shadow">
-                            <li><a href="./bestPaper.php" class="dropdown-item">Best Paper </a></li>
-                            <li><a href="./fellowship.php" class="dropdown-item">Fellowship Cash price</a></li>                            
-                            <li><a href="./foreignvisit.php" class="dropdown-item">Foreign Visits</a></li>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+
+
+                            <!-- Level two dropdown-->
+                           
+                            <li><a href="./studentAchievements.php" class="dropdown-item">Student Achievements</a></li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Faculty Achievements <i
+                                        class="bi bi-caret-down-fill"></i></a>
+                                <ul aria-labelledby="dropdownMenu4" class="dropdown-menu border-0 shadow">
+                                    <li>
+                                        <a tabindex="-1" href="./facultyAchievements.php" class="dropdown-item">Faculty Awards</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="./facultyForeign.php" class="dropdown-item">Foreign visit</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <!-- End Level two -->
                         </ul>
 
                     </li>
-                    
+
 
                     <li class="nav-item"><a href="./gallery.php">
                             <i class="bi bi-card-image"></i>
@@ -354,6 +390,10 @@
                     <li class="nav-item"><a href="./e-service.php">
                             <i class="bi bi-pc-display-horizontal"></i>
                             E-Service
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <i class="bi bi-pc-display-horizontal"></i>
+                            360 Tour
                         </a></li>
                 </ul>
             </div>
@@ -364,20 +404,44 @@
         // ------------------------------------------------------- //
         // Multi Level dropdowns
         // ------------------------------------------------------ //
-        $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
-            event.preventDefault();
-            event.stopPropagation();
+        $("li.dropdown [data-toggle='dropdown'] ").on("mouseover",
+            function(event) {
+                event.preventDefault();
+                event.stopPropagation();
 
-            $(this).siblings().toggleClass("show");
+                $(this).siblings().toggleClass("show");
 
 
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-            }
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-                $('.dropdown-submenu .show').removeClass("show");
-            });
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                    $('.dropdown-submenu .show').removeClass("show");
+                });
 
         });
+        $("li.dropdown [data-toggle='dropdown'] ").on("mouseout",
+            function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                    $('.dropdown-submenu .show').removeClass("show");
+                });
+                console.log("hello"+this);
+
+        });
+
+
+
     });
+
+    // $(".dropdown-toggle").on("mouseenter", function() {
+    //     // make sure it is not shown:
+    //     if (!$(this).parent().hasClass("show")) {
+    //         $(this).click();
+    //     }
+    // });
     </script>

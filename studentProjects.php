@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-6">
-                        <h2 class="container mb-2">Latest Scholor's Projects</h2>
+                        <h2 class="container mb-2">Scholar's Projects</h2>
                     </div>
                     <div class="col-3"></div>
                     <div class="col-12">

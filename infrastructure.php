@@ -37,8 +37,8 @@
             <h3>List of laboratory courses done</h3><br>
             <strong>Even Semester</strong>
             <ul>
-                <li>IT7211 Information Technology Essentials and Data Structures Laboratory - <a href="./PDF/manuals/IT7511.pdf"></a></li>
-                <li>IT7412 Web Technology Laboratory - <a href="./PDF/manuals/IT7412.pdf"></a></li>
+                <li>IT7211 Information Technology Essentials and Data Structures Laboratory - <a href="./PDF/manuals/IT7511.pdf">Manual</a></li>
+                <li>IT7412 Web Technology Laboratory - <a href="./PDF/manuals/IT7412.pdf">Manual</a></li>
                 <li>IT7411 Operating Systems Laboratory - <a href="./PDF/manuals/IT7411.pdf">Manual</a> </li>
             </ul>
             <strong>Odd Semester</strong>
@@ -126,7 +126,7 @@
             <strong>Odd Semester</strong>
             <ul>
                 <li>IT7311 Digital and Database Systems Laboratory</li>
-                <li>IT7512 Embedded Systems Laboratory - <a href="./PDF/manuals/IT7512.pdf"></a></li>
+                <li>IT7512 Embedded Systems Laboratory - <a href="./PDF/manuals/IT7512.pdf">Manual</a></li>
             </ul>
         </div>
         <div class="lab-equipment">
