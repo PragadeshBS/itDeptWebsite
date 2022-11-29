@@ -19,7 +19,8 @@
   height: 40vh;
   max-width: 90vw;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
+  border-radius: 2em;/* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -35,6 +36,7 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .phd .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  border-radius: 2em;
 }
 
 /* Position the front and back side */
@@ -44,11 +46,13 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 2em;
 }
 
 /* Style the front side (fallback if image is missing) */
 .phd .flip-card-front {
   color: white;
+  border-radius: 1.2em;
 }
 .phd .flip-card-front img{
   position: absolute;
@@ -66,6 +70,11 @@
   height:100%;
   background-color: rgba(0, 0, 0, 0.533);
   z-index: -1;
+  border-radius: 2em;
+}
+.phd img{
+  padding:2.2em;
+  border-radius: 2em;
 }
 .phd .flip-card-front h2{
   font-weight: 600;
