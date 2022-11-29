@@ -3,7 +3,7 @@
 <div class="announcements marquee">
     <div class="mt-3">
         <p>
-            <a href="./academics.php">
+            <a href="https://cac.annauniv.edu/uddetails/udug_2019/AmmendII/FICE/B.Tech.AI&DS%20-%20I%20&%20II.pdf">
                 New course: Artificial Intelligence & Data Science
                 <i class="bi bi-box-arrow-up-right external-link-icon"></i>
             </a>

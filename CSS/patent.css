@@ -135,7 +135,6 @@
 }
 
 .patent .card {
-	--card-translateY-offset: 100vh;
 	position: absolute;
 	left: 50%;
 	top: 50%;

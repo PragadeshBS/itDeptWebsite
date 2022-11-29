@@ -13,10 +13,5 @@
             Administrative Data Management System (ADaMS)
         </a>
     </div>
-    <div class="text-center fs-4 my-3">
-        <a href="https://www.aukdc.edu.in/fis/">
-            Faculty Information System
-        </a>
-    </div>
 </div>
 <?php require("./templates/footer.php"); ?>

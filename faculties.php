@@ -77,7 +77,9 @@
         <div class='staff-modal'>
           <div class='left'>
             <img src='./Images/teachingStaff/".$data[$i]['img']."' alt='Staff image' class='fac-detail-img img-fluid' />
-            <div><a target='_blank' href='".$data[$i]['externalLink']."'><button class='btn btn-primary mx-auto d-block'>Profile</button></a></div>
+            <div style='display: flex;gap: 1em;justify-content: center;'>
+              <a target='_blank' href='".$data[$i]['externalLink']."'><button class='btn btn-primary mx-auto d-block'>@IRINS</button></a>
+            </div>
           </div>
           <div class='right'>
             <table class='staffTable'>
@@ -104,19 +106,19 @@
                 </tr>
                 <tr>
                   <td>Orcid Id</td>
-                  <td>".$data[$i]['orcidId']."</td>
+                  <td><a href='https://orcid.org/".$data[$i]['orcidId']."'>".$data[$i]['orcidId']."</a></td>
                 </tr>
                 <tr>
                   <td>Scopus Id</td>
-                  <td>".$data[$i]['ScopusId']."</td>
+                  <td><a href='https://www.scopus.com/authid/detail.uri?authorId=".$data[$i]['ScopusId']."'>".$data[$i]['ScopusId']."</a></td>
                 </tr>
                 <tr>
                   <td>Researcher Id</td>
-                  <td>".$data[$i]['ResearcherId']."</td>
+                  <td><a href='https://www.webofscience.com/wos/author/rid/".$data[$i]['ResearcherId']."'>".$data[$i]['ResearcherId']."</a></td>
                 </tr>
                 <tr>
                   <td>Google Scholar Id</td>
-                  <td>".$data[$i]['GoogleScholarID']."</td>
+                  <td><a href='http://scholar.google.co.in/citations?user=".$data[$i]['GoogleScholarID']."'>".$data[$i]['GoogleScholarID']."</a></td>
                 </tr>
               </tbody>
             </table>

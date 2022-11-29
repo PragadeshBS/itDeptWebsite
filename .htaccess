@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^/faculty/([a-zA-Z0-9]+)/$ /faculty_details/index.php?id=$1
+RewriteRule ^admin/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ test-page/test.php?number=$1&alpha=$2 
+RewriteRule ^admin/NULL/([a-zA-Z0-9]+)$ test-page 

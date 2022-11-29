@@ -22,6 +22,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
     <link rel="stylesheet" href="./CSS/patent.css">
+
+    
     <link rel="stylesheet" href="./CSS/navigator.css">
     <link rel="stylesheet" href="./CSS/studentAwards.css">
     <link rel="stylesheet" href="./CSS/phd.css">    
@@ -156,9 +158,10 @@
                         </ul>
 
                     </li>
-                    <!-- <li class="nav-item"><a href="./students.php">
-                            <i class="bi bi-mortarboard-fill"></i>
-                            Students</a></li> -->
+                    <li class="nav-item"><a href="./infrastructure.php">
+                            <i class="bi bi-building"></i>
+                            Infrastructure</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a id="dropdownMenu1" href="./academics.php" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false" class="nav-link dropdown-toggle"> <i
@@ -169,56 +172,7 @@
                             <li><a href="./academics.php"  class="dropdown-item">Courses Offered</a></li>
 
                             <!-- Level two dropdown-->
-                            <li class="dropdown-submenu">
-                                <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Curriculum and Syllabi<i
-                                        class="bi bi-caret-down-fill"></i></a>
-                                <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
-                                    <li>
-                                        <li class="dropdown-submenu">
-                                            <a id="dropdownMenu5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false" class="dropdown-item dropdown-toggle">UG-IT <i
-                                                    class="bi bi-caret-down-fill"></i></a>
-                                            <ul aria-labelledby="dropdownMenu5" class="dropdown-menu border-0 shadow">
-                                                <li>
-                                                    
-                                                    <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2019/AmmendII/FICE/B.Tech.%20IT.pdf" class="dropdown-item">R-2019</a>
-                                                </li>
-                                                <li>
-                                                    <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2015/18.IT%20final.pdf" class="dropdown-item">R-2015</a>
-                                                </li>
-                                                <li>
-                                                    <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2013pt/IT.pdf" class="dropdown-item">R-2013</a>
-                                                </li>
-                                            </ul>
-                                        </li>                                        
-                                    </li>                                    
-                                    <li>
-                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2019/AmmendII/FICE/B.Tech.AI&DS%20-%20I%20&%20II.pdf" class="dropdown-item">UG- AI & DS</a>
-                                    </li>
-                                    <li>
-                                        <li>
-                                            <li class="dropdown-submenu">
-                                                <a id="dropdownMenu6" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false" class="dropdown-item dropdown-toggle">PG-IT<i
-                                                        class="bi bi-caret-down-fill"></i></a>
-                                                <ul aria-labelledby="dropdownMenu6" class="dropdown-menu border-0 shadow">
-                                                    <li>
-                                                        
-                                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udpg_2019/ice/11.%20M.Tech%20IT.pdf" class="dropdown-item">R-2019</a>
-                                                    </li>
-                                                    <li>
-                                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udpg_2015/47.M.Tech%20IT-.pdf" class="dropdown-item">R-2015</a>
-                                                    </li>
-                                                    <li>
-                                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udpg_2013/11.%20IT%20%20-%20replace%20on%2020.01.15.pdf" class="dropdown-item">R-2013</a>
-                                                    </li>
-                                                </ul>
-                                            </li>                                        
-                                        </li>
-                                    </li>
-                                </ul>
-                            </li>
+                            
                             <li class="dropdown-submenu">
                                 <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false" class="dropdown-item dropdown-toggle">Regulations<i
@@ -268,14 +222,62 @@
                                         </li>
                                     </li>
                                 </ul>
-                            </li>                             
+                            </li> 
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Curriculum and Syllabi<i
+                                        class="bi bi-caret-down-fill"></i></a>
+                                <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
+                                    <li>
+                                        <li class="dropdown-submenu">
+                                            <a id="dropdownMenu5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" class="dropdown-item dropdown-toggle">UG-IT <i
+                                                    class="bi bi-caret-down-fill"></i></a>
+                                            <ul aria-labelledby="dropdownMenu5" class="dropdown-menu border-0 shadow">
+                                                <li>
+                                                    
+                                                    <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2019/AmmendII/FICE/B.Tech.%20IT.pdf" class="dropdown-item">R-2019</a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2015/18.IT%20final.pdf" class="dropdown-item">R-2015</a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2013pt/IT.pdf" class="dropdown-item">R-2013</a>
+                                                </li>
+                                            </ul>
+                                        </li>                                        
+                                    </li>                                    
+                                    <li>
+                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udug_2019/AmmendII/FICE/B.Tech.AI&DS%20-%20I%20&%20II.pdf" class="dropdown-item">UG- AI & DS</a>
+                                    </li>
+                                    <li>
+                                        <li>
+                                            <li class="dropdown-submenu">
+                                                <a id="dropdownMenu6" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false" class="dropdown-item dropdown-toggle">PG-IT<i
+                                                        class="bi bi-caret-down-fill"></i></a>
+                                                <ul aria-labelledby="dropdownMenu6" class="dropdown-menu border-0 shadow">
+                                                    <li>
+                                                        
+                                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udpg_2019/ice/11.%20M.Tech%20IT.pdf" class="dropdown-item">R-2019</a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udpg_2015/47.M.Tech%20IT-.pdf" class="dropdown-item">R-2015</a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="-1" href="https://cac.annauniv.edu/uddetails/udpg_2013/11.%20IT%20%20-%20replace%20on%2020.01.15.pdf" class="dropdown-item">R-2013</a>
+                                                    </li>
+                                                </ul>
+                                            </li>                                        
+                                        </li>
+                                    </li>
+                                </ul>
+                            </li>                            
                             <!-- End Level two -->
                         </ul>
 
                     </li>
-                    <li class="nav-item"><a href="./infrastructure.php">
-                            <i class="bi bi-building"></i>
-                            Infrastructure</a></li>
+                    
 
                     <li class="nav-item dropdown">
                         <a id="dropdownMenu1" href="./research.php" data-toggle="dropdown" aria-haspopup="true"
@@ -288,21 +290,12 @@
                             <li><a href="./trustAreas.php" class="dropdown-item">Research Trust Areas</a></li>
                             <li><a href="./research.php" class="dropdown-item">Sponsored & CTDT projects </a></li>
                             <li><a href="./phd.php" class="dropdown-item">List of Scholars awarded Ph.D</a></li>                            
-                            <li><a href="./books.php" class="dropdown-item">Books Published</a></li>
-                            <li><a href="https://annauniv.irins.org/faculty/index/Department+of+Information+Technology" class="dropdown-item">Faculty Citations</a></li>
+                            <li><a href="./books.php" class="dropdown-item">Books Published</a></li>                           
 
 
                         </ul>
 
                     </li>
-                    <li class="nav-item"><a href="./studentAssociation.php">
-                            <i class="bi bi-puzzle"></i>
-                            ITA
-                        </a></li>
-                    <li class="nav-item"><a href="./placements.php">
-                            <i class="bi bi-person-check"></i>
-                            Placements
-                        </a></li>
                     <li class="nav-item dropdown">
                         <a id="dropdownMenu1" href="./activities.php" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false" class="nav-link dropdown-toggle"> <i
@@ -315,7 +308,7 @@
                             <!-- Level two dropdown-->
                             <li class="dropdown-submenu">
                                 <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Student Activities <i
+                                    aria-expanded="false" class="dropdown-item dropdown-toggle">Student Activities<i
                                         class="bi bi-caret-down-fill"></i></a>
                                 <ul aria-labelledby="dropdownMenu3" class="dropdown-menu border-0 shadow">
                                     <li>
@@ -326,6 +319,9 @@
                                     </li>
                                     <li>
                                         <a tabindex="-1" href="./studentsInterInstitute.php" class="dropdown-item">Inter-Institute Events</a>
+                                    </li>
+                                     <li>
+                                        <a tabindex="-1" href="./placements.php" class="dropdown-item">Placements</a>
                                     </li>
                                 </ul>
                             </li>
