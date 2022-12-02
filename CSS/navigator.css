@@ -104,7 +104,7 @@ nav {
 	z-index: -100;
 }
 
-nav a {
+nav a ,nav .child-1-parent,nav .child-2-parent{
 	margin-inline: 1em;
 	text-decoration: none;
 	color: var(--primary);
@@ -141,12 +141,12 @@ nav .parent{
 	color:var(--primary);
 	padding: 0.5em 0.6em;
 }
-nav .child-1-parent{
+nav .child-1-parent,nav .child-2-parent{
 	position:relative;
-	width:inherit;
 }
 nav .parent .child-1,
-nav .parent .child-2{
+nav .parent .child-2,
+nav .parent .child-3{
 	display: initial;
 	position:absolute;
 	padding:0.2em;
@@ -158,11 +158,8 @@ nav .parent .child-2{
 	left:0;
 	box-shadow: 0 0 0.8em black;
 }
-nav .parent .child-2{
+nav .parent .child-2,nav .parent .child-3{
 	z-index:1;
-}
-nav .child-2 a:nth-child(1){
-	display: none;
 }
 nav .parent:hover{
 	cursor: pointer;
@@ -172,7 +169,10 @@ nav .parent:hover{
 nav .parent:hover .child-1 {
 	transform: scale(1);
 }
-nav .patent:hover .child-1 .child-1-parent:hover .child-2 {
+nav .parent .child-1 .child-1-parent:hover .child-2{
+	transform: scale(1);
+}
+nav .parent .child-1 .child-1-parent .child-2 .child-2-parent:hover .child-3 {
 	transform: scale(1);
 }
 header label {

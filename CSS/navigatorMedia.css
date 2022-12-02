@@ -27,7 +27,8 @@
 		position: absolute;
 		left: 1em;
 	}
-	nav .parent .child-2 {
+	nav .parent .child-2 ,
+	nav .parent .child-3 {
 		position: absolute;
 		left:100%;
 		top:0;
