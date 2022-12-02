@@ -7,21 +7,41 @@
           <img src="" alt="" />
           <button>Profile</button>
         </div>
-        <div>
-          <table>
-            <tbody>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-              </tr>
-              <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="parent">
+          Hello
+          <div class="child-1">
+            thank You
+            <div class="child-2 ">
+              thank You
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <style>
+    .parent{
+      position:relative;
+      width:max-content;
+    }
+    .child-1,.child-2{
+      display: initial;
+      border:0.1em solid black;
+      position: absolute;
+      top:100%;
+      left:1em;
+      transform: scale(0);
+      transition: all 400ms;
+      width:max-content;
+    }
+    .parent:hover{
+      cursor: pointer;
+    }
+    .parent:hover .child-1 {
+      transform: scale(1);
+    }
+    .child-1:hover .child-2{
+      transform: scale(1);
+    }
+  </style>
 </body>
