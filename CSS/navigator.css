@@ -297,6 +297,7 @@ header label span::before {
 .contact-home{
 	display:flex;
 	flex-wrap: wrap;
+	gap:1em;
 }
 
 /* Introduction */

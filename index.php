@@ -372,10 +372,10 @@
             </div>
         </div>
     </div>
-    <div class="">
+    <div style="overflow-x:hidden;">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.313370572543!2d80.143466210926!3d12.949412676797468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fac595c29ff%3A0xb76082ae18b51418!2sMadras%20Institute%20of%20Technology%2C%20Anna%20University!5e0!3m2!1sen!2sin!4v1653134025025!5m2!1sen!2sin"
-            id="google-map" loading="lazy"></iframe>
+            id="google-map" loading="lazy" width="95%"></iframe>
     </div>
 </div>
 
