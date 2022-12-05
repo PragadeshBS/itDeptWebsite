@@ -7,7 +7,7 @@
     </div>
     <div class="contentsDiv">
         <span class="contentHeading">Sponsored Projects</span>
-        <div class="contentData"></div>
+        <div class="contentData" style="overflow-y:scroll;"></div>
     </div>
 </div>
 <script src="./Js/research.js" defer></script>

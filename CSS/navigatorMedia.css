@@ -82,6 +82,9 @@
 	.student-graph{		
 		grid-template-columns: repeat(2,auto);
 	}
+	.student-graph .canvasChart{
+		position: relative;
+	}
 	.FDP{
 		
 	grid-template-columns: 53% auto;
