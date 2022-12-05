@@ -5,6 +5,7 @@
     <img src="./Images/studentAwards/1.webp" alt="" loading="lazy">
     <img src="./Images/studentAwards/15.webp" alt="" loading="lazy">
     <img src="./Images/studentAwards/16.webp" alt="" loading="lazy">
+    <img src="./Images/gallery/13.webp" class="img-c2" alt="" loading="lazy" >
     <img src="./Images/studentAwards/2.webp"  alt="" loading="lazy">
     <img src="./Images/studentAwards/3.webp" alt="" loading="lazy">
     <img src="./Images/studentAwards/4.webp" alt="" loading="lazy">
