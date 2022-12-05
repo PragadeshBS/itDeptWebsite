@@ -6,7 +6,7 @@
         <section class="pb-5">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col">
                         <h2 class="container mb-2">Scholar's Projects</h2>
                     </div>
                     <div class="col-3"></div>
@@ -123,7 +123,7 @@
     <section class="pb-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col">
                     <h2 class="container mb-2">Summer Internship Projects</h2>
                 </div>
                 <div class="col-3"></div>
