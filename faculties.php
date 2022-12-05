@@ -153,9 +153,10 @@ th {
     text-align: justify;
     padding: 8px;
 }
-
+@media screen and (min-width: 922px) {
 td:nth-child(odd) {
     padding-right: 100px;
+}
 }
 
 tr:nth-child(even) {
@@ -232,7 +233,8 @@ tr:nth-child(even) {
 }
 
 .fac-detail-img {
-    max-width: 350px;
+    max-width: 90%;
+    margin:auto;
 }
 </style>
 
