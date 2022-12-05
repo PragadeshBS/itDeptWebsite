@@ -1,5 +1,6 @@
 <?php require("templates/header.php"); ?>
 
+<div class="body-start"></div>
 <div class="announcements marquee">
     <div class="mt-3">
         <p>
