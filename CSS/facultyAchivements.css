@@ -6,14 +6,14 @@
 
 .fac-Achive {
 	width: 95%;
-	background-color:#fff;
+	height:max-content;
+	margin:auto;
 }
 .fac-Achive #slideshow {
 	margin: 0 auto;
 	padding-top: 50px;
 	height:65vh;
 	width: 100%;
-	background-color:#fff;
 	box-sizing: border-box;
   margin-bottom:5em ;
 }
@@ -93,7 +93,8 @@
 }
 .fac-Achive
 .content-carrousel figure p,.fac-Achive .content-carrousel figure span{
-	padding:0.6em;
+	padding: 0.6em;	
+	font-size:1.2em;
 }
 .fac-Achive
 .content-carrousel figure span{
@@ -129,18 +130,20 @@
 	}
 }
 @media screen and (min-width: 920px) {
+	.fac-Achive #slideshow {
+		background-color:#fff;
+	}
 	.fac-Achive
 	.content-carrousel figure {
 		position: absolute;
 	}
 	.fac-Achive
-.content-carrousel figure p,.fac-Achive .content-carrousel figure span{
-	padding:0.6em;
-  opacity: 0.5;
-	font-size:0.8em;
-	transform: scale(0.6);
-}
-	
+	.content-carrousel figure p,.fac-Achive .content-carrousel figure span{
+		padding:0.6em;
+		opacity: 0.5;
+		font-size:0.8em;
+		transform: scale(0.6);
+	}
 	.fac-Achive
 	.content-carrousel figure:hover p,.fac-Achive .content-carrousel figure:hover span{
 		opacity: 1;

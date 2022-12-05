@@ -1,15 +1,13 @@
 <?php require("./templates/header.php"); ?>
 <div class="body-start"></div>
-<div class=" card fac-Achive">
+<div class="fac-Achive">
 <h1>Research Trust Areas</h1>
 <section id="slideshow">
 	<div class="entire-content">
 		<div class="content-carrousel" id="show">
+			
 			<figure class="shadow">
-				<img  src="./Images/researchTrust/ml.webp"/>
-			</figure>
-			<figure class="shadow">
-					<p>Artificial Intelligence & Machine Learning</p>
+				<p>Artificial Intelligence & Machine Learning</p>
 				<span>They play a prominent role in most conversations about the future of technology, business, the workplace and even humanity itself.</span>
 				<img  src="./Images/researchTrust/ml.webp"/>
 				<div class="img-bg"></div>
@@ -21,7 +19,7 @@
 				<div class="img-bg"></div>
 			</figure>
 			<figure class="shadow">
-									<p>Internet of Things</p>
+				<p>Internet of Things</p>
 				<span>The Internet of Things is a dynamic global network infrastructure consisting of uniquely identifiable physical and virtual things with self-configuring capabilities. The thinks may refer to items embedded with electronics, software, sensors, actuators, and network connectivity. Researches are currently focusing on providing support for IoT Architecture, Identification, Communications, Network Technology, Network Discovery, Security and Software solutions.</span>
 				<img  src="./Images/researchTrust/iot.webp"/>
 				<div class="img-bg"></div>
@@ -55,6 +53,9 @@
 				<span>Virtual reality uses a headset to place you in a computer-generated world that you can explore. Augmented reality, on the other hand, is a bit different. Instead of transporting you to a virtual world, it takes digital images and layers them on the real world around you through the use of either a clear visor or smartphone.</span>
 				<img  src="./Images/researchTrust/vr.webp"/>
 				<div class="img-bg"></div>
+			</figure>
+			<figure class="shadow">
+				<img  src="./Images/researchTrust/ml.webp"/>
 			</figure>					
 		</div>
 	</div>
