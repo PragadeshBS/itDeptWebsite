@@ -1,6 +1,6 @@
 <?php require("templates/header.php"); ?>
 <!-- Content from here -->
-
+<div class="body-start"></div>
 <div class="container">
     <div class="flex-container body-start">
         <!-- <div class="flex-item body-start hod-profile"> -->

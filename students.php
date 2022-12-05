@@ -1,4 +1,5 @@
 <?php require("templates/header.php"); ?>
+<div class="body-start"></div>
 <div class="intro-v2 curriculum-bg">
     <div class="intro-v2-content">
         <h1>Students</h1>

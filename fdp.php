@@ -1,4 +1,5 @@
 <?php require("./templates/header.php"); ?>
+<div class="body-start"></div>
 <div>
     <div class="card">
         <h2>Faculty Development Program Organized & Attended</h2>

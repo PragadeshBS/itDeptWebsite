@@ -1,4 +1,5 @@
 <?php require("./templates/header.php"); ?>
+<div class="body-start"></div>
 <div>
     <div class="card" style="max-width:95%;">
         <div class="row">

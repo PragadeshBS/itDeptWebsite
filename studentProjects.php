@@ -1,4 +1,5 @@
 <?php require("templates/header.php"); ?>
+<div class="body-start"></div>
 <h1>Student projects</h1>
 <div class="card">
     <div class="posters">

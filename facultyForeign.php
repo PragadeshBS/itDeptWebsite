@@ -1,5 +1,5 @@
 <?php require("./templates/header.php"); ?>
-
+<div class="body-start"></div>
 <div class=" card fac-Achive">
 <h1>Foreign Visit</h1>
 <section id="slideshow">

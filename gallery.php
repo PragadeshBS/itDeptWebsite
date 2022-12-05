@@ -1,4 +1,5 @@
 <?php require("./templates/header.php"); ?>
+<div class="body-start"></div>
 <div class="intro-v2">
     <div class="container mt-5">
         <h1>Gallery</h1>

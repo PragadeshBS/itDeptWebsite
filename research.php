@@ -1,4 +1,5 @@
 <?php require("templates/header.php"); ?>
+<div class="body-start"></div>
 <div class="wrapper container">
     <div class="optionsDiv">
         <button id="sponsored">Sponsored Projects</button>

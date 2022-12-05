@@ -1,4 +1,5 @@
 <?php require("./templates/header.php"); ?>
+<div class="body-start"></div>
 <h1 class="mt-5">List of Scholars awarded Ph.D</h1>
 <div class="card phd mb-2">
     <a class="flip-card" href="https://shodhganga.inflibnet.ac.in/handle/10603/253231">

@@ -111,149 +111,117 @@
 </div>
 
 <div class="stats">
-    <div class="container row text-center">
-        <div class="my-4 col-3">
+        <div class="stats-item">
             <div class="display-4">23</div>
             <div class="fs-6">Faculty</div>
         </div>
-        <div class="my-4 col-3">
+        <div class="stats-item">
             <div class="display-4">11</div>
             <div class="fs-6">Staff</div>
         </div>
-        <div class="my-4 col-3">
+        <div class="stats-item">
             <div class="display-4">467</div>
             <div class="fs-6">UG & PG Students</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">34</div>
             <div class="fs-6">Research Scholars</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">8</div>
             <div class="fs-6">Laboratories</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">3</div>
             <div class="fs-6">Students pursuing higher studies</div>
         </div>
-        <div class="mb-4 col-3">
-            <div class="display-4">8</div>
-            <div class="fs-6">Laboratories</div>
-        </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">40 LPA</div>
             <div class="fs-6">Highest CTC offered</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">80%</div>
             <div class="fs-6">Placement Percent</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">29</div>
             <div class="fs-6">Papers Published</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">8</div>
             <div class="fs-6">Awards Received</div>
         </div>
-        <div class="mb-4 col-3">
+        <div class="stats-item">
             <div class="display-4">78</div>
             <div class="fs-6">R&D Projects</div>
         </div>
-    </div>
 </div>
 <div class="mt-5 container">
     <h1 class="mx-0">Companies visited</h1>
     <center><img src="./Images/placement/companies.png" class="img-fluid"></center>
 </div>
-<div class="mt-5">
-    <h2 class="ml-2">Research Trust Areas</h2>
-    <div id="carouselExampleIndicators" class="carousel slide" style="position:relative;" data-ride="carousel">
-        
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./Images/Home Slider/slide1.webp" alt="...">
-                <div class="slide-text">
-                    <h3>Artificial Intelligence & Machine Learning</h3>
-                    <p>
+<div class="mt-5" style="overflow-x:scroll;margin:auto;">
+    <div class="fac-Achive">
+        <h1 style="display:fixed;">Research Trust Areas</h1>
+        <section id="slideshow">
+            <div class="entire-content">
+                <div class="content-carrousel" id="show">
                     
-                    </p>
+                    <figure class="shadow">
+                        <p>Artificial Intelligence & Machine Learning</p>
+                        <span>They play a prominent role in most conversations about the future of technology, business, the workplace and even humanity itself.</span>
+                        <img  src="./Images/researchTrust/ml.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                        <p>Image and Video Analytics</p>
+                        <span>Image and video analytics are important computer vision technology with the aim of making sense of image and video content in order to ultimately understand ubiquitous and rich source of information. It has been used in diverse multimedia applications, including visual surveillance, healthcare, smart cities, and security.</span>
+                        <img  src="./Images/researchTrust/va.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                        <p>Internet of Things</p>
+                        <span>The Internet of Things is a dynamic global network infrastructure consisting of uniquely identifiable physical and virtual things with self-configuring capabilities. The thinks may refer to items embedded with electronics, software, sensors, actuators, and network connectivity. Researches are currently focusing on providing support for IoT Architecture, Identification, Communications, Network Technology, Network Discovery, Security and Software solutions.</span>
+                        <img  src="./Images/researchTrust/iot.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                                            <p>Data Analytics</p>
+                        <span>data analytics examines different analytic techniques against very large, diverse data sets that include structured, semi-structured and unstructured data, from different sources, and in different sizes from terabytes to zettabytes.</span>
+                        <img  src="./Images/researchTrust/bd.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                        <p>Networks and Information Security</p>
+                        <span>Network Security refers to the measures taken by any enterprise or organization to secure its computer network and data using both hardware and software systems. This aims at securing the confidentiality and accessibility of the data and network</span>
+                        <img  src="./Images/researchTrust/nis.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                                            <p>Distributed and Cloud Computing</p>
+                                            <span>Distributed Cloud Computing generalizes the cloud computing model to position, process, and serve data and applications from geographically distributed sites to meet requirements for performance, redundancy and regulations.</span>
+                        <img  src="./Images/researchTrust/dcc.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                                            <p>Mobile Computing</p>
+                                            <span>Mobile Computing is a technology that allows transmission of data, voice and video via a computer or any other wireless enabled device without having to be connected to a fixed physical link.</span>
+                        <img  src="./Images/researchTrust/mc.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                                            <p>Augmented Reality & Virtual Reality</p>
+                        <span>Virtual reality uses a headset to place you in a computer-generated world that you can explore. Augmented reality, on the other hand, is a bit different. Instead of transporting you to a virtual world, it takes digital images and layers them on the real world around you through the use of either a clear visor or smartphone.</span>
+                        <img  src="./Images/researchTrust/vr.webp"/>
+                        <div class="img-bg"></div>
+                    </figure>
+                    <figure class="shadow">
+                        <img  src="./Images/researchTrust/ml.webp"/>
+                    </figure>					
                 </div>
-                
             </div>
-            <div class="carousel-item">
-                <img src="./Images/Home Slider/slide2.webp" alt="...">
-                <p>
-                    <h3>Image and Video Analytics</h3>
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/Home Slider/slide3.webp" alt="...">
-                <p>
-                    <h3>Data Analytics</h3>
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/Home Slider/slide4.webp" alt="...">
-                <p>
-                    <h3>Networks and Information Security</h3>
-                </p>            
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/2.webp" alt="...">   
-                <p>
-                    <h3>Distributed and Cloud Computing</h3>
-                </p>        
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/3.webp" alt="...">
-                <p>
-                    <h3>Mobile Computing</h3>
-                </p>
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/10.webp" alt="...">
-                <p>
-                    <h3>Augmented Reality & Virtual Reality</h3>
-                </p>            
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/8.webp" alt="...">
-            
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/6.webp" alt="...">
-                
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/13.webp" alt="...">
-                
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/11.webp" alt="...">
-                
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/4.webp" alt="...">
-                
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/14.webp" alt="...">
-            
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/gallery/12.webp" alt="...">
-                
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <!-- The Modal -->
+        </section>
     </div>
 </div>
 <div class="my-5 posters">
@@ -372,46 +340,45 @@
         </div>
     </section>
 </div>
-<div class="my-3">
-    <div class="container row">
-        <div class="col-4">
-            <h1 class="mb-3">Contact Us</h1>
-            <div class="container row">
-                <div class="col-2">
-                    <i class="fs-3 bi bi-geo-alt-fill"></i>
-                </div>
-                <div class="col-10">
-                    <p>Department of Information Technology,</p>
-                    <p>
-                        Madras Institute of Technology, Anna University, Chromepet,
-                        Chennai - 600044
-                    </p>
-                </div>
+<div class="contact-home">
+    <div class="">
+        <h1 class="mb-3">Contact Us</h1>
+        <div class="container row">
+            <div class="col-2">
+                <i class="fs-3 bi bi-geo-alt-fill"></i>
             </div>
-            <div class="container row align-items-center">
-                <div class="col-2">
-                    <i class="fs-3 bi bi-telephone-fill"></i>
-                </div>
-                <div class="col-10">
-                    <p>044-2251 6020</p>
-                </div>
-            </div>
-            <div class="container row align-items-center">
-                <div class="col-2">
-                    <i class="fs-3 bi bi-envelope-fill"></i>
-                </div>
-                <div class="col-10">
-                    <p>aucmitit@gmail.com</p>
-                </div>
+            <div class="col-10">
+                <p>Department of Information Technology,</p>
+                <p>
+                    Madras Institute of Technology, Anna University, Chromepet,
+                    Chennai - 600044
+                </p>
             </div>
         </div>
-        <div class="col-8">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.313370572543!2d80.143466210926!3d12.949412676797468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fac595c29ff%3A0xb76082ae18b51418!2sMadras%20Institute%20of%20Technology%2C%20Anna%20University!5e0!3m2!1sen!2sin!4v1653134025025!5m2!1sen!2sin"
-                id="google-map" loading="lazy"></iframe>
+        <div class="container row align-items-center">
+            <div class="col-2">
+                <i class="fs-3 bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-10">
+                <p>044-2251 6020</p>
+            </div>
+        </div>
+        <div class="container row align-items-center">
+            <div class="col-2">
+                <i class="fs-3 bi bi-envelope-fill"></i>
+            </div>
+            <div class="col-10">
+                <p>aucmitit@gmail.com</p>
+            </div>
         </div>
     </div>
+    <div class="">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.313370572543!2d80.143466210926!3d12.949412676797468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fac595c29ff%3A0xb76082ae18b51418!2sMadras%20Institute%20of%20Technology%2C%20Anna%20University!5e0!3m2!1sen!2sin!4v1653134025025!5m2!1sen!2sin"
+            id="google-map" loading="lazy"></iframe>
+    </div>
 </div>
+
 <style>
 .row {
     align-items: center;

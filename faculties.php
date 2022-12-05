@@ -1,5 +1,5 @@
 <?php require("templates/header.php"); ?>
-
+<div class="body-start"></div>
 <?php 
   $jsonData = file_get_contents("./JSON/faculty/teaching.json");
   $data = json_decode($jsonData, true);

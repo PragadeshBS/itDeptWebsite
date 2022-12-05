@@ -175,7 +175,7 @@ nav .parent .child-1 .child-1-parent:hover .child-2,
 nav .parent .child-1 .child-1-parent:focus .child-2{
 	transform: scale(1);  
 	transition: all 400ms;
-  display: initial;
+  	display: initial;
 }
 nav .parent .child-1 .child-1-parent .child-2 .child-2-parent:hover .child-3,
 nav .parent .child-1 .child-1-parent .child-2 .child-2-parent:focus .child-3 {
@@ -278,6 +278,27 @@ header label span::before {
 	padding:2em;
 	color: #f3f2ef;
 }
+.carousel-item img{
+	max-height: 720px;
+}
+/* stats */
+.stats{
+	display: grid;
+	grid-template-columns: repeat(2,auto);
+	gap:2em;
+	padding:1em;
+}
+.stats-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* contact us home */
+.contact-home{
+	display:flex;
+	flex-wrap: wrap;
+}
+
 /* Introduction */
 .intro {
 	display: grid;

@@ -59,7 +59,7 @@
                 <i class="bi bi-person-rolodex"></i>
                 HOD's Desk
             </a>
-            <div class="parent">
+            <div class="parent" style="z-index:5;">
                 <div>People<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">                
                     
@@ -83,7 +83,7 @@
                 <i class="bi bi-building"></i>
                 Infrastructure
             </a>            
-            <div class="parent">
+            <div class="parent" style="z-index:4;">
                 <div>Academics<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">                
                     <a href="./academics.php"><i class="bi bi-book-half"></i>Courses Offered</a>
@@ -134,7 +134,7 @@
                 </div>
                 
             </div>
-            <div class="parent">
+            <div class="parent" style="z-index:3;">
                 <div>Research & Innovation<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">                
                     <a href="./patent.php" class="dropdown-item"><i class="bi bi-newspaper"></i> Patent </a>
@@ -145,7 +145,7 @@
                 </div>
                 
             </div>                        
-            <div class="parent">
+            <div class="parent" style="z-index:2;">
                 <div>Events<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">                
                     <div class="child-1-parent">
@@ -168,7 +168,7 @@
                 </div>
                 
             </div>
-            <div class="parent">
+            <div class="parent" style="z-index:1;">
                 <div>Awards<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">
                     <a href="./studentAchievements.php" ><i class="bi bi-award"></i> Student Awards</a>

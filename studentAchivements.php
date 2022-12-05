@@ -1,4 +1,5 @@
 <?php require("./templates/header.php"); ?>
+<div class="body-start"></div>
 <h1 class="mt-5">Student Achievements</h1>
 <div class="card studentAwards mb-2">
     <img src="./Images/studentAwards/1.webp" alt="">

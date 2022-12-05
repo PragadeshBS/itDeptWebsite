@@ -1,4 +1,5 @@
 <?php require("./templates/header.php"); ?>
+<div class="body-start"></div>
 <div class="mt-5 py-3 rounded px-2 mx-3 bg-blue">
     <div>
         <h1 class="text-center">Vision and Mission</h1>

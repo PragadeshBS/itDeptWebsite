@@ -1,4 +1,5 @@
 <?php require("templates/header.php"); ?>
+<div class="body-start"></div>
 <div class="wrapper container">
     <div class="contentsDiv">
         <h1>Scholars</h1>
