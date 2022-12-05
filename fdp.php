@@ -3,32 +3,28 @@
 <div>
     <div class="card">
         <h2>Faculty Development Program Organized & Attended</h2>
-        <div class="row">
-            <div class="col-6">
-                <div class="my-3">
+        <div class="FDP">
+            <div>
                     <h3>FDP Organized 2021-2022</h3>
                     <div class="container" style="max-width:100%">
                         <div class="container" style="max-width:100%"><?php require("./activitiesContent/fdpOrg22.php"); ?></div>
                     </div>
-                </div>
             </div>
-            <div class="col">
-                <div class="my-3">
+            <div>
                     <h3>FDP Organized 2020-21</h3>
                     <div class="container" style="max-width:100%">
                         <div class="container" style="max-width:100%"><?php require("./activitiesContent/fdpOrg20.php"); ?></div>
                     </div>
-                </div>
             </div>
         </div>         
-        <div class="my-3">
+        <div>
             <h3>FDP Organized 2019-20</h3>
             <div class="container">
                 <embed id="pdf-embed" class="w-100 d-block mx-auto" src="./PDF/activities/FDPOrg19-20.pdf" width="600px"
                     height="500px" />
             </div>
         </div>
-        <div class="my-3">
+        <div>
             <h4>FDP Attended</h4>
             <ul class="nav nav-tabs">
                 <li class="nav-item">

@@ -79,6 +79,13 @@
 		/* background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 240, 240, 1) 100%); */
 		flex: 0 0 25%;
 	}
+	.student-graph{		
+		grid-template-columns: repeat(2,auto);
+	}
+	.FDP{
+		
+	grid-template-columns: 53% auto;
+	}
 }
 @media screen and (min-width: 750px) {
 	.carousel .carousel-item {

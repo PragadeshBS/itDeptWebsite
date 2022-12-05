@@ -796,6 +796,15 @@ faculties
 		flex-direction: column;
 		align-items: center;
 }
+/* students */
+.student-graph{
+	width: 100%;
+	display: grid;
+	gap:2em;
+	padding:2em;
+	align-items: center;
+	justify-content: center;
+}
 /* ITA */
 
 .ITA {
@@ -969,6 +978,15 @@ th {
 th,
 td {
 	padding: 0.5em;
+}
+/*
+FDP
+*/
+.FDP{
+	display:grid;
+	gap:2em;
+	align-items: center;
+	justify-content: center;
 }
 
 .highers-container {

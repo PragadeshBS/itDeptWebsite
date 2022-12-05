@@ -10,16 +10,7 @@
         </p>
     </div>
 </div>
-<div class="pt-3">
-    <div class="row align-items-center container">
-        <div class="col">
-            <img style="max-width:100%;" src="./Images/students/students-strength.webp" alt="">
-        </div>
-        <div class="col">
-            <img style="max-width:100%;" src="./Images/students/success-rate.webp" alt="">
-        </div>
-    </div>
-</div>
+
 <h2 class="mt-5 container">Students List</h2>
 <div class="students-input container my-3">
     <input type="radio" name="degree" style="display: none" checked />
@@ -40,6 +31,10 @@
 <div class="container">
     <embed id="pdf-embed" class="w-100 d-block mx-auto" src="./PDF/curriculum/UG-CBCS-2015.pdf" width="800px"
         height="500px" />
+</div>
+<div class="student-graph">        
+    <img style="max-width:100%;" src="./Images/students/students-strength.webp" alt="">
+    <img style="max-width:100%;" src="./Images/students/success-rate.webp" alt="">
 </div>
 </div>
 <!-- <script src="./Js/students.js"></script> -->
