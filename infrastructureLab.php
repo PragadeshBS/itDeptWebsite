@@ -24,7 +24,7 @@
             <strong>Odd Semester</strong>
             <ul>
                 <li>IT7312 Object Oriented Programming and Advanced Data Structure Laboratory</li>
-                <li>IT7511 Computer Networks Laboratory</li>
+                <li>IT7511 Computer Networks Laboratory - <a href="./PDF/manuals/IT7511.pdf">Manual</a></li>
             </ul>
         </div>
         <div class="lab-equipment">
