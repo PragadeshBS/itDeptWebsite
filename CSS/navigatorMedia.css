@@ -89,6 +89,9 @@
 		
 	grid-template-columns: 53% auto;
 	}
+	.academics{
+		grid-template-columns: repeat(2,auto);
+	}
 }
 @media screen and (min-width: 750px) {
 	.carousel .carousel-item {

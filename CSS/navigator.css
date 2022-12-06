@@ -574,6 +574,31 @@ Infrastructure
 	display: initial;
 }
 /*
+Academics
+*/
+.academics{
+	display:grid;
+	padding:1em;
+	justify-content: center;
+	align-items: center;
+}
+.academics li{
+	text-align: justify;
+}
+/*Video Lectures*/
+.videoLectures{
+	display:grid;
+	grid-auto-flow: column;
+	overflow-x: scroll;
+	overscroll-behavior-inline: contain;
+	gap:2em;	
+	grid-auto-columns: max(30vw,426px);
+	height:max(240px,40vh);
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 2em;
+}
+/*
 Students
 */
 .students-bg {

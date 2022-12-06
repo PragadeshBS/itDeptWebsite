@@ -27,8 +27,8 @@
     <div class="my-3">
         <div class="tabcontent" id="btech">
             <h1>Program Educational Objectives</h1>
-            <div class="container row align-items-start justify-content-center">
-                <div class="col-6">
+            <div class="academics">
+                <div>
                     After completion of the B.Tech. (IT) course, students will be able to:
                     <ul>
                         <li>
@@ -51,7 +51,7 @@
                         <li>PEO5. Practice IT solutions following technical standards with ethical values.</li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div>
                     <img src="./Images/peo.png" class="img-fluid">
                 </div>
             </div>
@@ -60,8 +60,8 @@
     <div class="my-3">
         <div class="tabcontent" id="mtech">
             <h1>Program Educational Objectives</h1>
-            <div class="container row align-items-start justify-content-center">
-                <div class="col-6">
+            <div class="academics">
+                <div>
                     Master of Technology in Information Technology curriculum is designed to prepare the graduates
                     having attitude and knowledge to:
                     <ul>
@@ -88,7 +88,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div>
                     <img src="./Images/peo.png" class="img-fluid">
                 </div>
             </div>

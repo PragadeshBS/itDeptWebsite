@@ -134,6 +134,13 @@
                             </div>           
                         </div>
                     </div>
+                    <div class="child-1-parent">
+                        Teaching And Learning<i class="bi bi-caret-down-fill"></i>
+                        <div class="child-2">   
+                        <a href="./videoLectures.php"><i class="bi bi-file-earmark-play"></i> Video Lectures</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
