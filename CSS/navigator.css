@@ -598,6 +598,110 @@ Academics
 	align-items: center;
 	padding-bottom: 2em;
 }
+/* feedback */
+.feedback {
+    height: 100%;
+    width: 100%;
+    display:grid;
+    justify-content:center;
+    align-items: center;
+	gap:1em;
+	padding:1em;
+}
+.feedback i{
+	font-size: 2.5em;
+}
+.feedback
+.container {
+    height: auto;
+    width: 85%;
+    overflow:hidden;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 10px rgba(17, 17, 17, 0.1);
+}
+.feedback
+.container .right,
+.feedback
+.container .left {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+.feedback
+.container .right {
+    padding: 1.5em;
+}
+.feedback
+.container .right img {
+    height: 250px;
+    width: 250px;
+    padding: 1.5em;
+    object-fit: cover;
+    object-position:center;
+}
+.feedback
+.container .left .content {
+    margin:50px 10px;;
+    padding: 0;
+}
+.feedback
+.container .left .content .fas {
+    color:
+    #06283d;
+}
+.feedback
+.container .left .content p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #111;
+    margin-left: 20px;
+}
+.feedback
+.container .left .content .author {
+    margin: 20px 0px;
+    line-height: 1.5;
+    text-align: right;
+    margin-left: 5.5em;
+}
+.feedback
+.container .left .content .author h2 {
+    color: 
+    #06283d;
+  text-align:right;
+  margin-left: 5.5em;
+}
+
+@media (max-width: 920px) {
+    .feedback .container {
+        min-height: 600px;
+        flex-direction:column;
+    }
+    .feedback .container .right img {
+        width:95%;
+    }
+    .feedback .container .left .content {
+        margin: 0.2em 0.2em;
+        padding: 0.8em;
+    }
+    .feedback .container .left .content p {
+        font-size: 15px;
+		margin-left: 0;
+		margin-bottom: 2em;
+    }
+	.feedback
+	.container .left .content .author,
+	.feedback
+	.container .left .content .author h2 {
+		margin:0;
+	}
+}
+
+
 /*
 Students
 */

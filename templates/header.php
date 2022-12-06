@@ -140,6 +140,7 @@
                         <a href="./videoLectures.php"><i class="bi bi-file-earmark-play"></i> Video Lectures</a>
                         </div>
                     </div>
+                    <a href="./curriculumFeedback.php"><i class="bi bi-list-columns-reverse"></i> Curriculum Feedback</a>
                     
                 </div>
                 
