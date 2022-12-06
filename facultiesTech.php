@@ -145,7 +145,39 @@ tr:nth-child(even) {
                     <li>B.E (CSE) - Anna University, MIT Campus</li>
                 </ul>
             </div>
+            
             <div class="col-3 faculties-item_2">
+                <img src="./Images/faculty/kalpana.webp" alt="" />
+                <h3>Ms. S. Kalpana</h3>
+                <p>Professional Assistant - I</p>
+                <p>
+                    <span class="fs-6"><strong>Responsibilities<br></strong></span>
+                    Maintain hardware and software issues for all systems in Labs.
+                    Troubleshoot the hardware and peripherals when needed.
+                </p>
+                <ul>
+                    <span class="fs-6"><strong>Qualification<br></strong></span>
+                    <li>B.E (C.S.E) - Rajalakshmi Engineering College, Thandalam.</li>
+                </ul>
+            </div>
+            <div class="col-3 faculties-item_2">
+                <img src="./Images/faculty/Babu.webp" alt="" />
+                <h3>Mr. J. Babu</h3>
+                <p>Professional Assistant - I</p>
+                <p>
+                    <span class="fs-6"><strong>Responsibilities<br></strong></span>
+                    System Maintenance, Software Installation and upgradation, Server
+                    Maintenance
+                </p>
+                <ul>
+                    <span class="fs-6"><strong>Qualification<br></strong></span>
+                    <li>BE(CSE) Pallavan college of Engineering, Kanchipuram</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row my-3 justify-content-center">
+        <div class="col-3 faculties-item_2">
                 <img src="./Images/faculty/Saravanan.webp" alt="" />
                 <h3>Mr. V. Saravanan</h3>
                 <p>Professional Assistant - II</p>
@@ -179,36 +211,6 @@ tr:nth-child(even) {
                         Master of Computer Application - Quaid-E-Millath Government College for
                         Women
                     </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row my-3 justify-content-center">
-            <div class="col-3 faculties-item_2">
-                <img src="./Images/faculty/kalpana.webp" alt="" />
-                <h3>Ms. S. Kalpana</h3>
-                <p>Professional Assistant - I</p>
-                <p>
-                    <span class="fs-6"><strong>Responsibilities<br></strong></span>
-                    Maintain hardware and software issues for all systems in Labs.
-                    Troubleshoot the hardware and peripherals when needed.
-                </p>
-                <ul>
-                    <span class="fs-6"><strong>Qualification<br></strong></span>
-                    <li>B.E (C.S.E) - Rajalakshmi Engineering College, Thandalam.</li>
-                </ul>
-            </div>
-            <div class="col-3 faculties-item_2">
-                <img src="./Images/faculty/Babu.webp" alt="" />
-                <h3>Mr. J. Babu</h3>
-                <p>Professional Assistant - I</p>
-                <p>
-                    <span class="fs-6"><strong>Responsibilities<br></strong></span>
-                    System Maintenance, Software Installation and upgradation, Server
-                    Maintenance
-                </p>
-                <ul>
-                    <span class="fs-6"><strong>Qualification<br></strong></span>
-                    <li>BE(CSE) Pallavan college of Engineering, Kanchipuram</li>
                 </ul>
             </div>
         </div>

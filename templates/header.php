@@ -82,10 +82,20 @@
                 </div>
                 
             </div>
+            <!--
             <a href="./infrastructure.php">
                 <i class="bi bi-building"></i>
                 Infrastructure
-            </a>            
+            </a> -->
+            <div class="parent" style="z-index:5;">
+                <div>Infrastructure<i class="bi bi-caret-down-fill"></i></div> 
+                <div class="child-1">
+                    <a href="./infrastructureLab.php" ><i class="bi bi-award"></i>Laboratories</a>
+                    <a href="#" ><i class="bi bi-award"></i>Computing Facilities</a>
+                    <a href="./infrastructureAcademics.php" ><i class="bi bi-award"></i>Academic Facilities</a>
+                </div>
+                
+            </div>            
             <div class="parent" style="z-index:4;">
                 <div>Academics<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">                

@@ -27,6 +27,10 @@ h4 {
 	font-weight: 600;
 	margin-inline: 0.4em;
 }
+h1{
+	color: #ab3c35;
+	padding-inline: 1em;
+}
 /*
 Heading and navigation
 */
@@ -448,6 +452,9 @@ Infrastructure
 	height: 100%;
   overflow-x: hidden;
 }
+.intro-v2-content h1{
+	color:#f3f2ef;
+}
 .home-v2{
 	position:relative;
 	width:100%;
@@ -481,6 +488,14 @@ Infrastructure
 	font-size: 0.83rem;
 	z-index: -2;
 }
+.infra-labs-v2 {
+	background-color: #1e1b19;
+	padding: 0.7em;
+	display: grid;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
 .lab-item {
 	/* background-color: #9c8592d9; */
 	background-color: darkslategray;
@@ -488,8 +503,10 @@ Infrastructure
 	position: relative;
 	/* color: #f3f2ef; */
 	color: white;
-	padding-inline: 0.5em;
+	padding-inline: 1em;
 	transition: transform 300ms ease-in-out;
+	height:100%;
+	max-height:60vh;
 }
 .lab-item h2 {
 	padding-inline: 0.5em;
@@ -508,6 +525,7 @@ Infrastructure
 	border-radius: inherit;
 	opacity: 0.165;
 	top: 0;
+	left:0;
 	grid-area: img;
 }
 .lab-item ul {
@@ -549,7 +567,8 @@ Infrastructure
 	width: 90%;
 	background-color: #f3f2ef;
 	box-shadow: 0 0 0 25em rgba(0, 0, 0, 0.816);
-	color: #1e1b19;
+	color: #1e1b19;	
+	max-height:initial;
 }
 .infra-lab-checked h2 {
 	position: absolute;
@@ -572,6 +591,25 @@ Infrastructure
 .infra-lab-checked .lab-equipment,
 .infra-lab-checked .lab-hrs {
 	display: initial;
+}
+.infra-others{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	gap:1em;
+	width:100%;
+	margin-bottom: 3em;
+}
+.infra-others .card{
+	
+	height:100%;
+	max-height: 70vh;
+}
+.infra-others p{
+	text-align: justify;	
+    font-weight: 500;
+}
+.infra-others ul{
+	padding-left: 2em;
 }
 /*
 Academics
@@ -655,7 +693,7 @@ Academics
 }
 .feedback
 .container .left .content p {
-    font-size: 18px;
+    font-size: 1.1em;
     line-height: 1.4;
     font-weight: 300;
     color: #111;

@@ -91,7 +91,10 @@
 	}
 	.academics{
 		grid-template-columns: repeat(2,auto);
-	}
+	}	
+	.infra-labs-v2{		
+		grid-template-columns: repeat(3,auto);
+		}
 }
 @media screen and (min-width: 750px) {
 	.carousel .carousel-item {
