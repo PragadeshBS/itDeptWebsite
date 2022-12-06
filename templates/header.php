@@ -91,7 +91,7 @@
                 <div>Infrastructure<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">
                     <a href="./infrastructureLab.php" ><i class="bi bi-award"></i>Laboratories</a>
-                    <a href="#" ><i class="bi bi-award"></i>Computing Facilities</a>
+                    <a href="./infrastructureComputing.php" ><i class="bi bi-award"></i>Computing Facilities</a>
                     <a href="./infrastructureAcademics.php" ><i class="bi bi-award"></i>Academic Facilities</a>
                 </div>
                 
@@ -186,6 +186,7 @@
                             <a href="./fdp.php"><i class="bi bi-braces"></i> Faculty Development Program</a>                                    
                         </div>
                     </div>
+                    <a href="./contributionTowardsSociety.php">Contribution Towards Society</a>
                 </div>
                 
             </div>

@@ -611,6 +611,33 @@ Infrastructure
 .infra-others ul{
 	padding-left: 2em;
 }
+.infra-comp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:1.5em;
+	flex-wrap: wrap;
+}
+.infra-comp-item-bg{
+	background-color: rgba(27, 25, 25, 0.884);
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+.infra-comp-item{
+	padding:2em;
+	position: relative;
+	width: min(90vw,500px);
+	color:white;	
+}
+.infra-comp-item img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	max-height: inherit;
+	z-index: -1;
+}
 /*
 Academics
 */

@@ -11,7 +11,7 @@
 		flex-wrap: wrap;
 		background-color: var(--primary);
 		gap: none;
-		justify-content: baseline;
+		justify-content: center;
 	}
 	nav a {
 		color: #f3f2ef;

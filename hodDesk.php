@@ -5,8 +5,8 @@
     <div class="flex-container body-start">
         <!-- <div class="flex-item body-start hod-profile"> -->
         <div class="flex-item">
-            <img src="./Images/faculty/hoddesk.webp" alt="hod-profile-image" />
-            <h2><b>Dr. Dhananjay Kumar</b></h2>
+            <img src="" alt="hod-profile-image" />
+            <h2><b>Dr. M R Sumalatha</b></h2>
             <p>Professor and Head<br>Department of Information Technology</p>
             <p>Madras Institute of Technology Campus</p>
             <p>Anna University, Chennai</p>
