@@ -2,24 +2,24 @@
 <div class="body-start"></div>
 <h1 class="mt-5">Books Published</h1>
 <a class="card book-container" href="./PDF/books/ml1.pdf">
-    <h4>Machine Learning and
-Deep Learning Techniques
-in Wireless and Mobile
-Networking Systems</h4>
+        <h4>Machine Learning and
+    Deep Learning Techniques
+    in Wireless and Mobile
+    Networking Systems</h4>
     <img src="./Images/Books/b2.webp" alt="">
     <i>- Dr G Rajesh</i>
-    <p>The design and development of automated approaches to improve the performance
-of wireless networks are considered among the challenging research issues in the
-field of wireless and mobile networking. The application of artificial intelligence
-(AI), machine learning (ML), and deep learning (DL) is relatively limited in the field
-of wireless networking systems and needs new models and methods to be devel-
-oped to improve performance. Wireless network technologies such as the Internet
-of Things (IoT), Industry 4.0, Industrial Internet of Things (IIoT), VANET, and
-FANET-based applications demand data-driven approaches which involve complex
-mathematical models. These models can be automated and optimized using ML and
-DL techniques. AI-, ML-, and DL-based schemes are more adaptable to the wireless
-environment. These models provide an optimized way to reduce the complexity and
-overhead of the traditional tractable system models.</p>
+        <p>The design and development of automated approaches to improve the performance
+    of wireless networks are considered among the challenging research issues in the
+    field of wireless and mobile networking. The application of artificial intelligence
+    (AI), machine learning (ML), and deep learning (DL) is relatively limited in the field
+    of wireless networking systems and needs new models and methods to be devel-
+    oped to improve performance. Wireless network technologies such as the Internet
+    of Things (IoT), Industry 4.0, Industrial Internet of Things (IIoT), VANET, and
+    FANET-based applications demand data-driven approaches which involve complex
+    mathematical models. These models can be automated and optimized using ML and
+    DL techniques. AI-, ML-, and DL-based schemes are more adaptable to the wireless
+    environment. These models provide an optimized way to reduce the complexity and
+    overhead of the traditional tractable system models.</p>
 </a>
 <a class="card book-container" href="./PDF/books/b2.pdf">
     <h4>Industry 4.0 Interoperability,

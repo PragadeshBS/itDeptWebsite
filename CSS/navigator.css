@@ -617,17 +617,22 @@ Infrastructure
 	align-items: center;
 	gap:1.5em;
 	flex-wrap: wrap;
+	height: max-content;
 }
 .infra-comp-item-bg{
-	background-color: rgba(27, 25, 25, 0.884);
+	background-color: rgba(27, 25, 25, 0.726);
 	width: 100%;
 	height:100%;
 	z-index: -1;
+	position: absolute;
+	top:0;
+	left:0;
 }
 .infra-comp-item{
 	padding:2em;
 	position: relative;
-	width: min(90vw,500px);
+	width: min(90vw,460px);
+	height:460px;
 	color:white;	
 }
 .infra-comp-item img{
@@ -635,7 +640,7 @@ Infrastructure
 	top:0;
 	left:0;
 	width:100%;
-	max-height: inherit;
+	height:100% ;
 	z-index: -1;
 }
 /*

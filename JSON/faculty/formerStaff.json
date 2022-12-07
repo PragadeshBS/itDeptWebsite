@@ -38,5 +38,18 @@
     "areaOfExpertise": "Database Management System| Mobile Computing",
     "img": "f4.webp",
     "link":""
+  },{
+    "id": 5,
+    "name": "Dr. Dhananjay Kumar",
+    "designation": "Professor",
+    "mobile": "6021/6306",
+    "email": "dhananjay@annauniv.edu",
+    "areaOfExpertise": "Mobile Communication and Computing, Video Streaming and Analysis",
+    "orcidId": "0000-0003-3758-1841",
+    "ScopusId": "35411200500",
+    "ResearcherId": "H-9853-2012",
+    "GoogleScholarID": "OF9U2GMAAAAJ",
+    "img": "117881.webp",
+    "link": "https://annauniv.irins.org/profile/117881"
   }
 ]

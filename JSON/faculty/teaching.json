@@ -1,17 +1,18 @@
 [
+  
   {
     "id": 1,
-    "name": "Dr. Dhananjay Kumar",
+    "name": "Dr. M.R. Sumalatha",
     "designation": "Professor and Head",
-    "mobile": "6021/6306",
-    "email": "dhananjay@annauniv.edu",
-    "areaOfExpertise": "Mobile Communication and Computing, Video Streaming and Analysis",
-    "orcidId": "0000-0003-3758-1841",
-    "ScopusId": "35411200500",
-    "ResearcherId": "H-9853-2012",
-    "GoogleScholarID": "OF9U2GMAAAAJ",
-    "img": "117881.webp",
-    "externalLink": "https://annauniv.irins.org/profile/117881"
+    "mobile": "6312/6472",
+    "email": "sumalatha@annauniv.edu",
+    "areaOfExpertise": "Distributed Systems, Cloud Computing, Big Data Analytics, Social Internet of things , Data Security and Privacy, Computer Forensics.",
+    "orcidId": "0000-0002-1169-420X",
+    "ScopusId": "16679943800",
+    "ResearcherId": "",
+    "GoogleScholarID": "OkIGkCgAAAAJ",
+    "img": "117880.webp",
+    "externalLink": "https://annauniv.irins.org/profile/117880"
   },
   {
     "id": 2,
@@ -26,20 +27,19 @@
     "GoogleScholarID": "8Gry04kAAAAJ",
     "img": "1178793.webp",
     "externalLink": "https://annauniv.irins.org/profile/117879"
-  },
-  {
+  },{
     "id": 3,
-    "name": "Dr. M.R. Sumalatha",
+    "name": "Dr. Dhananjay Kumar",
     "designation": "Professor",
-    "mobile": "6312/6472",
-    "email": "sumalatha@annauniv.edu",
-    "areaOfExpertise": "Distributed Systems, Cloud Computing, Big Data Analytics, Social Internet of things , Data Security and Privacy, Computer Forensics.",
-    "orcidId": "0000-0002-1169-420X",
-    "ScopusId": "16679943800",
-    "ResearcherId": "",
-    "GoogleScholarID": "OkIGkCgAAAAJ",
-    "img": "117880.webp",
-    "externalLink": "https://annauniv.irins.org/profile/117880"
+    "mobile": "6021/6306",
+    "email": "dhananjay@annauniv.edu",
+    "areaOfExpertise": "Mobile Communication and Computing, Video Streaming and Analysis",
+    "orcidId": "0000-0003-3758-1841",
+    "ScopusId": "35411200500",
+    "ResearcherId": "H-9853-2012",
+    "GoogleScholarID": "OF9U2GMAAAAJ",
+    "img": "117881.webp",
+    "externalLink": "https://annauniv.irins.org/profile/117881"
   },
   {
     "id": 4,
@@ -197,7 +197,7 @@
   },
   {
     "id": 15,
-    "name": "Dr. P. Lakshmi Harika Palivela",
+    "name": "Dr. P. Lakshmi Harika",
     "designation": "Teaching Fellow",
     "mobile": "6469",
     "email": "lakshmiharika@mitindia.edu ",
