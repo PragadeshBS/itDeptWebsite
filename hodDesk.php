@@ -5,7 +5,7 @@
     <div class="flex-container body-start">
         <!-- <div class="flex-item body-start hod-profile"> -->
         <div class="flex-item">
-            <img src="" alt="hod-profile-image" />
+            <img src="./Images/hod.webp" alt="hod-profile-image" />
             <h2><b>Dr. M R Sumalatha</b></h2>
             <p>Professor and Head<br>Department of Information Technology</p>
             <p>Madras Institute of Technology Campus</p>
@@ -13,35 +13,16 @@
         </div>
 
         <!-- <div class="hod-about flex-item"> -->
-        <div class="flex-item about-hod">
-            Information technology, one of the fastest growing technologies, has become
-            a strategic function in every organization and lands its foot in every walk
-            of our life. The department of Information Technology established in the
-            year 2000, offers under graduate and post graduate programmes in Information
-            Technology, with the curriculum been devised and periodically being revised
-            with the possibility of exploring different forms of knowledge through
-            theoretical, practical and productive means as stated by the great
-            philosopher Aristotle.
-            <br /><br />
-            The department considers the committed and dedicated faculty as its core
-            strength in providing value education with professional standards to the
-            enthusiastic and vibrant student community. Improved methods of teaching and
-            learning process are adopted to achieve learning abilities through practice,
-            exposure and motivation. Department has good infrastructural and computing
-            facilities and provides a conducive environment to promote academic and
-            research excellence in the department by successfully procuring and
-            executing funded research projects.
-            <br /><br />
-            The department of Information Technology has received funding from the
-            Department of Science and Technology under FIST (Fund for Improvement of
-            Science and Technology) scheme for setting up wireless sensor network and
-            cloud computing labs. The department has also received fund from
-            UGC-DRS-SAP( Department Research Support for Special Assistance Programme)
-            to carry out the research projects in Pervasive Computing.
-            <br /><br />
-            The department endeavors to continually improve, for standing ever competent
-            in producing information technologists in the real sense, through committed
-            and well defined function processes in the department.
+        <div class="flex-item about-hod" style="padding:1.5em;">
+            Welcome to the Department of Information Technology, Anna University, MIT Campus. As a well-known fact, we cannot imagine the world without information technology which has become an essential and inevitable part of our daily lives. The Department’s focus is to train our students to get strong academic knowledge in the recent trends of information technology like Artificial Intelligence, Data Analytics, Internet of Things, Social Networks, Mobile Applications, Machine Learning, and Blockchain Technology, to make the students ready to face real-world challenges. 
+            The Department has a rich blend of young and highly-experienced regular and teaching-fellow faculty members, all holding Ph.D degree. The faculty members display a high level of dedication and enthusiasm towards both teaching and state-of-the-art research. 
+            <br><br>
+            The Department faculties have sound knowledge in emerging research areas like Mobile Computing, Internet of Things, Artificial Intelligence, Machine Learning, Augmented Reality and Virtual Reality, Image and Video Analysis, Distributed and Cloud Computing Networks and Information Security, and Data Analytics.
+            Our faculty members are continuing their respective research projects and publishing their research articles in reputed national and international journals. 
+            <br><br>
+            The department is active in organizing various workshops and seminars for the growth and development of faculty and students’ research knowledge. The department organizes International Conference ICRTIT (International Conference in the Recent Trends of Information Technology) to motivate research students and faculty to implement their innovative research ideas and to publish in the conference. The faculty members make use of the available standard research lab facilities in the department. 
+            <br><br>
+            At present, the department offers two four-year undergraduate programme, B. Tech Information Technology, B.Tech Artificial Intelligence and Data Science, a two-year postgraduate programme, M.Tech Information Technology and a Ph.D programme in the faculty of Information and Communication Engineering Specializations. The focus of these curriculums are in keeping in view with the current and upcoming industry requirements as well as the challenges of the future. The graduates of our Department of Information Technology have a wide range of career opportunities in Artificial Intelligence, Web Development, Mobile Applications, and Smart Systems.
         </div>
     </div>
 </div>

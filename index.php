@@ -17,96 +17,12 @@
     </div>
 </div>
 <div class="home-v2">
-    <div id="carouselExampleIndicators" class="carousel slide" style="position:relative;" data-ride="carousel">
-    <!-- <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-
-    </ol> -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./Images/Home Slider/slide1.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/Home Slider/slide2.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/Home Slider/slide3.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/Home Slider/slide4.webp" alt="...">            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/2.webp" alt="...">           
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/3.webp" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/10.webp" alt="...">            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/8.webp" alt="...">
-           
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/6.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/13.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/11.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/4.webp" alt="...">
-            
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/14.webp" alt="...">
-           
-        </div>
-        <div class="carousel-item">
-            <img src="./Images/gallery/12.webp" alt="...">
-            
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    </div>
+    
+    <img src="./Images/home.webp" alt="...">
     <p class="intro-v2-content">
-        Keeping with the tradition of Anna University in offering new areas of specialization in engineering, the
-        Department of Information Technology was instituted in the year 2001 with the objective of imparting
-        knowledge in cutting-edge technologies in Information Technology and Computer Sciences.
+        The Department of Information Technology bequeaths students with the capability to apply knowledge of Information Technology to work efficiently in multidisciplinary teams and practice engineering with ethical approaches. The Department has excellent lab facilities which are being upgraded from time to time and provide ample opportunities for the students to learn and innovate. The students apply the recent trends of Information Technology like Artificial Intelligence, Data Analytics, Blockchain Technology, Internet of Things, Social Networks, and Cyber Forensics to develop innovative projects and solve the real world problems in the areas of Agriculture, Health care, Environmental Science, Telecommunications and Supply Chain sectors. The department has a team of committed and dedicated faculty as its core strength in providing education with professional standards to the enthusiastic and vibrant student community. The faculty member graduates the students to be globally recognized as innovative computing professionals. They adopt improved methods of teaching and learning process to achieve learning abilities through practice, exposure and motivation.
         <br><br>
-        The department is currently headed by Dr. Dhananjay Kumar, an educator and researcher himself. In the
-        footsteps of the former Heads, the incumbent Head is further taking the department to reach newer heights.
-        The department has a team of dynamic, young and dedicated staff, with specialization in wide array of areas.
-        It offers full time and part time courses for both UG and PG. The department receives funds from DST under
-        FIST programme.
-        <br><br>A new course, Artificial Intelligence &amp; Data Science, has been introduced at 2022 that keeps the
-        students
-        in line with the current trends of technology.
-        <br><br>Department of Information Technology, MIT, thrives to accomplish its vision of developing dexterous
-        and proficient students. Its progress is growing exponentially in contributing efficient and technically
-        sound students to the corporate world.
-        <br><br>
-        “Imagination is more important than knowledge “ - Innovative ideas from student side are encouraged and
-        support for implementation of the same offered by faculty members.
+        The Department was granted the “Fund for Improvement of S&T Infrastructure (FIST)” by the Department of Science & Technology (DST) and has good infrastructural and computing facilities thereby providing a conducive environment to promote academic and research excellence in the department by successfully procuring and executing funded research projects. 
     </p>
 </div>
 

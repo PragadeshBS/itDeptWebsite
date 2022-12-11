@@ -60,9 +60,9 @@
             </a>
             <a href="./hodDesk.php">
                 <i class="bi bi-person-rolodex"></i>
-                HOD's Desk
+                HOD's message
             </a>
-            <div class="parent" style="z-index:5;">
+            <div class="parent" style="z-index:6;">
                 <div>People<i class="bi bi-caret-down-fill"></i></div> 
                 <div class="child-1">                
                     

@@ -103,7 +103,8 @@
 	.home-v2 .carousel-item img {
 		margin-left: 50%;
 	}
-	.carousel-item img {
+	.home-v2 img {
+		margin-left:50%;
 		min-height: 450px;
 		max-height: 570px;
 		object-fit: cover;
@@ -132,7 +133,7 @@
 		color: #f3f2ef;
 		width: 100%;
 		clip-path: circle(70.9% at 0 55%);
-		padding-right: 50%;
+		padding-right: 51%;
 	}
 	.aboutDept {
 		grid-auto-flow: column;
